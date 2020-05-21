@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2020-05-16T08:24:03-04:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Project #1: Linear Regression</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", "AMScd.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\newcommand{\doubler}[1]{2#1}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="Math110Summer2020.html"><span class="title">MATH 110 Summer 2020</span></a></h1>
+<p class="byline">Daniel Moseley</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section1_6.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chapter1.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="chapter2.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section1_6.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chapter1.html" title="Up">Up</a><a class="next-button button toolbar-item" href="chapter2.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter"><a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a></li>
+<li class="link">
+<a href="chapter1.html" data-scroll="chapter1"><span class="codenumber">1</span> <span class="title">Chapter 1 - Linear Functions &amp; Change</span></a><ul>
+<li><a href="section1_1.html" data-scroll="section1_1">Functions and Function Notation</a></li>
+<li><a href="section1_2.html" data-scroll="section1_2">Rate of Change</a></li>
+<li><a href="section1_3.html" data-scroll="section1_3">Linear Functions</a></li>
+<li><a href="section1_4.html" data-scroll="section1_4">Formulas for Linear Functions</a></li>
+<li><a href="section1_5.html" data-scroll="section1_5">Modeling With Linear Functions</a></li>
+<li><a href="section1_6.html" data-scroll="section1_6">Fitting Linear Functions to Data</a></li>
+<li><a href="project1.html" data-scroll="project1" class="active">Project #1: Linear Regression</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chapter2.html" data-scroll="chapter2"><span class="codenumber">2</span> <span class="title">Chapter 2 - Functions</span></a><ul>
+<li><a href="section2_1.html" data-scroll="section2_1">Input and Output</a></li>
+<li><a href="section2_2.html" data-scroll="section2_2">Domain and Range</a></li>
+<li><a href="section-10.html" data-scroll="section-10"></a></li>
+<li><a href="section-11.html" data-scroll="section-11">Preview of Transformations: Shifts</a></li>
+<li><a href="section2_5.html" data-scroll="section2_5">Preview of Composite and Inverse Functions</a></li>
+</ul>
+</li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="project1"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">1.7</span> <span class="title">Project #1: Linear Regression</span>
+</h2>
+<p id="p-34">In track running, there are several races that are approximately a mile. In high school track the distance often used is 1600 meters, as it is four times around the standard track when running in the innermost lane. Historically, the mile (which is approximately 1609.344 meters) has been significant in running with Roger Bannister breaking the four minute barrier in 1954. However, in the modern Olympics, the distance most commonly run that is close to a mile is the 1500 meters.</p>
+<p id="p-35"><em class="alert">Winning 1500m times at the Olympics 1900-1992<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-2" id="fn-2"><sup> 1 </sup></a></em></p>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-2"><div class="fn">https://en.wikipedia.org/wiki/1500_metres_at_the_Olympics</div></div>
+<p id="p-36">This race has been run in every summer Olympic games since 1896. The summer Olympics have been held every four years except in 1916, 1940, and 1944. Oddly, the Olympics were also held out of schedule in 1906, and the governing body of the Olympics doesn't recognize the medals received during these games.</p>
+<p id="p-37"><table>
+<tr>
+<td class="c m b1 r0 l0 t0 lines">Runner (Men)</td>
+<td class="c m b1 r0 l0 t0 lines">Time (in minutes)</td>
+<td class="c m b1 r0 l0 t0 lines">Year</td>
+<td class="c m b1 r0 l0 t0 lines">Runner (Women)</td>
+<td class="c m b1 r0 l0 t0 lines" data-braille="last-cell">Time (in minutes)</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Charles Bennett</td>
+<td class="c m b0 r0 l0 t0 lines">4:06.2</td>
+<td class="c m b0 r0 l0 t0 lines">1900</td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines" data-braille="last-cell"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">James Lightbody</td>
+<td class="c m b0 r0 l0 t0 lines">4:05.4</td>
+<td class="c m b0 r0 l0 t0 lines">1904</td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines" data-braille="last-cell"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Melvin Sheppard</td>
+<td class="c m b0 r0 l0 t0 lines">4:03.4</td>
+<td class="c m b0 r0 l0 t0 lines">1908</td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines" data-braille="last-cell"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Arnold Jackson</td>
+<td class="c m b0 r0 l0 t0 lines">3:56.8</td>
+<td class="c m b0 r0 l0 t0 lines">1912</td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines" data-braille="last-cell"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Albert Hill</td>
+<td class="c m b0 r0 l0 t0 lines">4:01.8</td>
+<td class="c m b0 r0 l0 t0 lines">1920</td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines" data-braille="last-cell"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Paavo Nurmi</td>
+<td class="c m b0 r0 l0 t0 lines">3:53.6</td>
+<td class="c m b0 r0 l0 t0 lines">1924</td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines" data-braille="last-cell"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Harry Larva</td>
+<td class="c m b0 r0 l0 t0 lines">3:53.2</td>
+<td class="c m b0 r0 l0 t0 lines">1928</td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines" data-braille="last-cell"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Luigi Beccali</td>
+<td class="c m b0 r0 l0 t0 lines">3:51.2</td>
+<td class="c m b0 r0 l0 t0 lines">1932</td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines" data-braille="last-cell"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Jack Lovelock</td>
+<td class="c m b0 r0 l0 t0 lines">3:47.8</td>
+<td class="c m b0 r0 l0 t0 lines">1936</td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines" data-braille="last-cell"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Henry Eriksson</td>
+<td class="c m b0 r0 l0 t0 lines">3:49.8</td>
+<td class="c m b0 r0 l0 t0 lines">1948</td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines" data-braille="last-cell"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Josy Barthel</td>
+<td class="c m b0 r0 l0 t0 lines">3:45.1</td>
+<td class="c m b0 r0 l0 t0 lines">1952</td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines" data-braille="last-cell"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Ron Delany</td>
+<td class="c m b0 r0 l0 t0 lines">3:41.2</td>
+<td class="c m b0 r0 l0 t0 lines">1956</td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines" data-braille="last-cell"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Herb Elliott</td>
+<td class="c m b0 r0 l0 t0 lines">3:35.6</td>
+<td class="c m b0 r0 l0 t0 lines">1960</td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines" data-braille="last-cell"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Peter Snell</td>
+<td class="c m b0 r0 l0 t0 lines">3:38.1</td>
+<td class="c m b0 r0 l0 t0 lines">1964</td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines" data-braille="last-cell"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Kipchoge Keino</td>
+<td class="c m b0 r0 l0 t0 lines">3:34.9</td>
+<td class="c m b0 r0 l0 t0 lines">1968</td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines" data-braille="last-cell"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Pekka Vasala</td>
+<td class="c m b0 r0 l0 t0 lines">3:36.3</td>
+<td class="c m b0 r0 l0 t0 lines">1972</td>
+<td class="c m b0 r0 l0 t0 lines">Lyudmila Bragina</td>
+<td class="c m b0 r0 l0 t0 lines" data-braille="last-cell">4:01.4</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">John Walker</td>
+<td class="c m b0 r0 l0 t0 lines">3:39.17</td>
+<td class="c m b0 r0 l0 t0 lines">1976</td>
+<td class="c m b0 r0 l0 t0 lines">Tatyana Kazankina</td>
+<td class="c m b0 r0 l0 t0 lines" data-braille="last-cell">4:05.48</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Sebastian Coe</td>
+<td class="c m b0 r0 l0 t0 lines">3:38.4</td>
+<td class="c m b0 r0 l0 t0 lines">1980</td>
+<td class="c m b0 r0 l0 t0 lines">Tatyana Kazankina</td>
+<td class="c m b0 r0 l0 t0 lines" data-braille="last-cell">3:56.56</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Sebastian Coe</td>
+<td class="c m b0 r0 l0 t0 lines">3:33.53</td>
+<td class="c m b0 r0 l0 t0 lines">1984</td>
+<td class="c m b0 r0 l0 t0 lines">Gabriella Dorio</td>
+<td class="c m b0 r0 l0 t0 lines" data-braille="last-cell">4:03.25</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Peter Rono</td>
+<td class="c m b0 r0 l0 t0 lines">3:35.96</td>
+<td class="c m b0 r0 l0 t0 lines">1988</td>
+<td class="c m b0 r0 l0 t0 lines">Paula Ivan</td>
+<td class="c m b0 r0 l0 t0 lines" data-braille="last-cell">3:53.96</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Fermin Cacho</td>
+<td class="c m b0 r0 l0 t0 lines">3:40.12</td>
+<td class="c m b0 r0 l0 t0 lines">1992</td>
+<td class="c m b0 r0 l0 t0 lines">Kassiba Boulmerka</td>
+<td class="c m b0 r0 l0 t0 lines" data-braille="last-cell">3:55.30</td>
+</tr>
+</table></p>
+<em class="alert">Analyzing the Data</em><p id="p-38">The race has been an Olympic event for men longer than it has for women, so the data goes back further.  In this project you will be making predictions based on a linear regression formula for the winning times.  So first copy the men's and women's data into Excel or Desmos, taking care to convert all times into seconds.  Graph both sets of data on the same set of axes and add trend lines.  Have Excel/Desmos display both equations and the trend lines.</p>
+<p id="p-39">Before using the trend lines, write the formulas for both using proper function notation.  Let \(f\) be the function for the men's times and \(g\) be the function for the women's times.  Completely explain what the input and output of each function is.  Also discuss how the R-values for each function affect your confidence in using them.  Excel will report R squared rather than R, so you will need to calculate R from it. Is R positive or negative?  Why?</p>
+<p id="p-40">After discussing the formulas and their R-values, explain the meanings of the basic geometric properties of each trend line.    In particular, using the context of the problem, give the practical meaning of the slopes, vertical intercepts, and horizontal intercepts of each line.  Do all of your answers and explanations seem reasonable?  If not, why not?</p>
+<p id="p-41">Following the discussion of the geometric properties, use the trend lines to answer all of the following questions.  When answering each question, use proper mathematics and function notation when presenting the necessary algebra to answer each question.</p>
+<ol class="decimal">
+<li id="li-35">What are the meanings of \(f(1980)\) and \(g(1980)\text{?}\)  How reliable is each result?</li>
+<li id="li-36">You will notice there are some years missing in the data for the men when there normally would have been Olympics if the four year cycle was followed.  Why might these scores be missing?  Use your trend line to predict the winning times if these Olympics had been held.  How much do you trust these results?</li>
+<li id="li-37">In what year would have or will the winning times for the men and women be the same?</li>
+<li id="li-38">What times do you predict will be necessary to win the men's and women's in the 2020 Olympics?</li>
+<li id="li-39">Use your trend lines to approximate at which Olympics the men and women will break the 3 minute mark.  Do you believe your predictions?</li>
+</ol>
+<p id="p-42"><em class="alert">Report Guidelines</em></p>
+<p id="p-43">The final paper must be type written including all necessary formulas.  To type formulas in Word, use Insert/Equation.  This should be written as a paper and not a long homework problem.  In particular, do not number parts, instead write in sentences and paragraphs and use section headings if appropriate.  Each paper should include a title page, an introduction, a main body, and a conclusion.  As a general guide after reading the introduction, the reader should know what you are going to do, and why, without referring to this assignment sheet.  The main body should consist of answers to all of the questions, a discussion of each, and all the necessary formulas and algebra to find them.  Use your book as a guide on how to properly display equations.  Make sure you define every variable you use immediately before or after it first appears.  Also the Excel graph you created should be within the text (not at the end) and referred to by the text when you are initially explaining your functions.  The conclusion should summarize what you learned.  Specifically, what you learned about the winning times using your trend lines, not what you learned about mathematics (that is just hopefully a side effect).    Throughout adopt the tone that these are things you set out to find out on your own and are reporting your findings, not like you are responding to questions.</p></section></div></main>
+</div>
+</body>
+</html>

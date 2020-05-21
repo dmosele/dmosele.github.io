@@ -1,0 +1,913 @@
+%**************************************%
+%*    Generated from PreTeXt source   *%
+%*    on 2020-05-07T16:47:31-04:00    *%
+%*                                    *%
+%*      https://pretextbook.org       *%
+%*                                    *%
+%**************************************%
+\documentclass[oneside,10pt,]{book}
+%% Custom Preamble Entries, early (use latex.preamble.early)
+%% Default LaTeX packages
+%%   1.  always employed (or nearly so) for some purpose, or
+%%   2.  a stylewriter may assume their presence
+\usepackage{geometry}
+%% Some aspects of the preamble are conditional,
+%% the LaTeX engine is one such determinant
+\usepackage{ifthen}
+%% etoolbox has a variety of modern conveniences
+\usepackage{etoolbox}
+\usepackage{ifxetex,ifluatex}
+%% Raster graphics inclusion
+\usepackage{graphicx}
+%% Color support, xcolor package
+%% Always loaded, for: add/delete text, author tools
+%% Here, since tcolorbox loads tikz, and tikz loads xcolor
+\PassOptionsToPackage{usenames,dvipsnames,svgnames,table}{xcolor}
+\usepackage{xcolor}
+%% begin: defined colors, via xcolor package, for styling
+%% end: defined colors, via xcolor package, for styling
+%% Colored boxes, and much more, though mostly styling
+%% skins library provides "enhanced" skin, employing tikzpicture
+%% boxes may be configured as "breakable" or "unbreakable"
+%% "raster" controls grids of boxes, aka side-by-side
+\usepackage{tcolorbox}
+\tcbuselibrary{skins}
+\tcbuselibrary{breakable}
+\tcbuselibrary{raster}
+%% We load some "stock" tcolorbox styles that we use a lot
+%% Placement here is provisional, there will be some color work also
+%% First, black on white, no border, transparent, but no assumption about titles
+\tcbset{ bwminimalstyle/.style={size=minimal, boxrule=-0.3pt, frame empty,
+colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
+%% Second, bold title, run-in to text/paragraph/heading
+%% Space afterwards will be controlled by environment,
+%% independent of constructions of the tcb title
+%% Places \blocktitlefont onto many block titles
+\tcbset{ runintitlestyle/.style={fonttitle=\blocktitlefont\upshape\bfseries, attach title to upper} }
+%% Spacing prior to each exercise, anywhere
+\tcbset{ exercisespacingstyle/.style={before skip={1.5ex plus 0.5ex}} }
+%% Spacing prior to each block
+\tcbset{ blockspacingstyle/.style={before skip={2.0ex plus 0.5ex}} }
+%% xparse allows the construction of more robust commands,
+%% this is a necessity for isolating styling and behavior
+%% The tcolorbox library of the same name loads the base library
+\tcbuselibrary{xparse}
+%% Hyperref should be here, but likes to be loaded late
+%%
+%% Inline math delimiters, \(, \), need to be robust
+%% 2016-01-31:  latexrelease.sty  supersedes  fixltx2e.sty
+%% If  latexrelease.sty  exists, bugfix is in kernel
+%% If not, bugfix is in  fixltx2e.sty
+%% See:  https://tug.org/TUGboat/tb36-3/tb114ltnews22.pdf
+%% and read "Fewer fragile commands" in distribution's  latexchanges.pdf
+\IfFileExists{latexrelease.sty}{}{\usepackage{fixltx2e}}
+%% Footnote counters and part/chapter counters are manipulated
+%% April 2018:  chngcntr  commands now integrated into the kernel,
+%% but circa 2018/2019 the package would still try to redefine them,
+%% so we need to do the work of loading conditionally for old kernels.
+%% From version 1.1a,  chngcntr  should detect defintions made by LaTeX kernel.
+\ifdefined\counterwithin
+\else
+    \usepackage{chngcntr}
+\fi
+%% Text height identically 9 inches, text width varies on point size
+%% See Bringhurst 2.1.1 on measure for recommendations
+%% 75 characters per line (count spaces, punctuation) is target
+%% which is the upper limit of Bringhurst's recommendations
+\geometry{letterpaper,total={340pt,9.0in}}
+%% Custom Page Layout Adjustments (use latex.geometry)
+%% This LaTeX file may be compiled with pdflatex, xelatex, or lualatex executables
+%% LuaTeX is not explicitly supported, but we do accept additions from knowledgeable users
+%% The conditional below provides  pdflatex  specific configuration last
+%% The following provides engine-specific capabilities
+%% Generally, xelatex is necessary for non-Western fonts
+\ifthenelse{\boolean{xetex} \or \boolean{luatex}}{%
+%% begin: xelatex and lualatex-specific configuration
+\ifxetex\usepackage{xltxtra}\fi
+%% realscripts is the only part of xltxtra relevant to lualatex 
+\ifluatex\usepackage{realscripts}\fi
+%% fontspec package provides extensive control of system fonts,
+%% meaning *.otf (OpenType), and apparently *.ttf (TrueType)
+%% that live *outside* your TeX/MF tree, and are controlled by your *system*
+%% (it is possible that a TeX distribution will place fonts in a system location)
+\usepackage{fontspec}
+%% We use Latin Modern (lmodern) as the default font
+%% So we check that it is available as a system font
+\IfFontExistsTF{Latin Modern Roman}{}{\GenericError{}{The font "Latin Modern Roman" requested by PreTeXt output is not available as a system font}{Consult the PreTeXt Guide for help with LaTeX fonts.}{}}
+%% We then define various font family commands using a vanilla version,
+%% with the intention of letting a style override these choices
+%% \setmainfont can be re-issued, and \renewfontfamily can redefine others
+\setmainfont{Latin Modern Roman}[SmallCapsFont={Latin Modern Roman Caps}, SlantedFont={Latin Modern Roman Slanted}]
+\newfontfamily{\divisionfont}{Latin Modern Roman}
+\newfontfamily{\blocktitlefont}{Latin Modern Roman}
+\newfontfamily{\contentsfont}{Latin Modern Roman}
+\newfontfamily{\pagefont}{Latin Modern Roman}[SlantedFont={Latin Modern Roman Slanted}]
+\newfontfamily{\tabularfont}{Latin Modern Roman}[SmallCapsFont={Latin Modern Roman Caps}]
+\newfontfamily{\xreffont}{Latin Modern Roman}
+\newfontfamily{\titlepagefont}{Latin Modern Roman}
+%% begin: font information supplied by "font-xelatex-style" template
+%% end: font information supplied by "font-xelatex-style" template
+%% 
+%% Extensive support for other languages
+\usepackage{polyglossia}
+%% Set main/default language based on pretext/@xml:lang value
+%% document language code is "en-US", US English
+%% usmax variant has extra hypenation
+\setmainlanguage[variant=usmax]{english}
+%% Enable secondary languages based on discovery of @xml:lang values
+%% Enable fonts/scripts based on discovery of @xml:lang values
+%% Western languages should be ably covered by Latin Modern Roman
+%% end: xelatex and lualatex-specific configuration
+}{%
+%% begin: pdflatex-specific configuration
+\usepackage[utf8]{inputenc}
+%% PreTeXt will create a UTF-8 encoded file
+%% begin: font setup and configuration for use with pdflatex
+%% Portions of a document, are, or may, be affected by font-changing commands
+%% These are more robust when using  xelatex  but may be employed with  pdflatex
+%% The following definitons are meant to be re-defined in a style with \renewcommand
+\newcommand{\divisionfont}{\relax}
+\newcommand{\blocktitlefont}{\relax}
+\newcommand{\contentsfont}{\relax}
+\newcommand{\pagefont}{\relax}
+\newcommand{\tabularfont}{\relax}
+\newcommand{\xreffont}{\relax}
+\newcommand{\titlepagefont}{\relax}
+%% begin: font information supplied by "font-pdflatex-style" template
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+%% begin: font information supplied by "font-pdflatex-style" template
+%% end: font setup and configuration for use with pdflatex
+%% end: pdflatex-specific configuration
+}
+%% Symbols, align environment, commutative diagrams, bracket-matrix
+\usepackage{amsmath}
+\usepackage{amscd}
+\usepackage{amssymb}
+%% allow page breaks within display mathematics anywhere
+%% level 4 is maximally permissive
+%% this is exactly the opposite of AMSmath package philosophy
+%% there are per-display, and per-equation options to control this
+%% split, aligned, gathered, and alignedat are not affected
+\allowdisplaybreaks[4]
+%% allow more columns to a matrix
+%% can make this even bigger by overriding with  latex.preamble.late  processing option
+\setcounter{MaxMatrixCols}{30}
+%%
+%%
+%% Division Titles, and Page Headers/Footers
+%% titlesec package, loading "titleps" package cooperatively
+%% See code comments about the necessity and purpose of "explicit" option.
+%% The "newparttoc" option causes a consistent entry for parts in the ToC 
+%% file, but it is only effective if there is a \titleformat for \part.
+%% "pagestyles" loads the  titleps  package cooperatively.
+\usepackage[explicit, newparttoc, pagestyles]{titlesec}
+%% The companion titletoc package for the ToC.
+\usepackage{titletoc}
+%% Fixes a bug with transition from chapters to appendices in a "book"
+%% See generating XSL code for more details about necessity
+\newtitlemark{\chaptertitlename}
+%% begin: customizations of page styles via the modal "titleps-style" template
+%% Designed to use commands from the LaTeX "titleps" package
+%% Plain pages should have the same font for page numbers
+\renewpagestyle{plain}{%
+\setfoot{}{\pagefont\thepage}{}%
+}%
+%% Single pages as in default LaTeX
+\renewpagestyle{headings}{%
+\sethead{\pagefont\slshape\MakeUppercase{\ifthechapter{\chaptertitlename\space\thechapter.\space}{}\chaptertitle}}{}{\pagefont\thepage}%
+}%
+\pagestyle{headings}
+%% end: customizations of page styles via the modal "titleps-style" template
+%%
+%% Create globally-available macros to be provided for style writers
+%% These are redefined for each occurence of each division
+\newcommand{\divisionnameptx}{\relax}%
+\newcommand{\titleptx}{\relax}%
+\newcommand{\subtitleptx}{\relax}%
+\newcommand{\shortitleptx}{\relax}%
+\newcommand{\authorsptx}{\relax}%
+\newcommand{\epigraphptx}{\relax}%
+%% Create environments for possible occurences of each division
+%% Environment for a PTX "chapter" at the level of a LaTeX "chapter"
+\NewDocumentEnvironment{chapterptx}{mmmmmm}
+{%
+\renewcommand{\divisionnameptx}{Chapter}%
+\renewcommand{\titleptx}{#1}%
+\renewcommand{\subtitleptx}{#2}%
+\renewcommand{\shortitleptx}{#3}%
+\renewcommand{\authorsptx}{#4}%
+\renewcommand{\epigraphptx}{#5}%
+\chapter[{#3}]{#1}%
+\label{#6}%
+}{}%
+%% Environment for a PTX "section" at the level of a LaTeX "section"
+\NewDocumentEnvironment{sectionptx}{mmmmmm}
+{%
+\renewcommand{\divisionnameptx}{Section}%
+\renewcommand{\titleptx}{#1}%
+\renewcommand{\subtitleptx}{#2}%
+\renewcommand{\shortitleptx}{#3}%
+\renewcommand{\authorsptx}{#4}%
+\renewcommand{\epigraphptx}{#5}%
+\section[{#3}]{#1}%
+\label{#6}%
+}{}%
+%% Environment for a PTX "worksheet" at the level of a LaTeX "subsection"
+\NewDocumentEnvironment{worksheet-subsection}{mmmmmm}
+{%
+\renewcommand{\divisionnameptx}{Worksheet}%
+\renewcommand{\titleptx}{#1}%
+\renewcommand{\subtitleptx}{#2}%
+\renewcommand{\shortitleptx}{#3}%
+\renewcommand{\authorsptx}{#4}%
+\renewcommand{\epigraphptx}{#5}%
+\subsection[{#3}]{#1}%
+\label{#6}%
+}{}%
+%% Environment for a PTX "worksheet" at the level of a LaTeX "subsection"
+\NewDocumentEnvironment{worksheet-subsection-numberless}{mmmmmm}
+{%
+\renewcommand{\divisionnameptx}{Worksheet}%
+\renewcommand{\titleptx}{#1}%
+\renewcommand{\subtitleptx}{#2}%
+\renewcommand{\shortitleptx}{#3}%
+\renewcommand{\authorsptx}{#4}%
+\renewcommand{\epigraphptx}{#5}%
+\subsection*{#1}%
+\addcontentsline{toc}{subsection}{#3}
+\label{#6}%
+}{}%
+%%
+%% Styles for six traditional LaTeX divisions
+\titleformat{\part}[display]
+{\divisionfont\Huge\bfseries\centering}{\divisionnameptx\space\thepart}{30pt}{\Huge#1}
+[{\Large\centering\authorsptx}]
+\titleformat{\chapter}[display]
+{\divisionfont\huge\bfseries}{\divisionnameptx\space\thechapter}{20pt}{\Huge#1}
+[{\Large\authorsptx}]
+\titleformat{name=\chapter,numberless}[display]
+{\divisionfont\huge\bfseries}{}{0pt}{#1}
+[{\Large\authorsptx}]
+\titlespacing*{\chapter}{0pt}{50pt}{40pt}
+\titleformat{\section}[hang]
+{\divisionfont\Large\bfseries}{\thesection}{1ex}{#1}
+[{\large\authorsptx}]
+\titleformat{name=\section,numberless}[block]
+{\divisionfont\Large\bfseries}{}{0pt}{#1}
+[{\large\authorsptx}]
+\titlespacing*{\section}{0pt}{3.5ex plus 1ex minus .2ex}{2.3ex plus .2ex}
+\titleformat{\subsection}[hang]
+{\divisionfont\large\bfseries}{\thesubsection}{1ex}{#1}
+[{\normalsize\authorsptx}]
+\titleformat{name=\subsection,numberless}[block]
+{\divisionfont\large\bfseries}{}{0pt}{#1}
+[{\normalsize\authorsptx}]
+\titlespacing*{\subsection}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\titleformat{\subsubsection}[hang]
+{\divisionfont\normalsize\bfseries}{\thesubsubsection}{1em}{#1}
+[{\small\authorsptx}]
+\titleformat{name=\subsubsection,numberless}[block]
+{\divisionfont\normalsize\bfseries}{}{0pt}{#1}
+[{\normalsize\authorsptx}]
+\titlespacing*{\subsubsection}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\titleformat{\paragraph}[hang]
+{\divisionfont\normalsize\bfseries}{\theparagraph}{1em}{#1}
+[{\small\authorsptx}]
+\titleformat{name=\paragraph,numberless}[block]
+{\divisionfont\normalsize\bfseries}{}{0pt}{#1}
+[{\normalsize\authorsptx}]
+\titlespacing*{\paragraph}{0pt}{3.25ex plus 1ex minus .2ex}{1.5em}
+%%
+%% Styles for five traditional LaTeX divisions
+\titlecontents{part}%
+[0pt]{\contentsmargin{0em}\addvspace{1pc}\contentsfont\bfseries}%
+{\Large\thecontentslabel\enspace}{\Large}%
+{}%
+[\addvspace{.5pc}]%
+\titlecontents{chapter}%
+[0pt]{\contentsmargin{0em}\addvspace{1pc}\contentsfont\bfseries}%
+{\large\thecontentslabel\enspace}{\large}%
+{\hfill\bfseries\thecontentspage}%
+[\addvspace{.5pc}]%
+\dottedcontents{section}[3.8em]{\contentsfont}{2.3em}{1pc}%
+\dottedcontents{subsection}[6.1em]{\contentsfont}{3.2em}{1pc}%
+\dottedcontents{subsubsection}[9.3em]{\contentsfont}{4.3em}{1pc}%
+%%
+%% Begin: Semantic Macros
+%% To preserve meaning in a LaTeX file
+%%
+%% \mono macro for content of "c", "cd", "tag", etc elements
+%% Also used automatically in other constructions
+%% Simply an alias for \texttt
+%% Always defined, even if there is no need, or if a specific tt font is not loaded
+\newcommand{\mono}[1]{\texttt{#1}}
+%%
+%% Following semantic macros are only defined here if their
+%% use is required only in this specific document
+%%
+%% End: Semantic Macros
+%% Division Numbering: Chapters, Sections, Subsections, etc
+%% Division numbers may be turned off at some level ("depth")
+%% A section *always* has depth 1, contrary to us counting from the document root
+%% The latex default is 3.  If a larger number is present here, then
+%% removing this command may make some cross-references ambiguous
+%% The precursor variable $numbering-maxlevel is checked for consistency in the common XSL file
+\setcounter{secnumdepth}{3}
+%%
+%% AMS "proof" environment is no longer used, but we leave previously
+%% implemented \qedhere in place, should the LaTeX be recycled
+\newcommand{\qedhere}{\relax}
+%%
+%% A faux tcolorbox whose only purpose is to provide common numbering
+%% facilities for most blocks (possibly not projects, 2D displays)
+%% Controlled by  numbering.theorems.level  processing parameter
+\newtcolorbox[auto counter, number within=section]{block}{}
+%%
+%% This document is set to number PROJECT-LIKE on a separate numbering scheme
+%% So, a faux tcolorbox whose only purpose is to provide this numbering
+%% Controlled by  numbering.projects.level  processing parameter
+\newtcolorbox[auto counter, number within=section]{project-distinct}{}
+%% A faux tcolorbox whose only purpose is to provide common numbering
+%% facilities for 2D displays which are subnumbered as part of a "sidebyside"
+\newtcolorbox[auto counter, number within=tcb@cnt@block, number freestyle={\noexpand\thetcb@cnt@block(\noexpand\alph{\tcbcounter})}]{subdisplay}{}
+%% Divisional exercises (and worksheet) as LaTeX environments
+%% Third argument is option for extra workspace in worksheets
+%% Hanging indent occupies a 5ex width slot prior to left margin
+%% Experimentally this seems just barely sufficient for a bold "888."
+%% Division exercises, not in exercise group
+\tcbset{ divisionexercisestyle/.style={bwminimalstyle, runintitlestyle, exercisespacingstyle, left=5ex, breakable, parbox=false } }
+\newtcolorbox{divisionexercise}[4]{divisionexercisestyle, before title={\hspace{-5ex}\makebox[5ex][l]{#1.}}, title={\notblank{#2}{#2\space}{}}, phantom={\hypertarget{#4}{}}, after={\notblank{#3}{\newline\rule{\workspacestrutwidth}{#3\textheight}\newline}{}}}
+%% Localize LaTeX supplied names (possibly none)
+\renewcommand*{\chaptername}{Chapter}
+%% Footnote Numbering
+%% Specified by numbering.footnotes.level
+%% Undo counter reset by chapter for a book
+\counterwithout{footnote}{chapter}
+\counterwithin*{footnote}{section}
+%% QR Code Support
+%% Videos and other interactives
+\usepackage{qrcode}
+\newlength{\qrsize}
+\newlength{\previewwidth}
+%% tcolorbox styles for interactive previews
+%% changing size= and/or colback can aid in debugging
+\tcbset{ previewstyle/.style={bwminimalstyle, halign=center} }
+\tcbset{ qrstyle/.style={bwminimalstyle, hbox} }
+\tcbset{ captionstyle/.style={bwminimalstyle, left=1em, width=\linewidth} }
+%% Generic red play button (from SVG)
+%% tikz package should be loaded by now
+\definecolor{playred}{RGB}{230,33,23}
+\newcommand{\genericpreview}{
+        \begin{tikzpicture}[y=0.80pt, x=0.80pt, yscale=-1.000000, xscale=1.000000, inner sep=0pt, outer sep=0pt]
+        \path[fill=playred] (94.9800,28.8400) .. controls (94.9800,28.8400) and
+        (94.0400,22.2400) .. (91.1700,19.3400) .. controls (87.5300,15.5300) and
+        (83.4500,15.5100) .. (81.5800,15.2900) .. controls (68.1800,14.3200) and
+        (48.0600,14.4400) .. (48.0600,14.4400) .. controls (48.0600,14.4400) and
+        (27.9400,14.3200) .. (14.5400,15.2900) .. controls (12.6700,15.5100) and
+        (8.5900,15.5300) .. (4.9500,19.3400) .. controls (2.0800,22.2400) and
+        (1.1400,28.8400) .. (1.1400,28.8400) .. controls (1.1400,28.8400) and
+        (0.1800,36.5800) .. (0.0000,44.3300) -- (0.0000,51.5900) .. controls
+        (0.1800,59.3400) and (1.1400,67.0800) .. (1.1400,67.0800) .. controls
+        (1.1400,67.0800) and (2.0700,73.6800) .. (4.9500,76.5800) .. controls
+        (8.5900,80.3900) and (13.3800,80.2700) .. (15.5100,80.6700) .. controls
+        (23.0400,81.3900) and (47.2100,81.5600) .. (48.0500,81.5700) .. controls
+        (48.0600,81.5700) and (68.1900,81.6000) .. (81.5900,80.6300) .. controls
+        (83.4600,80.4100) and (87.5400,80.3900) .. (91.1800,76.5800) .. controls
+        (94.0500,73.6800) and (94.9900,67.0800) .. (94.9900,67.0800) .. controls
+        (94.9900,67.0800) and (95.9500,59.3300) .. (96.0100,51.5900) --
+        (96.0100,44.3300) .. controls (95.9400,36.5800) and (94.9800,28.8400) ..
+        (94.9800,28.8400) -- cycle(38.2800,61.4100) -- (38.2800,34.4100) --
+        (64.0200,47.9100) -- (38.2800,61.4100) -- cycle;
+        \end{tikzpicture}
+        }
+%% More flexible list management, esp. for references
+%% But also for specifying labels (i.e. custom order) on nested lists
+\usepackage{enumitem}
+%% hyperref driver does not need to be specified, it will be detected
+%% Footnote marks in tcolorbox have broken linking under
+%% hyperref, so it is necessary to turn off all linking
+%% It *must* be given as a package option, not with \hypersetup
+\usepackage[hyperfootnotes=false]{hyperref}
+%% Hyperlinking active in electronic PDFs, all links solid and blue
+\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,filecolor=blue,urlcolor=blue}
+\hypersetup{pdftitle={MATH 110 Summer 2020}}
+%% If you manually remove hyperref, leave in this next command
+\providecommand\phantomsection{}
+%% If tikz has been loaded, replace ampersand with \amp macro
+%% extpfeil package for certain extensible arrows,
+%% as also provided by MathJax extension of the same name
+%% NB: this package loads mtools, which loads calc, which redefines
+%%     \setlength, so it can be removed if it seems to be in the 
+%%     way and your math does not use:
+%%     
+%%     \xtwoheadrightarrow, \xtwoheadleftarrow, \xmapsto, \xlongequal, \xtofrom
+%%     
+%%     we have had to be extra careful with variable thickness
+%%     lines in tables, and so also load this package late
+\usepackage{extpfeil}
+%% Custom Preamble Entries, late (use latex.preamble.late)
+%% Begin: Author-provided packages
+%% (From  docinfo/latex-preamble/package  elements)
+%% End: Author-provided packages
+%% Begin: Author-provided macros
+%% (From  docinfo/macros  element)
+%% Plus three from MBX for XML characters
+\newcommand{\doubler}[1]{2#1}
+\newcommand{\lt}{<}
+\newcommand{\gt}{>}
+\newcommand{\amp}{&}
+%% End: Author-provided macros
+\begin{document}
+\frontmatter
+%% begin: half-title
+\thispagestyle{empty}
+{\titlepagefont\centering
+\vspace*{0.28\textheight}
+{\Huge MATH 110 Summer 2020}\\}
+\clearpage
+%% end:   half-title
+%% begin: adcard
+\thispagestyle{empty}
+\null%
+\clearpage
+%% end:   adcard
+%% begin: title page
+%% Inspired by Peter Wilson's "titleDB" in "titlepages" CTAN package
+\thispagestyle{empty}
+{\titlepagefont\centering
+\vspace*{0.14\textheight}
+%% Target for xref to top-level element is ToC
+\addtocontents{toc}{\protect\hypertarget{x:book:Math110Summer2020}{}}
+{\Huge MATH 110 Summer 2020}\\[3\baselineskip]
+{\Large Daniel Moseley}\\[0.5\baselineskip]
+{\Large Jacksonville University}\\[3\baselineskip]
+{\Large May 7, 2020}\\}
+\clearpage
+%% end:   title page
+%% begin: copyright-page
+\thispagestyle{empty}
+\vspace*{\stretch{2}}
+\vspace*{\stretch{1}}
+\null\clearpage
+%% end:   copyright-page
+\setlength{\qrsize}{9em}
+\setlength{\previewwidth}{\linewidth}
+\addtolength{\previewwidth}{-\qrsize}
+\begin{tcbraster}[raster columns=2, raster column skip=1pt, raster halign=center, raster force size=false, raster left skip=0pt, raster right skip=0pt]%
+\begin{tcolorbox}[previewstyle, width=\previewwidth]%
+\includegraphics[width=0.80\linewidth,height=\qrsize,keepaspectratio]{images/video-1.jpg}%
+\end{tcolorbox}%
+\begin{tcolorbox}[qrstyle]%
+{\hypersetup{urlcolor=black}\qrcode[height=\qrsize]{https://www.youtube.com/watch?v=Z547IT5Eq-8}}%
+\end{tcolorbox}%
+\begin{tcolorbox}[captionstyle]%
+\small YouTube: \mono{https://www.youtube.com/watch?v=Z547IT5Eq-8}\end{tcolorbox}%
+\end{tcbraster}%
+This is a collection of the materials (outside of the textbook) we will use in class to guide you on your journey through MATH 110. The textbook used in the course will be Functions Modeling Change 5th edition by Connally, et al.%
+%% begin: table of contents
+%% Adjust Table of Contents
+\setcounter{tocdepth}{1}
+\renewcommand*\contentsname{Contents}
+\tableofcontents
+%% end:   table of contents
+\mainmatter
+This is a collection of the materials (outside of the textbook) we will use in class to guide you on your journey through MATH 110.%
+%
+%
+\typeout{************************************************}
+\typeout{Chapter 1 Chapter 1 - Linear Functions \& Change}
+\typeout{************************************************}
+%
+\begin{chapterptx}{Chapter 1 - Linear Functions \& Change}{}{Chapter 1 - Linear Functions \& Change}{}{}{x:chapter:chapter1}
+%
+%
+\typeout{************************************************}
+\typeout{Section 1.1 Functions and Function Notation}
+\typeout{************************************************}
+%
+\begin{sectionptx}{Functions and Function Notation}{}{Functions and Function Notation}{}{}{x:section:section1_1}
+\setlength{\qrsize}{9em}
+\setlength{\previewwidth}{\linewidth}
+\addtolength{\previewwidth}{-\qrsize}
+\begin{tcbraster}[raster columns=2, raster column skip=1pt, raster halign=center, raster force size=false, raster left skip=0pt, raster right skip=0pt]%
+\begin{tcolorbox}[previewstyle, width=\previewwidth]%
+\includegraphics[width=0.80\linewidth,height=\qrsize,keepaspectratio]{images/video-2.jpg}%
+\end{tcolorbox}%
+\begin{tcolorbox}[qrstyle]%
+{\hypersetup{urlcolor=black}\qrcode[height=\qrsize]{https://www.youtube.com/watch?v=EQaTTLD6Hco}}%
+\end{tcolorbox}%
+\begin{tcolorbox}[captionstyle]%
+\small YouTube: \mono{https://www.youtube.com/watch?v=EQaTTLD6Hco}\end{tcolorbox}%
+\end{tcbraster}%
+%
+%
+\typeout{************************************************}
+\typeout{Worksheet 1.1.1 Worksheet}
+\typeout{************************************************}
+%
+\newgeometry{left=1.25cm, right=1.25cm, top=1.25cm, bottom=1.25cm}
+\begin{worksheet-subsection}{Worksheet}{}{Worksheet}{}{}{g:worksheet:idp140377756151432}
+\begin{divisionexercise}{1}{}{}{g:exercise:idp140377756151736}%
+The forecast high temperature for the next 7 days in Jacksonville, FL is given by%
+\begin{equation*}
+\begin{array}{l|c|c|c|c|c|c|c}
+\text{Day ($t$)} & 1 & 2 & 3 & 4 & 5 & 6 & 7 \\
+\hline \text{High Temp ($H$ in $^{\circ}F$)} & 75 & 77 & 83 & 77 & 80 & 78 & 80
+\end{array}
+\end{equation*}
+Is \(t\) a function of \(H\) or is \(H\) a function of \(t\)?%
+\textbf{\blocktitlefont Solution}.\hypertarget{g:solution:idp140377756152280}{}\quad{}We would say that \(H\) a function of \(t\) because the temperature depends on the day. We cannot say that \(t\) a function of \(H\) because the result would have one input that produced 2 outputs. For example \(77^{\circ}\)F corresponds to two different days (\(t=2\) and \(t=4\)).\end{divisionexercise}%
+\begin{divisionexercise}{2}{}{}{g:exercise:idp140377756156184}%
+If the function \(y=f(x)\) represents a child's height (\(y\) in inches)as a function of her age (\(x\) in years), interpret the statement%
+\begin{equation*}
+f(4)=42. 
+\end{equation*}
+%
+\textbf{\blocktitlefont Solution}.\hypertarget{g:solution:idp140377756164408}{}\quad{}The mathematical statement \(f(4)=42\) indicates that at age 4 years, the child is 42 inches tall.\end{divisionexercise}%
+\begin{divisionexercise}{3}{}{}{g:exercise:idp140377756164536}%
+Complete the following table for the function \(g(x)=3x+7\).%
+\begin{equation*}
+\begin{array}{l|c|c|c|c|c}
+x & 0 & 2 & 3 & 5 & 10 \\
+\hline g(x) &  &  &  & &
+\end{array}
+\end{equation*}
+%
+\textbf{\blocktitlefont Solution}.\hypertarget{g:solution:idp140377756167800}{}\quad{}We obtain the missing values by plugging in the values in the top row into the function. For example, \(g(0)=3(0)+7=7\) and \(g(2)=3(2)+7=13\).%
+\begin{equation*}
+\begin{array}{l|c|c|c|c|c}
+x & 0 & 2 & 3 & 5 & 10 \\
+\hline g(x) & 7 & 13 & 16 & 22 & 37
+\end{array}
+\end{equation*}
+\end{divisionexercise}%
+\end{worksheet-subsection}
+\restoregeometry
+\end{sectionptx}
+%
+%
+\typeout{************************************************}
+\typeout{Section 1.2 Rate of Change}
+\typeout{************************************************}
+%
+\begin{sectionptx}{Rate of Change}{}{Rate of Change}{}{}{x:section:section1_2}
+\setlength{\qrsize}{9em}
+\setlength{\previewwidth}{\linewidth}
+\addtolength{\previewwidth}{-\qrsize}
+\begin{tcbraster}[raster columns=2, raster column skip=1pt, raster halign=center, raster force size=false, raster left skip=0pt, raster right skip=0pt]%
+\begin{tcolorbox}[previewstyle, width=\previewwidth]%
+\includegraphics[width=0.80\linewidth,height=\qrsize,keepaspectratio]{images/video-3.jpg}%
+\end{tcolorbox}%
+\begin{tcolorbox}[qrstyle]%
+{\hypersetup{urlcolor=black}\qrcode[height=\qrsize]{https://www.youtube.com/watch?v=R-Yn41uAaVc}}%
+\end{tcolorbox}%
+\begin{tcolorbox}[captionstyle]%
+\small YouTube: \mono{https://www.youtube.com/watch?v=R-Yn41uAaVc}\end{tcolorbox}%
+\end{tcbraster}%
+%
+%
+\typeout{************************************************}
+\typeout{Worksheet 1.2.1 Worksheet}
+\typeout{************************************************}
+%
+\newgeometry{left=1.25cm, right=1.25cm, top=1.25cm, bottom=1.25cm}
+\begin{worksheet-subsection}{Worksheet}{}{Worksheet}{}{}{g:worksheet:idp140377756171752}
+\begin{divisionexercise}{1}{}{}{g:exercise:idp140377756172056}%
+Let \(f(x) = x^2-3x+7\). Compute the average rate of change from \(x=1\) to \(x=4\). Visualize the average rate of change using the line between the two points \((1,f(1))\) and \((4,f(4))\).%
+\par
+\setlength{\qrsize}{9em}
+\setlength{\previewwidth}{\linewidth}
+\addtolength{\previewwidth}{-\qrsize}
+\begin{tcbraster}[raster columns=2, raster column skip=1pt, raster halign=center, raster force size=false, raster left skip=0pt, raster right skip=0pt]%
+\begin{tcolorbox}[previewstyle, width=\previewwidth]%
+\IfFileExists{images/interactive-1-preview.png}%
+{\includegraphics[width=0.80\linewidth,height=\qrsize,keepaspectratio]{images/interactive-1-preview.png}}%
+{\small{}Specify static image with \mono{@preview} attribute,\\Or create and provide automatic screenshot as \mono{images/interactive-1-preview.png} via the \mono{mbx} script}%
+\end{tcolorbox}%
+\begin{tcolorbox}[qrstyle]%
+{\hypersetup{urlcolor=black}\qrcode[height=\qrsize]{/interactive-1.html}}%
+\end{tcolorbox}%
+\begin{tcolorbox}[captionstyle]%
+\small \mono{www.desmos.com/calculator/ahts9oeusv}\end{tcolorbox}%
+\end{tcbraster}%
+%
+\textbf{\blocktitlefont Hint}.\hypertarget{g:hint:idp140377756176136}{}\quad{}How many units does the line segment go up as you move one unit to the right?\textbf{\blocktitlefont Answer}.\hypertarget{g:answer:idp140377756177400}{}\quad{}\(2\)\textbf{\blocktitlefont Solution}.\hypertarget{g:solution:idp140377756178088}{}\quad{}The average rate of change is \(\frac{f(4)-f(1)}{4-1} = \frac{11-5}{3}=2 \). We can see it from the line segment above. As we go to the right one unit, we go up 2 units.\end{divisionexercise}%
+\begin{divisionexercise}{2}{}{}{g:exercise:idp140377756178792}%
+The total number of Netflix subscribers\footnotemark{} in a given year between 2010 and 2015 is given by the table below.%
+\begin{equation*}
+\begin{array}{c|c|c|c|c|c|c}
+\text{Year} & 2010 & 2011 & 2012 & 2013 & 2014 & 2015 \\
+\hline \text{Subscribers (in millions)} & 20.01 & 23.53 & 33.27 & 44.35 & 57.39 & 74.76 \\
+\end{array}
+\end{equation*}
+%
+\begin{enumerate}[label=(\alph*)]
+\item{}Determine the rate of change of the number of Netflix subscribers between 2010 and 2013.%
+\item{}Determine the rate of change of the number of Netflix subscribers between 2013 and 2015, and compare to you answer from part (a). What do you think this says about Netflix's growth?%
+\end{enumerate}
+%
+\textbf{\blocktitlefont Answer}.\hypertarget{g:answer:idp140377756183864}{}\quad{}%
+\begin{enumerate}[label=(\alph*)]
+\item{}\(\displaystyle 8.11\overline{3} \text{ million subscribers per year}\)%
+\item{}\(\displaystyle 15.205 \text{ million subscribers per year}\)%
+\end{enumerate}
+\textbf{\blocktitlefont Solution}.\hypertarget{g:solution:idp140377756186120}{}\quad{}%
+\begin{enumerate}[label=(\alph*)]
+\item{}Using the rate of change formula we get%
+\begin{equation*}
+RoC_{2010\leq x \leq 2013} = \frac{44.35-20.01}{2013-2010} = \frac{24.34}{3} = 8.11\overline{3} \text{ million subscribers per year}
+\end{equation*}
+%
+\item{}Using the rate of change formula we get%
+\begin{equation*}
+RoC_{2013\leq x \leq 2015} = \frac{74.76-44.35}{2015-2013} = \frac{30.41}{2} = 15.205 \text{ million subscribers per year}
+\end{equation*}
+Comparing to part (a) we see that we get a larger result and hence the average number of subscriptions looks to be increasing faster in the second time interval.%
+\end{enumerate}
+\end{divisionexercise}%
+\footnotetext[1]{https:\slash{}\slash{}www.businessinsider.com\slash{}netflix-subscribers-chart-2017-1\label{g:fn:idp140377756180712}}%
+\end{worksheet-subsection}
+\restoregeometry
+\end{sectionptx}
+%
+%
+\typeout{************************************************}
+\typeout{Section 1.3 Linear Functions}
+\typeout{************************************************}
+%
+\begin{sectionptx}{Linear Functions}{}{Linear Functions}{}{}{x:section:section1_3}
+\setlength{\qrsize}{9em}
+\setlength{\previewwidth}{\linewidth}
+\addtolength{\previewwidth}{-\qrsize}
+\begin{tcbraster}[raster columns=2, raster column skip=1pt, raster halign=center, raster force size=false, raster left skip=0pt, raster right skip=0pt]%
+\begin{tcolorbox}[previewstyle, width=\previewwidth]%
+\includegraphics[width=0.80\linewidth,height=\qrsize,keepaspectratio]{images/video-4.jpg}%
+\end{tcolorbox}%
+\begin{tcolorbox}[qrstyle]%
+{\hypersetup{urlcolor=black}\qrcode[height=\qrsize]{https://www.youtube.com/watch?v=jt7nPwcVBzA}}%
+\end{tcolorbox}%
+\begin{tcolorbox}[captionstyle]%
+\small YouTube: \mono{https://www.youtube.com/watch?v=jt7nPwcVBzA}\end{tcolorbox}%
+\end{tcbraster}%
+%
+%
+\typeout{************************************************}
+\typeout{Worksheet 1.3.1 Worksheet}
+\typeout{************************************************}
+%
+\newgeometry{left=1.25cm, right=1.25cm, top=1.25cm, bottom=1.25cm}
+\begin{worksheet-subsection}{Worksheet}{}{Worksheet}{}{}{g:worksheet:idp140377756192328}
+\begin{divisionexercise}{1}{}{}{g:exercise:idp140377756192632}%
+After being on Instagram for a while, Sam started keeping track of her followers. Let N represent the number of followers she has on Instagram at time \(t\) in months since she started keeping track.%
+\begin{equation*}
+\begin{array} { l | c | c | c | c | c }
+t \text{ (months)} & 0 & 1 & 3 & 7 & 10 \\
+\hline N \text{ (number of followers)} & 70 & 95 & 145 & 245 & 320
+\end{array} 
+\end{equation*}
+%
+\begin{enumerate}[label=(\alph*)]
+\item{}Could this function be linear? (Check the rate of change over each interval.)%
+\item{}What is the slope of this linear function?%
+\item{}What does the slope mean in real world terms?%
+\item{}Write a formula for \(N\) as a function of \(t\). (What is the vertical intercept?)%
+\item{}What does your vertical intercept represent in real world terms?%
+\end{enumerate}
+\textbf{\blocktitlefont Solution}.\hypertarget{g:solution:idp140377756198040}{}\quad{}%
+\begin{enumerate}[label=(\alph*)]
+\item{}Using the rate of change formula we get%
+%
+\begin{equation*}
+RoC_{0\leq t \leq 1} = \frac{95-70}{1-0} = 25 \text{ followers per month}
+\end{equation*}
+%
+\begin{equation*}
+RoC_{1\leq t \leq 3} = \frac{145-95}{3-1} = 25 \text{ followers per month}
+\end{equation*}
+%
+\begin{equation*}
+RoC_{3\leq t \leq 7} = \frac{245-145}{7-3} = 25 \text{ followers per month}
+\end{equation*}
+%
+\begin{equation*}
+RoC_{7\leq t \leq 10} = \frac{320-245}{10-7} = 25 \text{ followers per month}
+\end{equation*}
+From this data, the function looks linear as the rate of change is constant over every interval.%
+\item{}The slope is 25 as the slope is the constant rate of change of a linear function.%
+\item{}The slope represents the change in followers per month. That is, the number of followers increases by 25 per month.%
+\item{}\(\displaystyle N= 70+25t \)%
+\item{}The vertical intercept here is 70 which represents the initial number of followers when Sam started keeping track.%
+\end{enumerate}
+\end{divisionexercise}%
+\begin{divisionexercise}{2}{}{}{g:exercise:idp140377756204232}%
+The enrollment at JU is given by the following graph of a linear function where \(S\) represents the number of students, and \(t\) represents the number of years since 2000. \setlength{\qrsize}{9em}
+\setlength{\previewwidth}{\linewidth}
+\addtolength{\previewwidth}{-\qrsize}
+\begin{tcbraster}[raster columns=2, raster column skip=1pt, raster halign=center, raster force size=false, raster left skip=0pt, raster right skip=0pt]%
+\begin{tcolorbox}[previewstyle, width=\previewwidth]%
+\IfFileExists{images/interactive-2-preview.png}%
+{\includegraphics[width=0.80\linewidth,height=\qrsize,keepaspectratio]{images/interactive-2-preview.png}}%
+{\small{}Specify static image with \mono{@preview} attribute,\\Or create and provide automatic screenshot as \mono{images/interactive-2-preview.png} via the \mono{mbx} script}%
+\end{tcolorbox}%
+\begin{tcolorbox}[qrstyle]%
+{\hypersetup{urlcolor=black}\qrcode[height=\qrsize]{/interactive-2.html}}%
+\end{tcolorbox}%
+\begin{tcolorbox}[captionstyle]%
+\small \mono{www.desmos.com/calculator/pmcraqhvvj}\end{tcolorbox}%
+\end{tcbraster}%
+%
+%
+\begin{enumerate}[label=(\alph*)]
+\item{}Using the two given points on the graph, determine the rate of change (slope) of the linear function.%
+\item{}How many students were there in the year 2000?%
+\item{}Determine a formula for \(S\) as a function of \(t\)%
+\end{enumerate}
+\textbf{\blocktitlefont Solution}.\hypertarget{g:solution:idp140377756208408}{}\quad{}%
+\begin{enumerate}[label=(\alph*)]
+\item{}The slope is%
+%
+\begin{equation*}
+m = \frac{2744-2636}{4-1} = 36. 
+\end{equation*}
+\item{}If the number of students increases by 36 each year, then going back one year from 2001 to 2000 should result in a decrease in 36 from the 2636 students that were at JU in 2000. Hence, there were 2600 students in 2000.%
+\item{}Using the two pieces of data above%
+%
+\begin{equation*}
+S = 2600+36t 
+\end{equation*}
+\end{enumerate}
+\end{divisionexercise}%
+\end{worksheet-subsection}
+\restoregeometry
+\end{sectionptx}
+%
+%
+\typeout{************************************************}
+\typeout{Section 1.4 Formulas for Linear Functions}
+\typeout{************************************************}
+%
+\begin{sectionptx}{Formulas for Linear Functions}{}{Formulas for Linear Functions}{}{}{x:section:section1_4}
+\setlength{\qrsize}{9em}
+\setlength{\previewwidth}{\linewidth}
+\addtolength{\previewwidth}{-\qrsize}
+\begin{tcbraster}[raster columns=2, raster column skip=1pt, raster halign=center, raster force size=false, raster left skip=0pt, raster right skip=0pt]%
+\begin{tcolorbox}[previewstyle, width=\previewwidth]%
+\includegraphics[width=0.80\linewidth,height=\qrsize,keepaspectratio]{images/video-5.jpg}%
+\end{tcolorbox}%
+\begin{tcolorbox}[qrstyle]%
+{\hypersetup{urlcolor=black}\qrcode[height=\qrsize]{https://www.youtube.com/watch?v=DU_5s9fpSz8}}%
+\end{tcolorbox}%
+\begin{tcolorbox}[captionstyle]%
+\small YouTube: \mono{https://www.youtube.com/watch?v=DU\_5s9fpSz8}\end{tcolorbox}%
+\end{tcbraster}%
+%
+%
+\typeout{************************************************}
+\typeout{Worksheet 1.4.1 Worksheet}
+\typeout{************************************************}
+%
+\newgeometry{left=1.25cm, right=1.25cm, top=1.25cm, bottom=1.25cm}
+\begin{worksheet-subsection}{Worksheet}{}{Worksheet}{}{}{g:worksheet:idp140377756212296}
+\begin{divisionexercise}{1}{}{}{g:exercise:idp140377756212520}%
+Compute a formula for the linear function graphed below.%
+\par
+\setlength{\qrsize}{9em}
+\setlength{\previewwidth}{\linewidth}
+\addtolength{\previewwidth}{-\qrsize}
+\begin{tcbraster}[raster columns=2, raster column skip=1pt, raster halign=center, raster force size=false, raster left skip=0pt, raster right skip=0pt]%
+\begin{tcolorbox}[previewstyle, width=\previewwidth]%
+\IfFileExists{images/interactive-3-preview.png}%
+{\includegraphics[width=0.80\linewidth,height=\qrsize,keepaspectratio]{images/interactive-3-preview.png}}%
+{\small{}Specify static image with \mono{@preview} attribute,\\Or create and provide automatic screenshot as \mono{images/interactive-3-preview.png} via the \mono{mbx} script}%
+\end{tcolorbox}%
+\begin{tcolorbox}[qrstyle]%
+{\hypersetup{urlcolor=black}\qrcode[height=\qrsize]{/interactive-3.html}}%
+\end{tcolorbox}%
+\begin{tcolorbox}[captionstyle]%
+\small \mono{www.desmos.com/calculator/44aftc4bnr}\end{tcolorbox}%
+\end{tcbraster}%
+%
+\textbf{\blocktitlefont Solution}.\hypertarget{g:solution:idp140377756213976}{}\quad{}The slope is%
+\begin{equation*}
+\frac{22-13}{5-2} = \frac{9}{3} = 3 
+\end{equation*}
+Using the point-slope form we get%
+\begin{equation*}
+y-13 = 3(x-2) \quad \Rightarrow \quad y=3x+7 
+\end{equation*}
+\end{divisionexercise}%
+\begin{divisionexercise}{2}{}{}{g:exercise:idp140377756215144}%
+%
+\begin{enumerate}[label=(\alph*)]
+\item{}Find the equation of a line that is parallel to \(y=4x-2\) that passes through the point \((2,5)\).%
+\item{}Find the equation of a line that is perpendicular to \(y=3x+7\) that passes through the point \((3,5)\).%
+\end{enumerate}
+\textbf{\blocktitlefont Solution}.\hypertarget{g:solution:idp140377756216872}{}\quad{}%
+\begin{enumerate}[label=(\alph*)]
+\item{}Since the lines are parallel, the new slope is \(4\). Using the point-slope form we get%
+\begin{equation*}
+y-5=4(x-2) \quad \Rightarrow \quad y=4x-3
+\end{equation*}
+%
+\item{}Since the lines are perpendicular, the new slope is \(\frac{-1}{3}\). Using the point-slope form we get%
+\begin{equation*}
+y-5=\frac{-1}{3}(x-3) \quad \Rightarrow \quad y=\frac{-1}{3}x+6
+\end{equation*}
+%
+\end{enumerate}
+\end{divisionexercise}%
+\begin{divisionexercise}{3}{}{}{g:exercise:idp140377756220824}%
+The profit from selling widgets at a widget factory is given by the following table%
+\begin{equation*}
+\begin{array}{l|c|c|c|c|c}
+w \text{ (number of widgets)} & 5 & 10 & 20 & 50 & 100 \\
+\hline P \text{ (profit in dollars)} & 1 & 7 & 19 & 55 & 115
+\end{array}
+\end{equation*}
+%
+\begin{enumerate}[label=(\alph*)]
+\item{}Assuming that profit is linear, find a formula for profit as a function of number of widgets sold.%
+\item{}Why do you think that the vertical intercept (your \(b\) value) is negative?%
+\end{enumerate}
+\textbf{\blocktitlefont Solution}.\hypertarget{g:solution:idp140377756223128}{}\quad{}%
+\begin{enumerate}[label=(\alph*)]
+\item{}We can use any two points here, so I'll use \((5,1)\) and \((10,7)\).%
+\begin{equation*}
+m = \frac{7-1}{10-5}=\frac 65 = 1.2 
+\end{equation*}
+To compute the equation of the line, we use the point-slope form%
+\begin{equation*}
+y-1 = 1.2(x-5) \quad \Rightarrow \quad y = 1.2x-5 
+\end{equation*}
+%
+\item{}When first making a product, there will be initial costs that are only recovered once you start selling your product. Thus, profit will start out negative.%
+\end{enumerate}
+\end{divisionexercise}%
+\end{worksheet-subsection}
+\restoregeometry
+\end{sectionptx}
+%
+%
+\typeout{************************************************}
+\typeout{Section 1.5 Modeling With Linear Functions}
+\typeout{************************************************}
+%
+\begin{sectionptx}{Modeling With Linear Functions}{}{Modeling With Linear Functions}{}{}{x:section:section1_5}
+%
+%
+\typeout{************************************************}
+\typeout{Worksheet 1.5.1 Worksheet}
+\typeout{************************************************}
+%
+\newgeometry{left=1.25cm, right=1.25cm, top=1.25cm, bottom=1.25cm}
+\begin{worksheet-subsection}{Worksheet}{}{Worksheet}{}{}{g:worksheet:idp140377756226696}
+\begin{divisionexercise}{1}{}{}{g:exercise:idp140377756226824}%
+The store Bed, Bath, and Beyond offers two types of coupons, (type A) \textdollar{}5 dollars off a purchase of \textdollar{}15 dollars or more, and a (type B) 20\% off coupon. %
+\begin{enumerate}[label=(\alph*)]
+\item{}Model both coupons by linear functions. In this case, discounted price is your dependent variable, and price before the coupon is your independent variable.%
+\item{}Graph both functions and make a recommendation of when to use which coupon. To make it simpler, you can assume that the purchase you are making is \textdollar{}15 or more.%
+\par
+\setlength{\qrsize}{9em}
+\setlength{\previewwidth}{\linewidth}
+\addtolength{\previewwidth}{-\qrsize}
+\begin{tcbraster}[raster columns=2, raster column skip=1pt, raster halign=center, raster force size=false, raster left skip=0pt, raster right skip=0pt]%
+\begin{tcolorbox}[previewstyle, width=\previewwidth]%
+\IfFileExists{images/interactive-4-preview.png}%
+{\includegraphics[width=0.80\linewidth,height=\qrsize,keepaspectratio]{images/interactive-4-preview.png}}%
+{\small{}Specify static image with \mono{@preview} attribute,\\Or create and provide automatic screenshot as \mono{images/interactive-4-preview.png} via the \mono{mbx} script}%
+\end{tcolorbox}%
+\begin{tcolorbox}[qrstyle]%
+{\hypersetup{urlcolor=black}\qrcode[height=\qrsize]{/interactive-4.html}}%
+\end{tcolorbox}%
+\begin{tcolorbox}[captionstyle]%
+\small \mono{www.desmos.com/calculator/hurbtg6vyr}\end{tcolorbox}%
+\end{tcbraster}%
+%
+\end{enumerate}
+\end{divisionexercise}%
+\end{worksheet-subsection}
+\restoregeometry
+\end{sectionptx}
+%
+%
+\typeout{************************************************}
+\typeout{Section 1.6 Fitting Linear Functions to Data}
+\typeout{************************************************}
+%
+\begin{sectionptx}{Fitting Linear Functions to Data}{}{Fitting Linear Functions to Data}{}{}{x:section:section1_6}
+%
+%
+\typeout{************************************************}
+\typeout{Worksheet 1.6.1 Worksheet}
+\typeout{************************************************}
+%
+\newgeometry{left=1.25cm, right=1.25cm, top=1.25cm, bottom=1.25cm}
+\begin{worksheet-subsection}{Worksheet}{}{Worksheet}{}{}{g:worksheet:idp140377756230664}
+\begin{divisionexercise}{1}{}{}{g:exercise:idp140377756230792}%
+blah\end{divisionexercise}%
+\end{worksheet-subsection}
+\restoregeometry
+\end{sectionptx}
+\end{chapterptx}
+\end{document}
