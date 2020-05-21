@@ -20,7 +20,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 *********************************************************************-->
 
 <!-- To process this file do                                                                      -->
-<!-- cd ~/"OneDrive - Jacksonville University"/"JU Teaching"/"MATH 110"/PreTeXt                                                                                             -->
+<!-- cd ~/"OneDrive - Jacksonville University"/Website/"dmosele.github.io"/MATH110Su20                                                                                             -->
 <!-- (1) LaTeX/PDF:                                                                               -->
 <!--     xsltproc -o Math110Summer2020.tex ~/mathbook/xsl/mathbook-latex.xsl Math110Summer2020.xml                      -->
 <!--     pdflatex minimal.tex                                                                     -->
