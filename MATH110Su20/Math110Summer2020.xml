@@ -55,7 +55,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
             <titlepage>
                 <author>
-                    <personname>Daniel Moseley</personname>
+                    <personname><a href="https://dmosele.github.io">Daniel Moseley</a></personname>
                     <institution>Jacksonville University</institution>
                 </author>
                 <date><today /></date>
@@ -652,6 +652,140 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 				</exercise>
 			</worksheet>
         		</section>   
+	 </chapter>
+	 <chapter>
+	 </chapter>
+	 <chapter xml:id="chapter4">
+            	<title>Chapter 4 - Exponential Functions</title>
+           	<section xml:id="section4_1">
+                		<title>Exponential Functions #1</title>
+			<video youtube="xX3PtaLhNPs"/>
+			<worksheet>
+				<exercise>
+					The population of Forks, Washington was 3060 in the year 1980 and grew by <m>3.4\%</m> each year.    
+  					<ol type="a">
+    						<li>How many people lived in Forks in 1981? 1982?</li>
+    						<li>Write a formula for population <m>P</m> as a function of time <m>t</m> since 1980.</li>
+    						<li>What is predicted for the population in the year 2013?</li>
+  					</ol>
+					<solution>
+						<ol type="a">
+							<li> <p>To get the number of people in Forks in 1981 and 1982 we increase by 3.4% once and twice respectively.</p>
+							<me>\text{Pop in 1981} = 3060\cdot 1.034 \approx 3164 \text{ people} </me>
+							<me>\text{Pop in 1982} = 3060\cdot 1.034^2 \approx 3272 \text{ people} </me></li>
+							<li><m> P = f(t) = 3060 (1.034)^t </m></li>
+							<li><m> f(33) = 3060(1.034)^{33}\approx 9224\text{ people} </m></li>
+						</ol>
+					</solution>
+				</exercise>
+				<exercise>
+  					The radioactive isotope Radon-222 decays at a rate of <m>16.7\%</m> per day.<fn>From https://en.wikipedia.org/wiki/Radioactive_decay</fn>
+  					<ol type="a">
+    						<li>Write a function giving the mass <m>M</m> of a 500 gram sample after a time <m>t</m> in days.</li>
+    						<li>How much will we have remaining after 3 days?</li>
+    						<li><p>(hard) When will we only have half of our initial sample remaining? (Hint: Look at the graph of your exponential function, and the graph of <m>y=250</m>.)</p>
+						<p><interactive desmos="3zuaqdi0k9" width="100%" aspect="3:2" /></p></li>
+ 					</ol>
+					<solution>
+						<ol type="a">
+							<li> <p>Since the quantity decreases by <m>16.7\%</m> each day, there is <m>83.3\%</m> remaining. </p>
+							<me> M = g(t) = 500(.833)^t</me></li>
+							<li><m> g(3) = 500(.833)^3 \approx 289.005 \text{ grams}</m></li>
+							<li><p>We see that the curves intersect when <m>t=3.793</m>.</p>
+							<p><interactive desmos="bvaspuihnp" width="100%" aspect="3:2" /></p></li>
+						</ol>
+					</solution>
+				</exercise>
+			</worksheet>
+	 	</section>
+           	<section xml:id="section4_2">
+                		<title>Exponential Functions #2</title>
+			<video youtube="nJTLHSBnRb8"/>
+			<worksheet>
+				<exercise>
+				 	The population of manatees in the Gulf of Mexico was 1200 in the year 2010 and 1600 in the year 2018.    
+  					<ol type="a">
+    						<li>Write a formula for population <m>P</m> of manatees as a linear function of time <m>t</m> since 2010.</li>
+    						<li>Write a formula for population <m>P</m> of manatees as an exponential function of time <m>t</m> since 2010.</li>
+    						<li>What is predicted for the population in the year 2020?</li>
+  					</ol>
+					<solution>
+						<ol type="a">
+							<li> <p>Computing the slope we get </p>
+							<me> m = \frac{1600-1200}{8-0} = 50 \text{ manatees/year}</me>
+							<p>Putting it all together, we get that</p>
+							<me> P = 1200+50t </me></li>
+							<li> <p>To start with, we know that it is of the form <m>P=ab^t</m> where in this case <m>a=1200</m>. Using the fact that when <m>t=8</m>, <m>P=1600</m> we see that</p>
+							<me>1600=1200b^8 \quad \Rightarrow \quad \frac{1600}{1200}=b^8 \quad \Rightarrow \quad b = \sqrt[8]{\frac 43} </me>
+							<me>P = 1200\left( \sqrt[8]{\frac 43} \right)^t</me></li>
+							<li> <p>Using the linear model, we get </p>
+							<me> P = 1200+50(10) = 1700\text{ manatees}</me>
+							<p>Using the exponential model, we get </p>
+							<me> P = 1200\left( \sqrt[8]{\frac 43} \right)^{10} \approx 1719 \text{ manatees} </me></li>
+						</ol>
+					</solution>
+				</exercise>
+				<exercise>
+  					After a car is purchased, it loses value over time. For example, a $20000 car is worth only $8000 five years after it was purchased.
+  					<ol type="a">
+   						<li>Assuming that the car loses its value exponentially, find a formula for value <m>V</m> as a function of time since it was purchased.</li>
+   						<li><p>When will the car be worth $5000?</p>
+						<p><interactive desmos="3lfpxc5wnk" width="100%" aspect="3:2" /></p></li>
+  					</ol>
+					<solution>
+						<ol type="a">
+							<li> <p>The starting value is $20000, so </p>
+							<me> V = 20000b^t </me>
+							<p> Since the car is worth $8000 when <m>t=5</m>,</p>
+							<me> 8000 = 20000b^5 \quad \Rightarrow \quad b^5 = \frac{8000}{20000} = .4 \quad \Rightarrow \quad b = \sqrt[5]{.4} </me>
+							<p> Thus, the function is </p>
+							<me> V = 20000\left(\sqrt[5]{.4}\right)^t . </me></li>
+							<li><p>Graphing the exponential function and a horizontal line at 5000, we see that it takes approximately 7.565 years for the value of the car to reduce to $5000.</p>
+							<p><interactive desmos="asz9hsmnaa" width="100%" aspect="3:2" /></p>
+							</li>
+						</ol>
+					</solution>
+				</exercise>
+			</worksheet>
+	 	</section>
+		
+           	<section xml:id="section4_3">
+                		<title>Exponential Functions #3</title>
+			<video youtube="ecmqZdMMHCk"/>
+			<worksheet>
+				<exercise>
+					Find the equation of the exponential function passing through the points <m>(1,6)</m> and <m>(4,24)</m>.
+					<solution>
+						<p>As the function is of the form <m>y=a\cdot b^x</m>, we see that </p>
+						<me> 24=ab^4 \text{ and } 6=ab^1 </me>
+						<p>Dividing the two equations yields</p>
+						<me> \frac{24=ab^4}{6=ab^1} \quad \Rightarrow \quad 4 = b^3 \quad \Rightarrow \quad b = \sqrt[3]{4} </me>
+						<p> Now that we know <m>b</m>, we can find <m>a</m> by using one of the above equations</p>
+						<me>6=a\sqrt[3]{4}^1 \Rightarrow a = \frac{6}{\sqrt[3]{4}} </me>
+						<me> y=\frac{6}{\sqrt[3]{4}}(\sqrt[3]{4})^x</me>
+						<p>(It would be a good idea to check by graphing).</p>
+					</solution>
+				</exercise>
+
+				<exercise>
+  					Suppose the population of ants in my yard is given by 
+  					<me>A =f(t)= 100(1.12)^t </me>
+  					where <m>A</m> represents the number of ants, and <m>t</m> is time in weeks since I started measuring.
+  					<ol type="a">
+   						<li>Is the number of ants increasing or decreasing? By what percentage is it increasing/decreasing each week?</li>
+    						<li>When will the population of ants reach 1000?
+						</li>
+					</ol>
+					<solution>
+						<ol type="a">
+							<li> It is increasing because the growth factor <m>1.12</m> is greater than 1. It increases by 12% per week</li>
+							<li> <p>According to the graph, during week 20 the ant population reaches 1000.</p>
+							<p><interactive desmos="ddzkki5yvm" width="100%" aspect="3:2" /></p></li>
+						</ol>
+					</solution>
+				</exercise>
+			</worksheet>
+	 	</section>
 	 </chapter>
     </book>
 
