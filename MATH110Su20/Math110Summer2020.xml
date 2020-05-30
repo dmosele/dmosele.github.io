@@ -786,7 +786,148 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 				</exercise>
 			</worksheet>
 	 	</section>
+		<section xml:id="section4_4">
+                		<title>Applications to Compound Interest</title>
+			<video youtube="5C4q7OPWNOg"/>
+			<worksheet>
+				<exercise>
+					Surprise! You receive a $5000 bonus from your new job! You are deciding how you should invest this. (You really want to buy a new motorcycle.) 
+  					<ul>
+    						<li>Option 1: A savings account that earns $12.1%$ compounded annually.</li>
+    						<li>Option 2: A savings account that earns $12%$ compounded monthly.</li>
+					</ul>
+
+  					<ol type="a">
+   						<li>Suppose that we invest in "Option 1". Write a formula for the balance of the account <m>A</m> after <m>t</m> years.</li>
+    						<li>Suppose that we invest in "Option 2". Write a formula for the balance of the account <m>B</m> after <m>t</m> years.</li>
+    						<li>What is the effective interest rate for "Option 2"? Which account would you invest in?</li>
+    						<li><p>The motorcycle you want is $10000. How long will it take to save up that much using "Option 2"? </p>
+						<p><interactive desmos="3ywothugrj" width="100%" aspect="3:2" /></p></li>
+					</ol>
+					<solution>
+					<ol type="a">
+   						<li><me>B_1 = 5000(1.121)^t</me></li>
+    						<li><me>B_2 = 5000\left(1+\frac{.12}{12}\right)^{12t} = 5000(1.01)^{12t}</me></li>
+    						<li><p>To compute the effective rate, we strip away the 5000 and plug in 1 for t to see the effect after 1 year.</p>
+						<me> 1.01^{12} = 1.1268 </me>
+						<p>This tells us that our effective rate is <m>12.68</m>%</p></li>
+    						<li><p>We see that the graph of our "Option 2" function and the horizontal line at $10000 intersect when <m>t=5.805</m> meaning that it takes almost 6 years for us to reach the desired $10000 </p>
+						<p><interactive desmos="onfdxae8lo" width="100%" aspect="3:2" /></p></li>
+					</ol>
+					</solution>
+				</exercise>
+			</worksheet>
+		</section>
+		<section xml:id="section4_5">
+                		<title>The Number <m>e</m></title>
+			<video youtube="0vUtx-G136E"/>
+		</section>
 	 </chapter>
+	 <chapter xml:id="chapter5">
+            	<title>Chapter 5 - Logarithmic Functions</title>
+           	<section xml:id="section5_1">
+                		<title>Logarithms and Their Properties</title>
+			<video youtube="RFHa7ySE0-o"/>
+			<worksheet>
+				<exercise>
+					Without a calculator, compute the following
+  					<ol type="a">
+    						<li><m>\log(10000)</m></li>
+    						<li><m>\ln(e^3)</m></li>
+    						<li><m>\log\left( \frac{1}{\sqrt{10}} \right)</m></li>
+    						<li><m>e^{\ln 2}</m></li>
+    						<li><m>\log(\sqrt{1000})</m></li>
+  					</ol>
+					<solution>
+					<ol type="a">
+    						<li><m>\log(10000) = 4</m> because <m>10^4=10000</m></li>
+    						<li><m>\ln(e^3)=3</m> If we ask, what power of <m>e</m> it is, we see the answer is 3.</li>
+    						<li><p><m>\log\left( \frac{1}{\sqrt{10}} \right)=-\frac 12</m> There are several ways to do this, but notice that we could look at it as </p>
+						<me> \log(1)-log(\sqrt{10})=0-\frac 12 = -\frac 12</me> </li>
+    						<li><m>e^{\ln 2}=2</m> by our fifth log property</li>
+    						<li><p><m>\log(\sqrt{1000})=\frac 32</m> There are several ways to approach this, but using the fact that square root is the same as the <m>\frac 12 </m> power, </p>
+						<me> \log(\sqrt{1000}) = \log(1000^{\frac 12}) = \frac 12 \log(1000) = \frac 12 \cdot 3 = \frac 32</me></li>
+  					</ol>
+					</solution>
+				</exercise>
+
+				<exercise>
+  					<p>Using our logarithm properties, solve the equation</p>
+ 					<me>e^{0.12x} = 100 </me>
+					<solution>
+						<p>The key to this one is taking the natural logarithm of both sides (a preview of the next section). </p>
+						<me> \ln(e^{0.12x}) = \ln(100) \quad \Rightarrow \quad 0.12x = \ln(100) </me>
+						<p> We get the second equality by asking "what power of <m>e</m> is it?"</p>
+						<me> x = \frac{\ln(100)}{.12} \approx 38.376</me>
+					</solution>
+				</exercise>
+			</worksheet>
+		</section>
+           	<section xml:id="section5_2">
+                		<title>Logarithms and Exponential Models</title>
+			<video youtube="pb9wGJgTbWk"/>
+			<worksheet>
+				<exercise>
+					If you invest $1200 in an account accrues interest at a rate of 5% compounded continuously, how long will it take for the balance to reach $1600?
+					<solution>
+						<p>The formula for the account balance is</p>
+						<me>B = 1200e^{0.05t}</me>
+						<p>We want to know when it reaches $1600, so we set <m>B</m> to 1600 and solve for <m>t</m>.</p>
+						<me> 1600 = 1200 e^{0.05t} \quad \Rightarrow \quad \frac{1600}{1200} = e^{0.05t} \quad \Rightarrow \quad \ln\left(\frac{1600}{1200}\right) = \ln(e^{0.05t})=0.05t </me>
+						<me> t = \frac{\ln\left(\frac{1600}{1200}\right) }{0.05}</me>
+					</solution>
+				</exercise>
+				<exercise>
+  					The population of Smallville grows from 11000 in the year 2010 to 13000 in the year 2013. 
+  					<ol type="a">
+    						<li>Write a formula for the population <m>P</m> as an exponential function of <m>t</m>, the number of years since 2010.</li>
+    						<li>When will the population double in size?</li>
+  					</ol>
+					<solution>
+					<ol type="a">
+    						<li><p>We start with what we know, namely that 
+						<m>P=11000b^t</m> as the initial quantity is 11000. We then use the fact that <m>P</m> is 13000 when <m>t=3</m> to see</p>
+						<me>13000=11000b^3 \quad \Rightarrow \quad \frac{13000}{11000} = b^3 \quad \Rightarrow \quad \sqrt[3]{\frac{13000}{11000}} = b</me>
+						<me> P = 11000\left( \sqrt[3]{\frac{13000}{11000}} \right)^t </me></li>
+    						<li><p>We now set <m>P</m> equal to 22000 and solve for <m>t</m></p>
+						<me>22000=11000\left( \sqrt[3]{\frac{13000}{11000}} \right)^t \quad \Rightarrow \quad 2 = \left( \sqrt[3]{\frac{13000}{11000}} \right)^t </me>
+						<me>\ln(2) = t \cdot \ln \left( \sqrt[3]{\frac{13000}{11000}} \right)</me>
+						<me> t = \frac{\ln(2)}{\ln \left( \sqrt[3]{\frac{13000}{11000}} \right)} \approx 12.45 \text{ years}</me></li>
+  					</ol>
+					</solution>
+				</exercise>
+			</worksheet>
+		</section>
+		<section xml:id="section5_3">
+                		<title>Finishing Up Exponential Functions</title>
+			<video youtube="d8EbCw6jOkw"/>
+			<worksheet>
+				<exercise>
+					<p>The technology company Orange started selling its oPhone in 2015 with sales of 10000 oPhones. By 2018 it sold 500000 oPhones. Model the growth of oPhone sales using an exponential function of the form</p>
+   					<me>f(t)= ae^{kt} </me>
+  					where <m>t</m> is time in years since 2015.
+					<solution>
+						<p>We start with the fact that we know <m> f(t)=10000e^{kt}</m> as the initial quantity was 10000. Then we use that when <m>t=3</m>, the number of phones is 500000.</p>
+						<me>500000=10000e^{k\cdot 3} \quad \Rightarrow \quad 50 = e^{3k} </me>
+						<me> \ln(50)=\ln(e^{3k})=3k \quad \Rightarrow \quad k = \frac{\ln(50)}{3} \approx 1.30401</me>
+						<p> Putting it all together, we get</p>
+						<me> f(t) = 10000e^{1.30401t}</me>
+					</solution>
+				</exercise>
+
+				<exercise>
+  					Convert the exponential function <m>f(t)=3(0.5)^t</m> to a function of the form <m>f(t)=ae^{kt}</m>. What do you notice about <m>k</m> in this scenario?
+					<solution>
+						<p>Here, we remember that <m>b=e^k</m> and since <m>b=.5</m>, we can use that to solve for <m>k</m>. </p>
+						<me>0.5=e^k \quad \Rightarrow \quad \ln(0.5)=\ln(e^k)=k </me>
+						<p> Note that <m>\ln(0.5) \approx -0.6931</m> so </p>
+						<me> f(t)=3e^{-0.6931t}</me>
+						<p> The thing that is different in this scenario is that we have a negative <m>k</m> value. This happens when the exponential function is decreasing</p>
+					</solution>
+				</exercise>
+			</worksheet>
+		</section>		
+	</chapter>
     </book>
 
 </pretext>
