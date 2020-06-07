@@ -928,6 +928,79 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 			</worksheet>
 		</section>		
 	</chapter>
+	<chapter>
+	</chapter>
+	<chapter xml:id="chapter7">
+            	<title>Chapter 7 - Trigonometry and Periodic Functions</title>
+           	<section xml:id="section7_1">
+                		<title>Introduction to Periodic Functions</title>
+			<video youtube="6evikF1iaTs"/>
+			<worksheet>
+				<exercise>
+					<p>Determine the period, midline, and amplitude of the graph below</p>
+					<p><interactive desmos="4dhpuz4v6n" width="100%" aspect="3:2" /></p>
+					<solution>
+						The period of this graph is 4 (for me, I am measuring the distance between the peaks). The midline is halfway between the minimum (-3) and maximum (7) which is <m> y=\frac{-3+7}{2}=2</m>. The amplitude is the distance between the midline and the maximum which is 5.
+					</solution>
+				</exercise>
+				<exercise>
+					<p>Determine the period, midline, and amplitude of the graph below</p>
+					<p><interactive desmos="stjqucsg4h" width="100%" aspect="3:2" /></p>
+					<solution>
+						The period of this graph is 2 (for me, I am measuring the distance between the peaks). The midline is halfway between the minimum (-7) and maximum (-1) which is <m> y=\frac{-7+-1}{2}=-4</m>. The amplitude is the distance between the midline and the maximum which is 3.
+					</solution>
+				</exercise>
+			</worksheet>
+		</section>
+           	<section xml:id="section7_2">
+                		<title>The Sine and Cosine Functions</title>
+			<video youtube="3dsEQ-GFs3g"/>
+			<video youtube="m4GByng82G8"/>
+		</section>		
+           	<section xml:id="section7_3">
+                		<title>Radians and Arc Length</title>
+			<video youtube="ENwqnceRfzE"/>
+			<worksheet>
+				<exercise>
+					Conversions:
+  					<ol type="a">
+						<li>Convert <m>150^\circ</m> to radians.</li>
+   						<li>Convert <m>\frac{7\pi}{4}</m> radians to degrees.</li>
+ 					</ol>
+					<solution>
+					<ol type="a">
+						<li><m>150^\circ \cdot \frac{\pi}{180} = \frac{150\pi}{180}=\frac{5\pi}{6}</m></li>
+   						<li><m>\frac{7\pi}{4} \cdot \frac{180}{\pi} = 315^\circ</m></li>
+ 					</ol>
+					</solution>
+				</exercise>
+
+				<exercise>
+  					Compute the following without a calculator.
+  					<ol type="a">
+    						<li><m>\cos\left( \frac {3\pi}{4} \right)</m></li>
+	    					<li><m>\tan\left( 45^{\circ} \right)</m></li>
+    						<li><m>\sin\left(150^{\circ}\right)</m></li>
+ 					</ol>
+					<solution>
+					<ol type="a">
+    						<li><m>\cos\left( \frac {3\pi}{4} \right) = \cos(135^\circ)</m> Using symmetry of the unit circle (draw the picture here), we get that <m>\cos(135^\circ)=-\frac{\sqrt{2}}{2}</m></li>
+	    					<li><m>\tan\left( 45^{\circ} \right) =\frac{\sin(45^\circ)}{\cos(45^\circ)} = \frac{\sqrt{2}/2}{\sqrt{2}/2}=1</m></li>
+    						<li>Using symmetry we get that <m>\sin\left(150^{\circ}\right) = \frac 12</m></li>
+ 					</ol>
+					</solution>
+				</exercise>
+
+				<exercise>
+  					What is the length of an arc that is cut off by an angle of <m>225^\circ</m> in a circle of radius 4 feet?
+					<solution>
+						First, we convert to radians <m>225^\circ \cdot \frac{\pi}{180} = \frac{5\pi}{4} </m>, then we use the arc length formula
+						<me>s = r\theta = 4\cdot \frac{5\pi}{4} = 5\pi </me>
+					</solution>
+				</exercise>
+			</worksheet>
+		</section>				
+	</chapter>
     </book>
 
 </pretext>
