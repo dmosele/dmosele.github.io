@@ -999,7 +999,50 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 					</solution>
 				</exercise>
 			</worksheet>
-		</section>				
+		</section>	
+           	<section xml:id="section7_4">
+                		<title>Graphs of Sine and Cosine</title>
+			<video youtube="f1NOsqpSXwo"/>
+			<worksheet>
+				<exercise>
+					<p>Determine the midline and amplitude of the graph of <m>y=3\sin(x)+1</m> below. </p>
+					<p><interactive desmos="299ljjdbfc" width="100%" aspect="3:2" /></p>
+					<solution>The midline is <m>y=1</m> and the amplitude is 3.</solution>
+				</exercise>
+				<exercise>
+					<p>Determine the midline and amplitude of the graph of <m>y=-2\cos(x)+4</m> below. </p>
+					<p><interactive desmos="m7r18yxb8u" width="100%" aspect="3:2" /></p>
+					<solution>The midline is <m>y=4</m> and the amplitude is 2. (Note that it isn't -2, because distances cannot be negative).</solution>
+				</exercise>
+			</worksheet>
+		</section>	
+		<section xml:id="section7_5">
+                		<title>Sinusoidal Functions</title>
+			<video youtube="uAOL_Q23Md0"/>
+			<worksheet>
+				<exercise>
+					For the following graphs of periodic functions, estimate the period, midline, and amplitude of the function. Then find the formula for the function. (Hint, the period is always either a multiple of <m>\pi</m> or a whole number).
+					<ol type="a">
+						<li><p><interactive desmos="fyxnffcbdl" width="100%" aspect="3:2" /></p></li>
+						<li><p><interactive desmos="q2jcwxcjzm" width="100%" aspect="3:2" /></p></li>
+						<li><p><interactive desmos="qdhzod0kmk" width="100%" aspect="3:2" /></p></li>
+						<li><p>(challenge)</p><p><interactive desmos="td6vgjlg4u" width="100%" aspect="3:2" /></p></li>
+					</ol>
+					<solution>
+					<ol type="a">
+						<li>The period is <m>\pi</m>, the midline is <m>y=2</m>, the amplitude is <m>4</m>, and a possible formula is <m>y=4\sin(2x)+2</m></li>
+						<li>The period is <m>2</m>, the midline is <m>y=-1</m>, the amplitude is <m>1</m>, and a possible formula is <m>y=\cos(\pi x)-1</m></li>
+						<li>The period is <m>\frac{2\pi}{3}</m>, the midline is <m>y=10</m>, the amplitude is <m>20</m>, and a possible formula is <m>y=-20\cos(3 x)+10</m></li>
+						<li>The period is <m>2\pi</m>, the midline is <m>y=2</m>, the amplitude is <m>3</m>, and a possible formula is <m>y=3\cos( x+0.5)+2</m>. This one has a shift left by 0.5.</li>
+					</ol>
+					</solution>
+				</exercise>
+			</worksheet>
+		</section>	
+		<section xml:id="section7_8">
+                		<title>Inverse Trigonometric Functions</title>
+			<video youtube="5ImdKq7QlOI"/>
+		</section>	
 	</chapter>
     </book>
 
