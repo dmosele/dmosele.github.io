@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--********************************************************************
+Copyright 2015 Robert A. Beezer
+
+This file is part of MathBook XML.
+
+MathBook XML is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 or version 3 of the
+License (at your option).
+
+MathBook XML is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
+*********************************************************************-->
+
+<!-- To process this file do                                                                      -->
+<!-- cd ~/"OneDrive - Jacksonville University"/Website/"dmosele.github.io"/MATH140Su20                                                                                             -->
+<!-- (1) LaTeX/PDF:                                                                               -->
+<!--     xsltproc -o Math140Summer2020.tex ~/mathbook/xsl/mathbook-latex.xsl Math140Summer2020.xml                      -->
+<!--     pdflatex minimal.tex                                                                     -->
+<!--     xelatex minimal.tex                                                                      -->
+<!--                                                                                              -->
+<!-- (2) HTML:                                                                                    -->
+<!--     xsltproc ~/mathbook/xsl/mathbook-html.xsl Math110Summer2020.xml                                      -->
+<!--     <browser>  minimal.html                                                                  -->
+<!--                                                                                              -->
+<!-- (3) CoCalc worksheet (parameter causes a single file for output)                             -->
+<!--     REMOVE the "X" in the double dash (which is not legal in an XML comment)                 -->
+<!--     xsltproc -X-stringparam chunk.level 0 mathbook/xsl/mathbook-smc.xsl minimal.xml          -->
+<!--     <CoCalc> minimal.sagews                                                                  -->
+<!--                                                                                              -->
+<!-- (4) Sage doctesting                                                                          -->
+<!--     REMOVE the "X" in the double dash (which is not legal in an XML comment)                 -->
+<!--     xsltproc -X-stringparam chunk.level 0 mathbook/xsl/mathbook-sage-doctest.xsl minimal.xml -->
+<!--     <read further instructions in> minimal.py                                                -->
+
+<pretext>
+
+    <docinfo>
+        <macros>
+        \newcommand{\doubler}[1]{2#1}
+        </macros>
+    </docinfo>
+
+    <book xml:id="Math140Summer2020">
+        <title>MATH 140 Summer 2020</title>
+
+        <frontmatter>
+
+            <titlepage>
+                <author>
+                    <personname><a href="https://dmosele.github.io">Daniel Moseley</a></personname>
+                    <institution>Jacksonville University</institution>
+                </author>
+                <date><today /></date>
+            </titlepage>
+
+            <abstract>
+                <video youtube="Z547IT5Eq-8"/>
+
+                <p>This is a collection of the materials (outside of the textbook) we will use in class to guide you on your journey through MATH 110. The textbook used in the course will be Functions Modeling Change 5th edition by Connally, et al.</p>
+            </abstract>
+
+        </frontmatter>
+
+        <introduction>
+            <p>This is a collection of the materials (outside of the textbook) we will use in class to guide you on your journey through MATH 140.</p>
+        </introduction>
+
+        <chapter xml:id="week1">
+            <title>Week 1 - Limits and the Derivative</title>
+            <section xml:id="section1_7">
+                <title>Continuity and Limits</title>
+                
+                <video youtube="EQaTTLD6Hco"/>
+                
+                	<worksheet>
+                		<exercise>
+                    	<p>The forecast high temperature for the next 7 days in Jacksonville, FL is given by</p>
+                        
+                		</exercise>
+
+                	</worksheet>
+            </section>
+ 	</chapter>
+    </book>
+
+</pretext>
