@@ -27,7 +27,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 <!--     xelatex minimal.tex                                                                      -->
 <!--                                                                                              -->
 <!-- (2) HTML:                                                                                    -->
-<!--     xsltproc ~/mathbook/xsl/mathbook-html.xsl Math110Summer2020.xml                                      -->
+<!--     xsltproc ~/mathbook/xsl/mathbook-html.xsl Math140Summer2020.xml                                      -->
 <!--     <browser>  minimal.html                                                                  -->
 <!--                                                                                              -->
 <!-- (3) CoCalc worksheet (parameter causes a single file for output)                             -->
@@ -62,9 +62,9 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
             </titlepage>
 
             <abstract>
-                <video youtube="Z547IT5Eq-8"/>
+                <video youtube="u7gLANu3-Yo"/>
 
-                <p>This is a collection of the materials (outside of the textbook) we will use in class to guide you on your journey through MATH 110. The textbook used in the course will be Functions Modeling Change 5th edition by Connally, et al.</p>
+                <p>This is a collection of the materials (outside of the textbook) we will use in class to guide you on your journey through MATH 140. The textbook used in the course will be Calculus: Single Variable, 7th Edition edition by Hughes-Hallett, et al.</p>
             </abstract>
 
         </frontmatter>
