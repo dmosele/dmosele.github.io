@@ -76,18 +76,38 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
         <chapter xml:id="week1">
             <title>Week 1 - Limits and the Derivative</title>
             <section xml:id="section1_7">
-                <title>Continuity and Limits</title>
+                <title>Section 1.7 - Introduction to Continuity and Limits</title>
                 
-                <video youtube="EQaTTLD6Hco"/>
+                <video youtube="h3khNZKCZPA"/>
                 
                 	<worksheet>
-                		<exercise>
-                    	<p>The forecast high temperature for the next 7 days in Jacksonville, FL is given by</p>
-                        
+                		<exercise>                        
                 		</exercise>
-
                 	</worksheet>
             </section>
+
+            <section xml:id="section1_8">
+                <title>Section 1.8 - Extending the Idea of a Limit</title>
+                
+                <video youtube="Y_LSb1botCA"/>
+                
+                	<worksheet>
+                		<exercise>                        
+                		</exercise>
+                	</worksheet>
+            </section>
+            
+            <section xml:id="section1_9">
+                <title>Section 1.9 - Further Limit Calculations</title>
+                
+                <video youtube="0ng7NKxHY3w"/>
+                
+                	<worksheet>
+                		<exercise>                        
+                		</exercise>
+                	</worksheet>
+            </section>
+                        
  	</chapter>
     </book>
 
