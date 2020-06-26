@@ -81,8 +81,51 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                 <video youtube="h3khNZKCZPA"/>
                 
                 	<worksheet>
-                		<exercise>                        
-                		</exercise>
+                		<exercise>
+  				Are the following functions continuous?
+  				<ol type="a">
+    					<li> <me> f(x) = \left\{ \begin{matrix} x &amp; x \leq 1 \\ x^2 &amp; x > 1 \end{matrix} \right. </me></li>
+    					<li> <me> g(x) = \left\{ \begin{matrix} \frac x{\left\vert x \right\vert} &amp; x \neq 0 \\ 0 &amp; x = 0 \end{matrix} \right. </me> </li>
+  				</ol>
+				<p><interactive desmos=""/></p>
+				<solution>
+				<ol type="a">
+					<li> <p>Yes, it is continuous</p>
+					<p><interactive desmos="kslwpjxdgf"/></p></li>
+					<li> <p>No, it is not continuous</p>
+					<p><interactive desmos="emzeyduwy7"/></p></li>
+				</ol>
+				</solution>
+			</exercise>
+
+			<exercise>
+  				Find <m>k</m> so that the following function is continuous on any interval:
+  				<me> f(x) = \left \{ \begin{matrix} kx &amp; x \leq 3 \\ 5 &amp; x > 3 \end{matrix} \right. </me>
+				<p><interactive desmos=""/></p>		
+				<solution>
+					<p>While I use Desmos for intuition, to find the exact answer we need the left and right sides to meet when <m>x=3</m>. Thus we need <m>k(3)=5</m> and hence <m>k=\frac 53</m>.</p>
+					<p><interactive desmos="v2lspd0dbo"/></p>
+				</solution>		
+			</exercise>
+
+			<exercise>
+  				Let <me> f(x) = \frac{e^x - 1}{x}. </me> 
+  
+  				<ol type="a">
+    					<li> Make a table of values of <m>f(x)</m> for <m>x=0.1,0.01,0.001,0.0001,-0.1,-0.01,-0.001,-0.0001</m>.</li>
+    
+    					<li> Make a conjecture (educated guess) about the value of 
+    						<me> \lim _{x\to 0} f(x) .</me></li>
+
+    					<li> Graph the function on your graphing calculator to see if it verifies your conjecture from parts a) and b).</li>
+  				</ol>
+				<p><interactive desmos=""/></p>	
+				<solution>
+					<p> We see from both the table and the graph that <m>f(x)</m> approaches 1 as <m>x</m> approaches 0. Hence,
+					<me> \lim_{x\to 0} f(x)=1</me></p>
+					<p><interactive desmos="zswsdqkoct"/></p>
+				</solution>			
+			</exercise>
                 	</worksheet>
             </section>
 
@@ -93,7 +136,21 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                 
                 	<worksheet>
                 		<exercise>                        
+				Compute <me>\lim_{x\to \infty} \frac{4x+5}{6x^2+7x+8}</me>
+				<solution>
+					You can evaluate this graphically, but to me the best tactic is to divide the numerator and denominator by the largest power of <m>x</m>. In this case that is <m>x^2</m>.
+					<me> \lim_{x\to \infty} \frac{4x+5}{6x^2+7x+8} = \lim_{x\to \infty} \frac{\frac4x+\frac5{x^2}}{6+\frac7x+\frac8{x^2}} = 0 </me>
+					Note that everything in the numerator goes to zero, so the fraction as a whole goes to zero (as the denominator is nonzero).
+				</solution>
                 		</exercise>
+			<exercise>
+				Compute the left and right hand limits of the function <m> \frac{\ln(|x|+1)}{x}</m> as <m>x</m> approaches 0 and use these computations to draw a conclusion about 
+				<me>\lim_{x\to 0} \frac{\ln(|x|+1)}{x}</me>
+				<solution>
+					<p>From the left, it appears to be approaching -1, whereas from the right, it appears to be approaching 1. Thus, the limit does not exist.</p>
+					<p><interactive desmos="hhdwb6gqmc"/></p>
+				</solution>
+			</exercise>
                 	</worksheet>
             </section>
             
@@ -103,10 +160,33 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                 <video youtube="0ng7NKxHY3w"/>
                 
                 	<worksheet>
-                		<exercise>                        
+                		<exercise>  
+				Compute 
+  				<me>\lim_{x\to 2} \frac{x^2-4}{x-2} </me>
+  				using any technique. Justify your answer.
+				<solution>
+					While any of the solutions can be used here, the algebraic technique is the best choice.
+					<me>\lim_{x\to 2} \frac{x^2-4}{x-2} = \lim_{x\to 2} \frac{(x-2)(x+2)}{(x-2)} = \lim_{x\to 2} x+2 = 4 </me>
+				</solution>
+			</exercise>
+
+			<exercise>
+  				Compute 
+  				<me>\lim_{x\to 0} \frac{\sin x}{x} </me>
+  				using any technique (making sure that your graphing calculator is in radians). Justify your answer.
+				<solution>
+					<p>Here, the algebraic technique cannot be used, so we will use graphical and numerical. From the graph and the table, we see that the limit approaches 1. </p>
+					<p><interactive desmos="9kmp9abyzk"/></p>
+				</solution>
                 		</exercise>
                 	</worksheet>
             </section>
+            
+            <section xml:id="section2_1">
+                <title>Section 2.1 - How Do We Measure Speed?</title>
+                
+                <video youtube="rwIfqJm8yDc"/>
+            </section>            
                         
  	</chapter>
     </book>

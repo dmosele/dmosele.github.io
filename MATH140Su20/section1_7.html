@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2020-06-25T15:45:21-04:00    *-->
+<!--*    on 2020-06-26T15:54:22-04:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -81,6 +81,7 @@ MathJax.Hub.Config({
 <li><a href="section1_7.html" data-scroll="section1_7" class="active">Section 1.7 - Introduction to Continuity and Limits</a></li>
 <li><a href="section1_8.html" data-scroll="section1_8">Section 1.8 - Extending the Idea of a Limit</a></li>
 <li><a href="section1_9.html" data-scroll="section1_9">Section 1.9 - Further Limit Calculations</a></li>
+<li><a href="section2_1.html" data-scroll="section2_1">Section 2.1 - How Do We Measure Speed?</a></li>
 </ul>
 </li>
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
@@ -91,7 +92,62 @@ MathJax.Hub.Config({
 <iframe id="video-2" width="600" height="337" allowfullscreen="" src="https://www.youtube.com/embed/h3khNZKCZPA?&amp;modestbranding=1&amp;rel=0"></iframe><section class="worksheet" id="worksheet-1"><h3 class="heading hide-type">
 <span class="type">Worksheet</span> <span class="codenumber">1.1.1</span> <span class="title">Worksheet</span>
 </h3>
-<article class="exercise exercise-like" id="exercise-1"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6></article></section></section></div></main>
+<article class="exercise exercise-like" id="exercise-1"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>Are the following functions continuous? <ol class="lower-alpha">
+<li id="li-1"><div class="displaymath">
+\begin{equation*}
+f(x) = \left\{ \begin{matrix} x &amp; x \leq 1 \\ x^2 &amp; x &gt; 1 \end{matrix} \right. 
+\end{equation*}
+</div></li>
+<li id="li-2"><div class="displaymath">
+\begin{equation*}
+g(x) = \left\{ \begin{matrix} \frac x{\left\vert x \right\vert} &amp; x \neq 0 \\ 0 &amp; x = 0 \end{matrix} \right. 
+\end{equation*}
+</div></li>
+</ol>
+<p id="p-3"><iframe src="https://www.desmos.com/calculator/" id="interactive-1" width="600" height="600"></iframe></p>
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-1" id="solution-1"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-1"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-3">
+<p id="p-4">Yes, it is continuous</p>
+<p id="p-5"><iframe src="https://www.desmos.com/calculator/kslwpjxdgf" id="interactive-2" width="600" height="600"></iframe></p>
+</li>
+<li id="li-4">
+<p id="p-6">No, it is not continuous</p>
+<p id="p-7"><iframe src="https://www.desmos.com/calculator/emzeyduwy7" id="interactive-3" width="600" height="600"></iframe></p>
+</li>
+</ol></div></div></article><article class="exercise exercise-like" id="exercise-2"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>Find \(k\) so that the following function is continuous on any interval:<div class="displaymath">
+\begin{equation*}
+f(x) = \left \{ \begin{matrix} kx &amp; x \leq 3 \\ 5 &amp; x &gt; 3 \end{matrix} \right. 
+\end{equation*}
+</div>
+<p id="p-8"><iframe src="https://www.desmos.com/calculator/" id="interactive-4" width="600" height="600"></iframe></p>
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-2" id="solution-2"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-2"><div class="solution solution-like">
+<p id="p-9">While I use Desmos for intuition, to find the exact answer we need the left and right sides to meet when \(x=3\text{.}\) Thus we need \(k(3)=5\) and hence \(k=\frac 53\text{.}\)</p>
+<p id="p-10"><iframe src="https://www.desmos.com/calculator/v2lspd0dbo" id="interactive-5" width="600" height="600"></iframe></p>
+</div></div></article><article class="exercise exercise-like" id="exercise-3"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>Let<div class="displaymath">
+\begin{equation*}
+f(x) = \frac{e^x - 1}{x}. 
+\end{equation*}
+</div>
+<ol class="lower-alpha">
+<li id="li-5">Make a table of values of \(f(x)\) for \(x=0.1,0.01,0.001,0.0001,-0.1,-0.01,-0.001,-0.0001\text{.}\)</li>
+<li id="li-6">Make a conjecture (educated guess) about the value of<div class="displaymath">
+\begin{equation*}
+\lim _{x\to 0} f(x) .
+\end{equation*}
+</div>
+</li>
+<li id="li-7">Graph the function on your graphing calculator to see if it verifies your conjecture from parts a) and b).</li>
+</ol>
+<p id="p-11"><iframe src="https://www.desmos.com/calculator/" id="interactive-6" width="600" height="600"></iframe></p>
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-3" id="solution-3"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-3"><div class="solution solution-like">
+<p id="p-12">We see from both the table and the graph that \(f(x)\) approaches 1 as \(x\) approaches 0. Hence,</p>
+<div class="displaymath">
+\begin{equation*}
+\lim_{x\to 0} f(x)=1
+\end{equation*}
+</div>
+<p id="p-13"><iframe src="https://www.desmos.com/calculator/zswsdqkoct" id="interactive-7" width="600" height="600"></iframe></p>
+</div></div></article></section></section></div></main>
 </div>
 </body>
 </html>
