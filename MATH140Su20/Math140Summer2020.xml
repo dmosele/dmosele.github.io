@@ -197,21 +197,116 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                 		<title>Section 2.2 - The Derivative at a Point</title>
                 
                 		<video youtube="uy-C8NtAgWE"/>
+		
+			<worksheet>
+				<exercise>
+  					Let <m>s(t)</m> represent the distance in inches that a turtle has traveled in <m>t</m> seconds. The table below indicates the position of the turtle at discrete time intervals.
+  					<me> \begin{array} {| c | c | c | c | c | c | c | c |}
+    					\hline t \text{(in seconds)}&amp; 0 &amp; 0.5 &amp; 1 &amp; 1.5 &amp; 2 &amp; 2.5 &amp; 3 \\
+   					\hline s(t) \text{(in inches)}&amp; 1.2 &amp; 1.5 &amp; 1.7 &amp; 2.0 &amp; 2.3 &amp; 2.4 &amp; 2.7 \\
+   	 				\hline
+  					\end{array} </me>
+  					Approximate the instantaneous velocity of the turtle at time <m>t=2</m>.
+				</exercise>
+
+				<exercise>
+  					The following graph is the graph of the position function of a particle traveling in a straight line. 
+ 					<image source="images/Math140S13wksht5g1.jpg" />
+
+  					When is the velocity of the particle positive, and when is it negative?
+				</exercise>
+
+				<exercise>
+  					Compute the derivative at a point <m>f'(1)</m> of <m>f(x)=-3x^2+7x-2</m> using the limit definition of the derivative.
+				</exercise>
+			</worksheet>
+			
+			<video youtube="aiu5PdTHcLk"/>
             	</section>      
             	<section xml:id="section2_3">
                 		<title>Section 2.3 - The Derivative Function</title>
                 
                 		<video youtube="msvxJte7V4Y"/>
+			<worksheet>
+				<exercise>
+					The function <m>f(x)</m> is represented by the graph below. Sketch a graph of <m>f'(x)</m> on the axes below. 
+ 					<image source="images/Math140WkshtDerivative2G1.png" />
+				</exercise>
+
+				<exercise>
+  					If <m>f(x) = x^2 - 4x+5</m>, compute <m>f'(x)</m> using the limit definition of the derivative.
+				</exercise>
+			
+			</worksheet>
+						
+			<video youtube="https://ZKFewXAYRrg"/>
             	</section>    
             	<section xml:id="section2_4">
                 		<title>Section 2.4 - Interpreting Derivatives</title>
                 
                 		<video youtube="bonR2NTmEeI"/>
+			<worksheet>
+				<exercise>
+  					On a hot summer day, Bob takes a carton of ice cream out of a 10<m>^\circ</m>F freezer and forgets about it. Suppose room temperature is <m>75^\circ</m>F.
+  					<ol type="a">
+    						<li><p>Sketch a graph of temperature <m>f(t)</m> of the ice cream as a function of time, where <m>t</m> is time in hours.</p>
+ 						<p><image source="images/Math140WkshtInterpretingDerivativesG1.png" /></p>
+						</li>
+    						<li>What are the units of <m>f'(t)</m>?</li>
+   						<li>Is the derivative positive or negative?</li>
+    						<li>Interpret the statement <m>f'(4)=3</m> in the context of the problem.</li>
+ 					</ol>
+				</exercise>
+			</worksheet>
+						
+			<video youtube="N4Dot_5pq7U"/>
             	</section>   
             	<section xml:id="section2_5">
                 		<title>Section 2.5 - The Second Derivative</title>
                 
                 		<video youtube="4aLT6XeV9Gc"/>
+			<worksheet>
+				<exercise>
+ 	 				The table below gives the position <m>s</m> in feet of my car <m>t</m> seconds after I start merging onto the interstate.
+  					<me> 
+						\begin{array}{| l | l | l | l | l | l | l |}
+  						\hline \text{Time } (t) &amp; 0 &amp; 2 &amp; 4 &amp; 6 &amp; 8 &amp; 10\\
+  						\hline \text{Position} (s) &amp; 0 &amp; 20 &amp; 52 &amp; 90 &amp; 132 &amp; 200 \\
+  						\hline
+  						\end{array} 
+					</me>
+  
+					<ol type="a">
+    						<li>Estimate <m>\displaystyle \frac{ds}{dt}</m> for the time intervals below
+      						<me> 
+							\begin{array}{| p{2.5cm} | p{2cm} | p{2cm} | p{2cm} | p{2cm} | p{2cm} |}
+  							\hline \text{Time Interval} &amp; 0-2 &amp; 2-4 &amp; 4-6 &amp; 6-8 &amp; 8-10\\
+  							\hline \frac{ds}{dt} &amp;  &amp;  &amp;  &amp;  &amp;  \\
+  							\hline
+  							\end{array} 
+						</me>
+						</li>
+  						<li>What can we say about <m>\displaystyle \frac{d^2 s}{dt^2}</m> over this period of time</li>
+  					</ol>
+				</exercise>
+
+				<exercise>
+  					Compute the second derivative of 
+  					<me>f(x) = 3x^2+7x+1 . </me>
+				</exercise>
+		
+				<exercise>
+  					<p><fn>Similar to Example 5 in Section 2.5</fn>The following graph is the graph of the position function of a particle traveling in a straight line. </p>
+ 					<p><image source="images/Math140S13wksht5g1.jpg" /></p>
+  
+  					<ol type="a">
+    						<li>When is the acceleration of the particle positive, and when is it negative?</li>
+    						<li>When is the acceleration zero?</li>
+  					</ol>
+				</exercise>
+			</worksheet>
+						
+			<video youtube="6KvGtxdqehs"/>
             	</section>    
             	<section xml:id="section2_6">
                 		<title>Section 2.6 - Differentiability</title>
