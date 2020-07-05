@@ -9,7 +9,7 @@
 <html lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Section 1.8 - Extending the Idea of a Limit</title>
+<title>Week 2 - The Derivative</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script type="text/x-mathjax-config">
@@ -67,10 +67,10 @@ MathJax.Hub.Config({
 </div></div>
 <nav id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section1_7.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="week1.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="section1_9.html" title="Next">Next</a></span></div>
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section2_1.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="Math140Summer2020.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="section2_2.html" title="Next">Next</a></span></div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section1_7.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="week1.html" title="Up">Up</a><a class="next-button button toolbar-item" href="section1_9.html" title="Next">Next</a>
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section2_1.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="Math140Summer2020.html" title="Up">Up</a><a class="next-button button toolbar-item" href="section2_2.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
 <div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
@@ -79,12 +79,12 @@ MathJax.Hub.Config({
 <li class="link">
 <a href="week1.html" data-scroll="week1"><span class="codenumber">1</span> <span class="title">Week 1 - Limits and Speed</span></a><ul>
 <li><a href="section1_7.html" data-scroll="section1_7">Section 1.7 - Introduction to Continuity and Limits</a></li>
-<li><a href="section1_8.html" data-scroll="section1_8" class="active">Section 1.8 - Extending the Idea of a Limit</a></li>
+<li><a href="section1_8.html" data-scroll="section1_8">Section 1.8 - Extending the Idea of a Limit</a></li>
 <li><a href="section1_9.html" data-scroll="section1_9">Section 1.9 - Further Limit Calculations</a></li>
 <li><a href="section2_1.html" data-scroll="section2_1">Section 2.1 - How Do We Measure Speed?</a></li>
 </ul>
 </li>
-<li class="link">
+<li class="link active">
 <a href="week2.html" data-scroll="week2"><span class="codenumber">2</span> <span class="title">Week 2 - The Derivative</span></a><ul>
 <li><a href="section2_2.html" data-scroll="section2_2">Section 2.2 - The Derivative at a Point</a></li>
 <li><a href="section2_3.html" data-scroll="section2_3">Section 2.3 - The Derivative Function</a></li>
@@ -95,30 +95,16 @@ MathJax.Hub.Config({
 </li>
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
-<main class="main"><div id="content" class="pretext-content"><section class="section" id="section1_8"><h2 class="heading hide-type">
-<span class="type">Section</span> <span class="codenumber">1.2</span> <span class="title">Section 1.8 - Extending the Idea of a Limit</span>
+<main class="main"><div id="content" class="pretext-content"><section class="chapter" id="week2"><h2 class="heading">
+<span class="type">Chapter</span> <span class="codenumber">2</span> <span class="title">Week 2 - The Derivative</span>
 </h2>
-<iframe id="video-4" width="600" height="337" allowfullscreen="" src="https://www.youtube.com/embed/Y_LSb1botCA?&amp;modestbranding=1&amp;rel=0"></iframe><section class="worksheet" id="worksheet-2"><h3 class="heading hide-type">
-<span class="type">Worksheet</span> <span class="codenumber">1.2.1</span> <span class="title">Worksheet</span>
-</h3>
-<article class="exercise exercise-like" id="exercise-4"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>Compute<div class="displaymath">
-\begin{equation*}
-\lim_{x\to \infty} \frac{4x+5}{6x^2+7x+8}
-\end{equation*}
-</div>
-<a data-knowl="" class="id-ref original" data-refid="hk-solution-4" id="solution-4"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-4"><div class="solution solution-like">You can evaluate this graphically, but to me the best tactic is to divide the numerator and denominator by the largest power of \(x\text{.}\) In this case that is \(x^2\text{.}\)<div class="displaymath">
-\begin{equation*}
-\lim_{x\to \infty} \frac{4x+5}{6x^2+7x+8} = \lim_{x\to \infty} \frac{\frac4x+\frac5{x^2}}{6+\frac7x+\frac8{x^2}} = 0 
-\end{equation*}
-</div>Note that everything in the numerator goes to zero, so the fraction as a whole goes to zero (as the denominator is nonzero).</div></div></article><article class="exercise exercise-like" id="exercise-5"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>Compute the left and right hand limits of the function \(\frac{\ln(|x|+1)}{x}\) as \(x\) approaches 0 and use these computations to draw a conclusion about<div class="displaymath">
-\begin{equation*}
-\lim_{x\to 0} \frac{\ln(|x|+1)}{x}
-\end{equation*}
-</div>
-<a data-knowl="" class="id-ref original" data-refid="hk-solution-5" id="solution-5"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-5"><div class="solution solution-like">
-<p id="p-14">From the left, it appears to be approaching -1, whereas from the right, it appears to be approaching 1. Thus, the limit does not exist.</p>
-<p id="p-15"><iframe src="https://www.desmos.com/calculator/hhdwb6gqmc" id="interactive-8" width="600" height="600"></iframe></p>
-</div></div></article></section><iframe id="video-5" width="600" height="337" allowfullscreen="" src="https://www.youtube.com/embed/Z1GZLOb89wY?&amp;modestbranding=1&amp;rel=0"></iframe></section></div></main>
+<nav class="summary-links"><ul>
+<li><a href="section2_2.html"><span class="codenumber">2.1</span> <span class="title">Section 2.2 - The Derivative at a Point</span></a></li>
+<li><a href="section2_3.html"><span class="codenumber">2.2</span> <span class="title">Section 2.3 - The Derivative Function</span></a></li>
+<li><a href="section2_4.html"><span class="codenumber">2.3</span> <span class="title">Section 2.4 - Interpreting Derivatives</span></a></li>
+<li><a href="section2_5.html"><span class="codenumber">2.4</span> <span class="title">Section 2.5 - The Second Derivative</span></a></li>
+<li><a href="section2_6.html"><span class="codenumber">2.5</span> <span class="title">Section 2.6 - Differentiability</span></a></li>
+</ul></nav></section></div></main>
 </div>
 </body>
 </html>

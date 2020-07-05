@@ -74,7 +74,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
         </introduction>
 
         <chapter xml:id="week1">
-            <title>Week 1 - Limits and the Derivative</title>
+            <title>Week 1 - Limits and Speed</title>
             <section xml:id="section1_7">
                 <title>Section 1.7 - Introduction to Continuity and Limits</title>
                 
@@ -189,8 +189,35 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                 <title>Section 2.1 - How Do We Measure Speed?</title>
                 
                 <video youtube="rwIfqJm8yDc"/>
-            </section>            
-                        
+            </section>        
+      	</chapter>    
+        <chapter xml:id="week2">
+            	<title>Week 2 - The Derivative</title>		
+            	<section xml:id="section2_2">
+                		<title>Section 2.2 - The Derivative at a Point</title>
+                
+                		<video youtube="uy-C8NtAgWE"/>
+            	</section>      
+            	<section xml:id="section2_3">
+                		<title>Section 2.3 - The Derivative Function</title>
+                
+                		<video youtube="msvxJte7V4Y"/>
+            	</section>    
+            	<section xml:id="section2_4">
+                		<title>Section 2.4 - Interpreting Derivatives</title>
+                
+                		<video youtube="bonR2NTmEeI"/>
+            	</section>   
+            	<section xml:id="section2_5">
+                		<title>Section 2.5 - The Second Derivative</title>
+                
+                		<video youtube="4aLT6XeV9Gc"/>
+            	</section>    
+            	<section xml:id="section2_6">
+                		<title>Section 2.6 - Differentiability</title>
+                
+                		<video youtube="XMQqubhCCOs"/>
+            	</section>                            
  	</chapter>
     </book>
 
