@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2020-07-05T14:31:15-04:00    *-->
+<!--*    on 2020-07-06T16:56:17-04:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -111,7 +111,7 @@ MathJax.Hub.Config({
 \end{equation*}
 </div>
 <ol class="lower-alpha">
-<li id="li-12">Estimate \(\displaystyle \frac{ds}{dt}\) for the time intervals below<div class="displaymath">
+<li id="li-16">Estimate \(\displaystyle \frac{ds}{dt}\) for the time intervals below<div class="displaymath">
 \begin{equation*}
 \begin{array}{| p{2.5cm} | p{2cm} | p{2cm} | p{2cm} | p{2cm} | p{2cm} |}
 \hline \text{Time Interval} &amp; 0-2 &amp; 2-4 &amp; 4-6 &amp; 6-8 &amp; 8-10\\
@@ -121,19 +121,45 @@ MathJax.Hub.Config({
 \end{equation*}
 </div>
 </li>
-<li id="li-13">What can we say about \(\displaystyle \frac{d^2 s}{dt^2}\) over this period of time</li>
-</ol></article><article class="exercise exercise-like" id="exercise-15"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>Compute the second derivative of<div class="displaymath">
+<li id="li-17">What can we say about \(\displaystyle \frac{d^2 s}{dt^2}\) over this period of time</li>
+</ol>
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-14" id="solution-14"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-14"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-18">We can estimate \(\displaystyle \frac{ds}{dt}\) for the time intervals below using the average rate of change.<div class="displaymath">
+\begin{equation*}
+\begin{array}{| p{2.5cm} | p{2cm} | p{2cm} | p{2cm} | p{2cm} | p{2cm} |}
+\hline \text{Time Interval} &amp; 0-2 &amp; 2-4 &amp; 4-6 &amp; 6-8 &amp; 8-10\\
+\hline \frac{ds}{dt} &amp;  \frac{20-0}{2-0} = 10 &amp; 16  &amp; 19 &amp; 21 &amp; 34 \\
+\hline
+\end{array} 
+\end{equation*}
+</div>
+</li>
+<li id="li-19">The second derivative is positive as it appears that the derivative is increasing.</li>
+</ol></div></div></article><article class="exercise exercise-like" id="exercise-15"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>Compute the second derivative of<div class="displaymath">
 \begin{equation*}
 f(x) = 3x^2+7x+1 . 
 \end{equation*}
-</div></article><article class="exercise exercise-like" id="exercise-16"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
+</div>
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-15" id="solution-15"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-15"><div class="solution solution-like">Using the limit of the difference quotient, we get<div class="displaymath">
+\begin{align*}
+f'(x)  \amp = \lim_{h\to 0} \frac{f(x+h)-f(x)}{h} \\
+\amp = \lim_{h\to 0} \frac{3x^2+6xh+3h^2+7x+7h+1 - (3x^2+7x+1)}{h} \\
+\amp = \lim_{h\to 0} \frac{6xh+3h^2+7h}{h} \\
+\amp = \lim_{h\to 0} 6x+3h+7\\
+\amp = 6x+7
+\end{align*}
+</div>To compute the second derivative, we take the derivative of \(f'(x)\) as above. Since it is linear, the derivative is the slope which is 6 in this case.</div></div></article><article class="exercise exercise-like" id="exercise-16"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
 <p id="p-20"><a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-1" id="fn-1"><sup> 1 </sup></a>The following graph is the graph of the position function of a particle traveling in a straight line.</p>
 <div class="hidden-content tex2jax_ignore" id="hk-fn-1"><div class="fn">Similar to Example 5 in Section 2.5</div></div>
 <p id="p-21"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="images/Math140S13wksht5g1.jpg" style="width: 100%; height: auto;" alt=""></div></p>
 <ol class="lower-alpha">
-<li id="li-14">When is the acceleration of the particle positive, and when is it negative?</li>
-<li id="li-15">When is the acceleration zero?</li>
-</ol></article></section><iframe id="video-16" width="600" height="337" allowfullscreen="" src="https://www.youtube.com/embed/6KvGtxdqehs?&amp;modestbranding=1&amp;rel=0"></iframe></section></div></main>
+<li id="li-20">When is the acceleration of the particle positive, and when is it negative?</li>
+<li id="li-21">When is the acceleration zero?</li>
+</ol>
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-16" id="solution-16"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-16"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-22">The acceleration of the particle is positive when the graph is concave up. This looks to be \(x&gt;1.5\text{.}\) The acceleration is negative when the graph is concave down. This looks to be \(x&lt; 1.5\text{.}\)</li>
+<li id="li-23">The acceleration appears to be zero at 1.5</li>
+</ol></div></div></article></section><iframe id="video-16" width="600" height="337" allowfullscreen="" src="https://www.youtube.com/embed/6KvGtxdqehs?&amp;modestbranding=1&amp;rel=0"></iframe></section></div></main>
 </div>
 </body>
 </html>

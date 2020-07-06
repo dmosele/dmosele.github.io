@@ -207,6 +207,12 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
    	 				\hline
   					\end{array} </me>
   					Approximate the instantaneous velocity of the turtle at time <m>t=2</m>.
+					<solution>
+						We have three approaches to this, Left, right and average.
+						<me>\text{(Left) } \frac{f(2)-f(1.5)}{2-1.5} = \frac{2.3-2.0}{.5)= 0.6 \text{ in/sec}</me>
+						<me>\text{(Right) } \frac{f(2.5)-f(2)}{2.5-2} = \frac{2.4-2.3}{.5)= 0.2 \text{ in/sec}</me>
+						<me>\text{(Average) } \frac{.6+.2}{2} = 0.4 \text{ in/sec}</me>
+					</solution>
 				</exercise>
 
 				<exercise>
@@ -214,10 +220,21 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
  					<image source="images/Math140S13wksht5g1.jpg" />
 
   					When is the velocity of the particle positive, and when is it negative?
+					<solution>
+						The velocity of the particle is positive when the function is increasing, so <m> 0 &lt; t &lt; .75 </m> and <m> t > 2.25</m>. The velocity of the particle is negative when the function is decreasing, so <m>.75 &lt; t &lt; 2.25</m>.
+					</solution>
 				</exercise>
 
 				<exercise>
   					Compute the derivative at a point <m>f'(1)</m> of <m>f(x)=-3x^2+7x-2</m> using the limit definition of the derivative.
+					<solution>
+						<me> f'(1) = \lim_{h\to 0} \frac{f(1+h)-f(1)}{h} </me>
+						<me> = \lim_{h\to 0} \frac{-3(1+h)^2+7(1+h)-2-(2)}{h}</me>
+						<me> = \lim_{h\to 0} \frac{-3-6h-3h^2+7+7h-4}{h}</me>
+						<me> = \lim_{h\to 0} \frac{-3h^2+h}{h} </me>
+						<me> = \lim_{h\to 0} -3h+1</me>
+						<me> = 1 </me>
+					</solution>
 				</exercise>
 			</worksheet>
 			
@@ -231,15 +248,29 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 				<exercise>
 					The function <m>f(x)</m> is represented by the graph below. Sketch a graph of <m>f'(x)</m> on the axes below. 
  					<image source="images/Math140WkshtDerivative2G1.png" />
+					<solution>
+					 	<image source="images/Math140WkshtDerivative2G2.JPG" />
+					</solution>
 				</exercise>
 
 				<exercise>
   					If <m>f(x) = x^2 - 4x+5</m>, compute <m>f'(x)</m> using the limit definition of the derivative.
+					<solution>
+						Using the limit definition we get
+						<md>
+							<mrow>f'(x) \amp = \lim_{h\to 0} \frac{f(x+h)-f(x)}{h} </mrow>
+							<mrow>\amp = \lim_{h\to 0} \frac{(x+h)^2-4(x+h)+5-(x^2-4x+5)}{h}</mrow>
+							<mrow>\amp = \lim_{h\to 0} \frac{x^2+2hx+h^2-4x-4h+5-x^2+4x-5}{h}</mrow>
+							<mrow>\amp = \lim_{h\to 0} \frac{2hx+h^2-4h}{h} </mrow>
+							<mrow>\amp = \lim_{h\to 0} \frac{h(2x+h-4)}{h}</mrow>
+							<mrow>\amp = \lim_{h\to 0} 2x+h-4 = 2x-4 </mrow>
+						</md>
+					</solution>
 				</exercise>
 			
 			</worksheet>
 						
-			<video youtube="https://ZKFewXAYRrg"/>
+			<video youtube="ZKFewXAYRrg"/>
             	</section>    
             	<section xml:id="section2_4">
                 		<title>Section 2.4 - Interpreting Derivatives</title>
@@ -256,6 +287,14 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
    						<li>Is the derivative positive or negative?</li>
     						<li>Interpret the statement <m>f'(4)=3</m> in the context of the problem.</li>
  					</ol>
+					<solution>
+						<ol type="a">
+							<li><image source="images/Math140WkshtInterpretingDerivativesG2.jpg" /></li>
+							<li>The units are <m>^\circ</m>F per hour (always output per input)</li>
+							<li>The derivative is positive as the temperature is increasing</li>
+							<li>After 4 hours, the temperature of the ice cream is increasing at a rate of 3<m>^\circ</m>F per hour.</li>
+						</ol>
+					</solution>
 				</exercise>
 			</worksheet>
 						
@@ -288,11 +327,36 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 						</li>
   						<li>What can we say about <m>\displaystyle \frac{d^2 s}{dt^2}</m> over this period of time</li>
   					</ol>
+					<solution>
+					<ol type="a">
+    						<li>We can estimate <m>\displaystyle \frac{ds}{dt}</m> for the time intervals below using the average rate of change.
+      						<me> 
+							\begin{array}{| p{2.5cm} | p{2cm} | p{2cm} | p{2cm} | p{2cm} | p{2cm} |}
+  							\hline \text{Time Interval} &amp; 0-2 &amp; 2-4 &amp; 4-6 &amp; 6-8 &amp; 8-10\\
+  							\hline \frac{ds}{dt} &amp;  \frac{20-0}{2-0} = 10 &amp; 16  &amp; 19 &amp; 21 &amp; 34 \\
+  							\hline
+  							\end{array} 
+						</me>
+						</li>
+  						<li>The second derivative is positive as it appears that the derivative is increasing.</li>
+  					</ol>
+					</solution>
 				</exercise>
 
 				<exercise>
   					Compute the second derivative of 
   					<me>f(x) = 3x^2+7x+1 . </me>
+					<solution>
+						Using the limit of the difference quotient, we get
+						<md>
+							<mrow> f'(x)  \amp = \lim_{h\to 0} \frac{f(x+h)-f(x)}{h} </mrow>
+							<mrow> \amp = \lim_{h\to 0} \frac{3x^2+6xh+3h^2+7x+7h+1 - (3x^2+7x+1)}{h} </mrow>
+							<mrow> \amp = \lim_{h\to 0} \frac{6xh+3h^2+7h}{h} </mrow>
+							<mrow> \amp = \lim_{h\to 0} 6x+3h+7</mrow>
+							<mrow> \amp = 6x+7</mrow>
+						</md>
+						To compute the second derivative, we take the derivative of <m>f'(x)</m> as above. Since it is linear, the derivative is the slope which is 6 in this case.
+					</solution>
 				</exercise>
 		
 				<exercise>
@@ -303,6 +367,12 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
     						<li>When is the acceleration of the particle positive, and when is it negative?</li>
     						<li>When is the acceleration zero?</li>
   					</ol>
+					<solution>
+					<ol type="a">
+    						<li>The acceleration of the particle is positive when the graph is concave up. This looks to be <m>x>1.5</m>. The acceleration is negative when the graph is concave down. This looks to be <m> x&lt; 1.5</m>.</li>
+    						<li>The acceleration appears to be zero at 1.5</li>
+  					</ol>
+					</solution>
 				</exercise>
 			</worksheet>
 						
