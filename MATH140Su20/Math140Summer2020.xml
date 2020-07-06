@@ -289,7 +289,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
  					</ol>
 					<solution>
 						<ol type="a">
-							<li><image source="images/Math140WkshtInterpretingDerivativesG2.jpg" /></li>
+							<li><image source="images/Math140WkshtInterpretingDerivativesG2.JPG" /></li>
 							<li>The units are <m>^\circ</m>F per hour (always output per input)</li>
 							<li>The derivative is positive as the temperature is increasing</li>
 							<li>After 4 hours, the temperature of the ice cream is increasing at a rate of 3<m>^\circ</m>F per hour.</li>
