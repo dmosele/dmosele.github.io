@@ -384,6 +384,127 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                 		<video youtube="XMQqubhCCOs"/>
             	</section>                            
  	</chapter>
+	<chapter xml:id="week3">
+            	<title>Week 3 - Derivative Rules</title>		
+            	<section xml:id="section3_1">
+                		<title>Section 3.1 - Powers &amp; Polynomials</title>
+                
+                		<video youtube="2MYJKakPOBs"/>
+		
+			<worksheet>
+				<exercise>
+  					Compute the derivatives of the following functions
+					<ol type="a">
+    						<li><m>f(t) = 3t^2-4t+1</m></li>
+    						<li><m>g(x) = 17x^{3/2} - 5x^{1/2}</m></li>
+   						<li><m>h(t) = 3t^2 + \frac{12}{\sqrt t} - \frac{1}{t^2}</m></li>
+   						<li><m>k(x) = \frac{\sqrt x (1+x)}{x^2}</m></li>
+					</ol>
+					<solution>
+					<ol type="a">
+    						<li><m>f'(t) = 6t-4 </m></li>
+    						<li><m>g(x) = \left(\frac{51}{2}\right)x^{1/2} - \left( \frac 52 \right) x^{-1/2}</m></li>
+   						<li><m>h(t) = 6t -6t^{-3/2} +2t^{-3}</m></li>
+   						<li><m>k(x) = -\frac 32 x^{-5/2} - \frac 12 x^{-3/2}</m></li>
+					</ol>
+					</solution>
+				</exercise>
+  				<exercise>
+					A raindrop falls from a cloud with height (in meters) given as a function of time by 
+					<me>h=1000-4.9t^2.</me> 
+					Find the velocity and acceleration at time <m>t</m>.
+					<solution>
+						The velocity is the derivative 
+						<me> \frac{dh}{dt} = -9.8 t \text{ m}/\text{sec}</me>
+						and the acceleration is the second derivative
+						<me> \frac{d^2h}{dt^2} = -9.8 \text{ m}/\text{sec}^2</me>
+					</solution>
+				</exercise>
+			</worksheet>
+			<video youtube="v6xWL_qKdt0"/>
+		</section>
+		
+		<section xml:id="section3_2">
+                		<title>Section 3.2 - The Exponential Function</title>
+                
+                		<video youtube="F4dke9WKQXM"/>
+		
+			<worksheet>
+				<exercise>
+  					Compute the derivatives of the following functions
+  					<ol type="a">
+   						<li><m>f(t) = 5\cdot 2^t</m></li>
+    						<li><m>g(x) = e^{3x}</m></li>
+  						<li><m>h(t) = e^{t+3}</m></li>
+						<li><m>k(x) = \pi^{\pi}+\pi^x+x^{\pi}</m></li>
+  					</ol>
+					<solution>
+					<ol type="a">
+   						<li><m>f'(t) = 5\cdot 2^t \ln(2)</m></li>
+    						<li><m>g'(x) = e^{3x}\cdot 3</m></li>
+  						<li><m>h'(t) = e^{t+3}</m></li>
+						<li><m>k'(x) = 0+\pi^x\ln(\pi)+\pix^{\pi-1}</m></li>
+  					</ol>
+					</solution>
+				</exercise>
+			</worksheet>
+			<video youtube="4pnJa1cmNjI"/>
+		</section>
+		<section xml:id="section3_3">
+                		<title>Section 3.3 - Product &amp; Quotient Rules</title>
+                
+                		<video youtube="h6uYz4T2xtk"/>
+		
+			<worksheet>
+				<exercise>
+  					Compute the derivatives of the following functions:
+  					<ol type="a">
+   						<li><m>f(x) = x^3 3^x</m></li>
+						<li><m>g(x) = \frac{x^2 + e^x}{x^3}</m></li>
+						<li><m>h(x) = \frac{x^2+7}{x^2-7}</m></li>
+    						<li><m>k(x) = e^{x+5}(x^2+3x)</m></li>
+  					</ol>
+					<solution>
+					<ol type="a">
+   						<li><m>f'(x) = x^3 3^x\ln(3)+3^x(3x^2)</m></li>
+						<li><m>g'(x) = \frac{(x^3)(2x+e^x)-(x^2 + e^x)(3x^2)}{(x^3)^2}</m></li>
+						<li><m>h'(x) = \frac{(x^2-7)(2x)-(x^2+7)(2x)}{(x^2-7)^2}</m></li>
+    						<li><m>k(x) = e^{x+5}(2x+3)+(x^2+3x)e^{x+5}</m></li>
+  					</ol>
+					</solution>
+				</exercise>
+			</worksheet>
+			<video youtube="aKmx4mJ-b2Q"/>
+		</section>
+		<section xml:id="section3_4">
+                		<title>Section 3.4 - The Chain Rule</title>
+                
+                		<video youtube="PGwkvz2tYyY"/>
+		
+			<worksheet>
+				<exercise>
+					Compute the derivatives of the following functions using the chain rule:
+  					<ol type="a">
+    						<li><m>k(x) = e^{x+1}</m></li>
+    						<li><m>f(x) = \sqrt{e^x +1}</m></li>
+    						<li><m>g(t) = (\sqrt{t} + 1)^{100}</m></li>
+    						<li><m>h(x) = \sqrt{ \frac{x^2+9}{x+3}}</m></li>
+    						<li><m>k(x) = e^{(x^2)}</m></li>
+					</ol>
+					<solution>
+					<ol type="a">
+    						<li><m>k'(x) = e^{x+1}</m></li>
+    						<li><m>f'(x) = \frac 12 (e^x +1)^{-1/2}(e^x)</m></li>
+    						<li><m>g(t) = 100(\sqrt{t} + 1)^{99}\left( \frac 12 t^{-1/2} \right)</m></li>
+    						<li><m>h(x) = \frac 12 \left( \frac{x^2+9}{x+3} \right) ^{-1/2} \left( \frac{(x+3)(2x)-(x^2+9)(1)}{(x+3)^2} \right)</m></li>
+    						<li><m>k(x) = e^{(x^2)} (2x)</m></li>
+					</ol>
+					</solution>
+				</exercise>
+			</worksheet>
+			<video youtube="ksltkNMjLLg"/>
+		</section>
+	</chapter>
     </book>
 
 </pretext>
