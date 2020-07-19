@@ -505,6 +505,170 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 			<video youtube="ksltkNMjLLg"/>
 		</section>
 	</chapter>
-    </book>
+	
+	<chapter xml:id="week4">
+        <title>Week 4 - More Derivative Rules</title>
+        <section xml:id="section3_5">
+            <title>Section 3.5 - Trigonometric Functions</title>
+                
+            <video youtube="EtJwmbpXxVI"/>
+		
+			<worksheet>
+                <exercise>
+                    So we know that
+                    <me> \frac{d}{dx} ( \sin x ) = \cos x \hspace{.2in} \text{ and } \hspace{.2in} \frac{d}{dx} (\cos x) = - \sin x </me>
+                    and we know that
+                    <me>\tan x = \frac{\sin x}{\cos x} . </me>
+                    Compute the derivative of <m>\tan x</m>.
+                    <solution>
+                        Using the quotient rule, we get
+                        <me> \frac{d}{dx}\left( \tan x \right) = \frac{d}{dx}\left( \frac{\sin x}{\cos x} \right) = \frac{\cos(x)\cos(x)-\sin(x)(-\sin(x))}{(\cos(x))^2}</me>
+                        <me> = \frac{(\cos(x))^2+(\sin(x))^2}{(\cos(x))^2} = \frac{1}{(\cos(x))^2} </me>
+                        The last equality comes from the Pythagorean Identity.
+                    </solution>
+                </exercise>
+
+                <exercise>
+                    <fn>From problem 62 in section 3.5</fn> The voltage, <m>V</m>, in volts, in an electrical outlet is given as a function of time, <m>t</m>, in second by the function
+                    <me>V = 156 \cos(120 \pi t) </me>
+                    <ol type="a">
+                        <li>Give an expression for the rate of change of voltage with respect to time.</li>
+                        <li>What is the maximum rate of change?</li>
+                    </ol>
+                    <solution>
+                    <ol type="a">
+                        <li><m>\frac{dV}{dt} = 156(-\sin(120\pi t))(120\pi)</m></li>
+                        <li>The maximum that <m>-\sin(120 \pi t)</m> can be is 1 as -1 is the minimum of the sine function. Thus, the maximum of the derivative here is <m>156\cdot 120\pi</m>.</li>
+                    </ol>
+                    </solution>
+                </exercise>
+                
+                <exercise>
+                    Compute the following derivatives:
+                    <ol type="a">
+                        <li><m>\displaystyle \frac{d}{dx} (\sin(x^2))</m></li>
+                        <li><m>\displaystyle\frac{d}{dx} \left( \frac{3\cos(x)}{x^2-7}\right)</m></li>
+                        <li><m>\displaystyle\frac{d}{dx} \left( \frac{\cos(x)}{\sin(x)} \right)</m>  (p.s. Do you know a name for this function?)</li>
+                        <li><m>\displaystyle\frac{d}{dx} \left( e^{\sin(x)} \right)</m></li>
+                    </ol>
+                    <solution>
+                    <ol type="a">
+                        <li><m>\displaystyle \frac{d}{dx} (\sin(x^2))= \cos(x^2)\cdot (2x)</m></li>
+                        <li><m>\displaystyle\frac{d}{dx} \left( \frac{3\cos(x)}{x^2-7}\right)= \frac{(x^2-7)(3(-\sin(x)))-(3\cos(x))(2x)}{(x^2-7)^2}</m></li>
+                        <li><m>\displaystyle\frac{d}{dx} \left( \frac{\cos(x)}{\sin(x)} \right) = \frac{\sin(x)(-\sin(x))-(\cos(x))(\cos(x))}{(\sin(x))^2} = \frac{-1}{(\sin(x))^2} </m> (the original function is cotangent)</li>
+                        <li><m>\displaystyle\frac{d}{dx} \left( e^{\sin(x)} \right) = e^{\sin(x)}\cos(x)</m></li>
+                    </ol>
+                    </solution>
+                </exercise>
+			</worksheet>
+		</section>
+                
+        <section xml:id="section3_6">
+            <title>Section 3.6 - Inverse Functions</title>
+            
+            <video youtube="H4Gp5Xlsh-E"/>
+    
+            <worksheet>
+                <exercise>
+                    Compute the derivative of the following functions:
+                    <ol type="a">
+                        <li><m>f(x) = \ln(2^x+x^2)</m></li>
+                        <li><m>g(t) = \sqrt{\arcsin(t)}</m></li>
+                        <li><m>h(x) = \arctan(\ln(x))</m></li>
+                        <li><m>k(y) = e^{\ln (2y+3)}</m></li>
+                    </ol>
+                    <solution>
+                    <ol type="a">
+                        <li><m>f'(x) = \frac{1}{2^x+x^2} (2^x\ln(2)+2x)</m></li>
+                        <li><m>g'(t) = \frac 12(\arcsin(t))^{-1/2} \cdot \frac{1}{\sqrt{1-t^2}}</m></li>
+                        <li><m>h'(x) = \frac{1}{1+(\ln(x))^2}\cdot \frac 1x</m></li>
+                        <li><m>k'(y) = 2</m></li>
+                    </ol>
+                    </solution>
+                </exercise>
+            </worksheet>
+        </section>
+        
+        <section xml:id="section3_7">
+            <title>Section 3.7 - Implicit Differentiation</title>
+                    
+            <video youtube="dcmemzRnwpw"/>
+            
+            <worksheet>
+                <exercise>
+                    Compute <m>\frac{dy}{dx}</m> if <m>\ln x + \ln (y^2) = 3</m>.
+                    <solution>
+                    Taking the derivative of both sides of the equation we get
+                    <me> \frac 1x + \frac{1}{y^2}\cdot 2y \cdot \frac{dy}{dx} = 0 </me>
+                    Solving for <m>\frac{dy}{dx}</m> we get
+                    <me> \frac{dy}{dx} = \frac{-y}{2x} </me>
+                    </solution>
+                </exercise>
+
+                <exercise>
+                    Find the equation of the tangent line to
+                    <me> y^2 = \frac{x^2}{xy-4} </me>
+                    at the point <m>(4,2)</m>.
+                    <solution>
+                        There are several approaches here, but let's start with some algebra so that we can get rid of the fraction.
+                        <me> y^2(xy-4) = x^2 </me>
+                        <me> xy^3-4y^2 = x^2 </me>
+                        Taking the derivative of both sides we get
+                        <me> x(3y^2)\frac{dy}{dx} + y^3 - 8y\frac{dy}{dx} = 2x </me>
+                        Solving for <m>\frac{dy}{dx}</m> we get
+                        <me> \frac{dy}{dx}(3xy^2-8y) = 2x-y^3 </me>
+                        <me> \frac{dy}{dx} = \frac{2x-y^3}{3xy^2-8y} </me>
+                        We want to compute the tangent line at <m>(4,2)</m>, so we plug in 4 for <m>x</m> and 2 for <m>y</m>.
+                        <me> \left. \frac{dy}{dx} \right\vert_{(4,2)} = \frac{2(4)-2^3}{3(4)(2^2)-8(2)} = 0 </me>
+                        Since the slope is zero, the tangent line is <m>y=2</m> as that is the <m>y</m>-coordinate of the point.
+                    </solution>
+                </exercise>
+
+                <exercise>
+                    Find the slope of the tangent to the curve
+                    <me> \sin (xy) = x </me>
+                    at the point <m>(1, \pi/2)</m>. (Hint: Look at the graph to explain the answer.)
+                    <solution>
+                        First we take the derivative of both sides
+                        <me> \cos(xy)\cdot \left( x \frac{dy}{dx}+y\right) = 1 </me>
+                        Using algebra to solve for <m>\frac{dy}{dx}</m> we get
+                        <me> \frac{dy}{dx} =\frac{\frac{1}{\cos(xy)}-y}{x} </me>
+                        Plugging in the point, we get
+                        <me> \left. \frac{dy}{dx} \right\vert_{(1,\pi/2)} = \text{ undefined} </me>
+                        Looking at the graph you find that the slope is vertical at this point explaining the undefined slope.
+                    </solution>
+                </exercise>
+            </worksheet>
+        </section>
+        
+        <section xml:id="section3_9">
+            <title>Section 3.9 - Linear Approximation</title>
+                
+            <video youtube="aVGtRbraI4w"/>
+        
+            <worksheet>
+                <exercise>
+                    Use the tangent line approximation of <m>f(x)=\ln(x)</m> at <m>x=1</m> to approximate the value <m>\ln(1.1)</m>.
+                    <solution>
+                        Using tangent line approximation at <m>x=1</m> we see that <m>f(1)=\ln(1)=0</m>, <m>f'(x) = \frac 1x</m>, and <m>f'(1) = \frac 11 = 1</m>, so the tangent line is
+                        <me> y = f(1)+f'(1)(x-1) = 0 + 1(x-1) = x-1 </me>
+                        Using tangent line approximation we see that
+                        <me> \ln(1.1) = f(1.1) \approx 1.1-1 = 0.1 </me>
+                    </solution>
+                </exercise>
+
+                <exercise>
+                    Let <m>f(A)</m> represent the price of building a house of area <m>A</m> ft<m>^2</m> in Bob the Builder's subdivision. To buy a 2100 ft<m>^2</m> house it costs $200,000. If <m>f'(2100)=90</m>, estimate the cost of a 2150 ft<m>^2</m> house using tangent line approximation.
+                    <solution>
+                        Using tangent line approximation we get
+                        <me> f(A)\approx f(2100)+f'(2100)(A-2100) = 200000+90(A-2100)</me>
+                        <me> f(2150)\approx 200000+90(2150-2100) = 204500</me>.
+                        The bigger house should cost approximately $204,500.
+                    </solution>
+                </exercise>
+            </worksheet>
+        </section>
+    </chapter>
+</book>
 
 </pretext>
