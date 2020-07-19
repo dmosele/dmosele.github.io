@@ -561,6 +561,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                     </solution>
                 </exercise>
 			</worksheet>
+            <video youtube="5UFYu0TRcbA"/>
 		</section>
                 
         <section xml:id="section3_6">
@@ -587,6 +588,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                     </solution>
                 </exercise>
             </worksheet>
+            <video youtube="2r9rSUbJxl8"/>
         </section>
         
         <section xml:id="section3_7">
@@ -639,6 +641,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                     </solution>
                 </exercise>
             </worksheet>
+            <video youtube="fm-TT6QiqWA"/>
         </section>
         
         <section xml:id="section3_9">
@@ -667,6 +670,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                     </solution>
                 </exercise>
             </worksheet>
+            <video youtube="TFd9RMIHfkY"/>
         </section>
     </chapter>
 </book>
