@@ -673,6 +673,53 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
             <video youtube="TFd9RMIHfkY"/>
         </section>
     </chapter>
+    
+    	<chapter xml:id="week5">
+        <title>Week 5 - Optimization</title>
+        <section xml:id="section4_1">
+            <title>Section 4.1 - Using First &amp; Second Derivatives</title>
+                
+            <video youtube="FJWZBPCZ8bc"/>
+            <video youtube="5VvYmLMdmAM"/>
+		
+			<worksheet>
+                			<exercise>
+   					  Let <m>\displaystyle f(x) = \frac{5x}{x^2+4}</m>. 
+  						<ol type="a">
+    							<li>Identify the critical points of <m>f</m>.</li>
+    							<li>Find all maxima and minima of <m>f</m> using the first derivative test.</li>
+  						</ol>
+				</exercise>
+
+				<exercise>
+  					Let <m>g(x) = x^3 - 12x + 7</m>. 
+					<ol type="a">
+    						<li>Identify the critical points of <m>g</m>.</li>
+   						<li>Find all maxima and minima of <m>g</m> using the second derivative test.</li>
+					</ol>
+                			</exercise>
+			</worksheet>
+		</section>
+
+        <section xml:id="section4_2_4_3">
+            <title>Section 4.2/4.3 - Optimization</title>
+                
+            <video youtube="--qtFDYNrOs"/>
+            <video youtube="6qH0P2kP0UQ"/>
+		
+			<worksheet>
+                			<exercise>
+					<fn>adapted from section 4.3</fn>A new game is in the process of being invented, and the inventor requests your help in choosing the dimensions of the court it is played on. The court should be rectangular with area <m>1000\mathrm{ft}^2</m>. There are also <m>8\mathrm{ft}</m> ``out of bounds" zones on the left and right sides, and <m>5\mathrm{ft}</m> ``out of bounds" zones at the top and bottom. Find the dimensions of the smallest area that this court with out of bounds zones could occupy.
+  					<image source="images/court.jpg" />
+				</exercise>
+				<exercise>
+					<fn>Similar to #15 in Section 4.3</fn>
+					<image source="images/Math140S16Exam3adG1crop"/>
+    					The rectangle pictured to the left has one vertex on the graph of the curve <m>y=e^{-x}</m>, one edge along the <m>x</m>-axis, and another edge along the <m>y</m>-axis. Find the value of <m>x</m> that maximizes the area of the rectangle. 
+                			</exercise>
+			</worksheet>
+		</section>
+	</chapter>
 </book>
 
 </pretext>
