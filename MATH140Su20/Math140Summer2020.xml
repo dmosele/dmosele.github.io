@@ -689,6 +689,13 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
     							<li>Identify the critical points of <m>f</m>.</li>
     							<li>Find all maxima and minima of <m>f</m> using the first derivative test.</li>
   						</ol>
+						<solution>
+						First, we find the critical points
+						<me>f'(x) = \frac{(x^2+4)(5)-(5x)(2x)}{(x^2+4)^2} = \frac{-5x^2+20}{(x^2+4)^2} = \frac{(-5)(x-2)(x+2)}{(x^2+4)^2} </me>
+						The critical points are at <m>x=-2</m> and <m>x=2</m>. If we look at values a little to the left and right of these critical points we will be able to use the first derivative test.
+						<me>f'(-4) = \frac{-60}{400}\quad f'(0)=\frac{20}{16} \quad f'(4) = \frac{-60}{400} </me>
+						Since the derivative changes from negative to positive at <m>x=-2</m>, there is a local minimum there. Since the derivative changes from positive to negative at <m>x=2</m>, there is a local maximum there.
+						</solution>
 				</exercise>
 
 				<exercise>
@@ -697,8 +704,18 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
     						<li>Identify the critical points of <m>g</m>.</li>
    						<li>Find all maxima and minima of <m>g</m> using the second derivative test.</li>
 					</ol>
+					<solution>
+						To identify the critical points we take the derivative of <m>g</m>
+						<me> g'(x) = 3x^2-12 = 3(x^2-4)=3(x-2)(x+2)</me>
+						The derivative is zero at <m>x=-2</m> and <m>x=2</m>. To use the second derivative test we take the second derivative.
+						<me>g''(x) = 6x</me>
+						We then plug in our critical points 
+						<me>g''(-2)=-12\quad g''(2)=12</me>
+						and see there is a local max at <m>x=-2</m> and a local min at <m>x=2</m>.
+					</solution>
                 			</exercise>
 			</worksheet>
+			<video youtube="awvC-2Bvhlg"/>
 		</section>
 
         <section xml:id="section4_2_4_3">
@@ -714,10 +731,11 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 				</exercise>
 				<exercise>
 					<fn>Similar to #15 in Section 4.3</fn>
-					<image source="images/Math140S16Exam3adG1crop"/>
+					<image source="images/Math140S16Exam3adG1crop.png"/>
     					The rectangle pictured to the left has one vertex on the graph of the curve <m>y=e^{-x}</m>, one edge along the <m>x</m>-axis, and another edge along the <m>y</m>-axis. Find the value of <m>x</m> that maximizes the area of the rectangle. 
                 			</exercise>
 			</worksheet>
+			<video youtube="fsFP_nE88k4"/>
 		</section>
 	</chapter>
 </book>
