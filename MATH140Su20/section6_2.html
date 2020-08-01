@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2020-08-01T16:17:42-04:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Section 6.2 - Antiderivatives</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", "AMScd.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\newcommand{\doubler}[1]{2#1}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="Math140Summer2020.html"><span class="title">MATH 140 Summer 2020</span></a></h1>
+<p class="byline">Daniel Moseley</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section5_2.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="week6.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="section5_3.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section5_2.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="week6.html" title="Up">Up</a><a class="next-button button toolbar-item" href="section5_3.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter"><a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a></li>
+<li class="link">
+<a href="week1.html" data-scroll="week1"><span class="codenumber">1</span> <span class="title">Week 1 - Limits and Speed</span></a><ul>
+<li><a href="section1_7.html" data-scroll="section1_7">Section 1.7 - Introduction to Continuity and Limits</a></li>
+<li><a href="section1_8.html" data-scroll="section1_8">Section 1.8 - Extending the Idea of a Limit</a></li>
+<li><a href="section1_9.html" data-scroll="section1_9">Section 1.9 - Further Limit Calculations</a></li>
+<li><a href="section2_1.html" data-scroll="section2_1">Section 2.1 - How Do We Measure Speed?</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="week2.html" data-scroll="week2"><span class="codenumber">2</span> <span class="title">Week 2 - The Derivative</span></a><ul>
+<li><a href="section2_2.html" data-scroll="section2_2">Section 2.2 - The Derivative at a Point</a></li>
+<li><a href="section2_3.html" data-scroll="section2_3">Section 2.3 - The Derivative Function</a></li>
+<li><a href="section2_4.html" data-scroll="section2_4">Section 2.4 - Interpreting Derivatives</a></li>
+<li><a href="section2_5.html" data-scroll="section2_5">Section 2.5 - The Second Derivative</a></li>
+<li><a href="section2_6.html" data-scroll="section2_6">Section 2.6 - Differentiability</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="week3.html" data-scroll="week3"><span class="codenumber">3</span> <span class="title">Week 3 - Derivative Rules</span></a><ul>
+<li><a href="section3_1.html" data-scroll="section3_1">Section 3.1 - Powers &amp; Polynomials</a></li>
+<li><a href="section3_2.html" data-scroll="section3_2">Section 3.2 - The Exponential Function</a></li>
+<li><a href="section3_3.html" data-scroll="section3_3">Section 3.3 - Product &amp; Quotient Rules</a></li>
+<li><a href="section3_4.html" data-scroll="section3_4">Section 3.4 - The Chain Rule</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="week4.html" data-scroll="week4"><span class="codenumber">4</span> <span class="title">Week 4 - More Derivative Rules</span></a><ul>
+<li><a href="section3_5.html" data-scroll="section3_5">Section 3.5 - Trigonometric Functions</a></li>
+<li><a href="section3_6.html" data-scroll="section3_6">Section 3.6 - Inverse Functions</a></li>
+<li><a href="section3_7.html" data-scroll="section3_7">Section 3.7 - Implicit Differentiation</a></li>
+<li><a href="section3_9.html" data-scroll="section3_9">Section 3.9 - Linear Approximation</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="week5.html" data-scroll="week5"><span class="codenumber">5</span> <span class="title">Week 5 - Optimization</span></a><ul>
+<li><a href="section4_1.html" data-scroll="section4_1">Section 4.1 - Using First &amp; Second Derivatives</a></li>
+<li><a href="section4_2_4_3.html" data-scroll="section4_2_4_3">Section 4.2/4.3 - Optimization</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="week6.html" data-scroll="week6"><span class="codenumber">6</span> <span class="title">Week 6 - Integration</span></a><ul>
+<li><a href="section5_1.html" data-scroll="section5_1">Section 5.1 - How Do We Measure Distance Traveled?</a></li>
+<li><a href="section5_2.html" data-scroll="section5_2">Section 5.2 - The Definite Integral</a></li>
+<li><a href="section6_2.html" data-scroll="section6_2" class="active">Section 6.2 - Antiderivatives</a></li>
+<li><a href="section5_3.html" data-scroll="section5_3">Section 5.3 - The Fundamental Theorem of Calculus</a></li>
+</ul>
+</li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="section6_2"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">6.3</span> <span class="title">Section 6.2 - Antiderivatives</span>
+</h2>
+<iframe id="video-44" width="600" height="337" allowfullscreen="" src="https://www.youtube.com/embed/A51TvPkZqBw?&amp;modestbranding=1&amp;rel=0"></iframe><section class="worksheet" id="worksheet-20"><h3 class="heading hide-type">
+<span class="type">Worksheet</span> <span class="codenumber">6.3.1</span> <span class="title">Worksheet</span>
+</h3>
+<article class="exercise exercise-like" id="exercise-38"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>Find all antiderivatives for the following functions: <ol class="lower-alpha">
+<li id="li-96">\(\displaystyle f(x)=x^2\)</li>
+<li id="li-97">\(\displaystyle g(t)=\sin(t)\)</li>
+<li id="li-98">\(\displaystyle h(x)=\frac{1}{x^2}\)</li>
+<li id="li-99">\(\displaystyle f(z)= z+e^z\)</li>
+<li id="li-100">\(\displaystyle g(t)=\frac{t^2+1}{t}\)</li>
+</ol>
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-36" id="solution-36"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-36"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-101">\(\displaystyle F(x)=\frac{x^3}{3}+C\)</li>
+<li id="li-102">\(\displaystyle G(t)=-\cos(t)+C\)</li>
+<li id="li-103">\(\displaystyle H(x)=\frac{-1}{x}+C\)</li>
+<li id="li-104">\(\displaystyle F(z)= \frac{z^2}{2}+e^z+C\)</li>
+<li id="li-105">\(g(t)=\frac{t^2+1}{t}=t+\frac 1t\text{;}\) \(G(t) = \frac{t^2}{2}+\ln{\vert t \vert}+C\)</li>
+</ol></div></div></article><article class="exercise exercise-like" id="exercise-39"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>Find the antiderivative \(F\) of \(f(x)=2+4x+5x^2\) such that \(F(0)=0\text{.}\) <a data-knowl="" class="id-ref original" data-refid="hk-solution-37" id="solution-37"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-37"><div class="solution solution-like">The general antiderivative looks like<div class="displaymath">
+\begin{equation*}
+F(x) = 2x+2x^2+\frac{5x^3}{3}+C 
+\end{equation*}
+</div>and we want to find the one with \(F(0)=0\text{.}\) Note that plugging 0 into the above formula yields \(F(0)=C\text{,}\) hence we need \(C=0\text{.}\) Our final answer is<div class="displaymath">
+\begin{equation*}
+F(x) = 2x+2x^2+\frac{5x^3}{3} \text{.}
+\end{equation*}
+</div>
+</div></div></article></section><iframe id="video-45" width="600" height="337" allowfullscreen="" src="https://www.youtube.com/embed/zdezhYUt4Bo?&amp;modestbranding=1&amp;rel=0"></iframe></section></div></main>
+</div>
+</body>
+</html>

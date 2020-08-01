@@ -738,6 +738,169 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 			<video youtube="fsFP_nE88k4"/>
 		</section>
 	</chapter>
+	
+	<chapter xml:id="week6">
+        		<title>Week 6 - Integration</title>
+        		<section xml:id="section5_1">
+            		<title>Section 5.1 - How Do We Measure Distance Traveled?</title>
+                
+            		<video youtube="P1MB0IQdFIg"/>
+		
+			<worksheet>
+                			<exercise>
+			 		Let <m>s(t)</m> represent the speed of a runner (in feet per second) at time <m>t</m> seconds after the start of a race. 
+  					<me> 
+						\begin{array} {| c | c | c | c | c | c | c |}
+    						\hline t \amp 0 \amp 3 \amp 6 \amp 9 \amp 12 \amp 15 \\
+    						\hline s(t) \amp 0 \amp 12 \amp 16.1 \amp 18.2 \amp 19 \amp 19.6 \\
+    						\hline
+  						\end{array}
+					</me>
+  					<ol type="a">    
+   						<li>Approximate <m>\displaystyle{\int_0^{15} s(t) \,dt}</m> using left and right hand sums with <m>n=5</m>.</li>
+    						<li>What could we do to more accurately approximate <m>\displaystyle{\int_0^{15} s(t) \, dt}</m>?</li>
+    						<li>Give an interpretation of what the value <m>\displaystyle{\int_0^{15} s(t) \, dt}</m> represents in the context of the problem.</li>
+  					</ol>
+					<solution>
+					<ol type="a">    
+   						<li><me>\text{LHS} = (3)(0)+(3)(12)+(3)(16.1)+(3)(18.2)+(3)(19) = 195.9\text{ feet}</me>
+						<me>\text{RHS} = (3)(12)+(3)(16.1)+(3)(18.2)+(3)(19)+(3)(19.6) = 254.7\text{ feet}</me></li>
+    						<li>To more accurately approximate <m>\displaystyle{\int_0^{15} s(t) \, dt}</m>, we could increase <m>n</m> or look at the average of the left and right hand sums.</li>
+    						<li>The value <m>\displaystyle{\int_0^{15} s(t) \, dt}</m> represents the distance traveled by the runner in those 15 seconds.</li>
+  					</ol>
+					</solution>
+				</exercise>
+			</worksheet>
+			<video youtube="tdrXAVzcSsE"/>
+		</section>
+		
+        		<section xml:id="section5_2">
+            		<title>Section 5.2 - The Definite Integral</title>
+                
+            		<video youtube="Yondz-h5sqY"/>
+			<p><interactive desmos="jsnqbeju0e"/></p>
+		
+			<worksheet>
+                			<exercise>
+ 	 				Approximate <m>\displaystyle \int_0^{\pi/2} \sin(x) \, dx</m> using <m>n=2</m> subintervals. 
+  					(That is, we cut the interval from <m>0</m> to <m>\pi/2</m> into 2 pieces).
+					<solution>
+						<me> 
+							\begin{matrix} 
+							x \amp 0 \amp \frac{\pi}{4} \amp \frac{\pi}{2} \\
+							\sin(x) \amp 0 \amp \frac{\sqrt 2}{2} \amp 1 \\
+							\end{matrix}
+						</me>
+						Using the left hand sum, right hand sum, and their average we get
+						<me> \text{LHS} = \frac{\pi}{4}\left( 0 + \frac {\sqrt 2} {2} \right) \approx 0.555</me>
+						<me> \text{RHS} = \frac{\pi}{4}\left( \frac {\sqrt 2} {2} +1 \right) \approx 1.341</me>
+						<me> \text{Average} = .948 </me>
+						The real value is 1 which is pretty close to the average.
+					</solution>
+				</exercise>
+				<exercise>
+  					The graph of <m>f(x)</m> is given below.
+ 					<image source="images/Math140S14Wksht19G1.jpg"/>
+  					<ol type="a">
+   						<li>Compute <m>\displaystyle \int_1^3 f(x)\, dx</m>.</li>
+    						<li>Compute <m>\displaystyle \int_0^1 f(x)\, dx</m>.</li>
+    						<li>Compute <m>\displaystyle \int_0^3 f(x)\, dx</m>.</li>
+    						<li>Compute <m>\displaystyle \int_0^3 \vert f(x)\vert \, dx</m>.</li> 
+  					</ol>
+					<solution>
+					<ol type="a">
+   						<li><m>\displaystyle \int_1^3 f(x)\, dx = \frac{16}{3}</m>.</li>
+    						<li><m>\displaystyle \int_0^1 f(x)\, dx = -\frac 56</m>.</li>
+    						<li><m>\displaystyle \int_0^3 f(x)\, dx = \frac{16}{3}-\frac 56 = \frac{27}{6} = \frac 92</m>.</li>
+    						<li><m>\displaystyle \int_0^3 \vert f(x)\vert \, dx= \frac{16}{3}-\frac 56 = \frac{37}{6}</m>.</li> 
+  					</ol>
+					</solution>
+				</exercise>
+			</worksheet>
+			<video youtube="o98xDARSFww"/>
+		</section>   			
+
+        		<section xml:id="section6_2">
+            		<title>Section 6.2 - Antiderivatives</title>
+                
+            		<video youtube="A51TvPkZqBw"/>
+		
+			<worksheet>
+                			<exercise>
+  					Find all antiderivatives for the following functions:
+  					<ol type="a">
+    						<li><m>f(x)=x^2</m></li>
+    						<li><m>g(t)=\sin(t)</m></li>
+   						<li><m>h(x)=\frac{1}{x^2}</m></li>
+   						<li><m>f(z)= z+e^z</m></li>
+    						<li><m>g(t)=\frac{t^2+1}{t}</m></li>
+  					</ol>
+					<solution>
+					<ol type="a">
+    						<li><m>F(x)=\frac{x^3}{3}+C</m></li>
+    						<li><m>G(t)=-\cos(t)+C</m></li>
+   						<li><m>H(x)=\frac{-1}{x}+C</m></li>
+   						<li><m>F(z)= \frac{z^2}{2}+e^z+C</m></li>
+    						<li><m>g(t)=\frac{t^2+1}{t}=t+\frac 1t</m>;
+						<m>G(t) = \frac{t^2}{2}+\ln{\vert t \vert}+C</m></li>
+  					</ol>
+					</solution>
+				</exercise>
+				<exercise>
+  					Find the antiderivative <m>F</m> of <m>f(x)=2+4x+5x^2</m> such that <m>F(0)=0</m>. 
+					<solution>
+						The general antiderivative looks like 
+						<me> F(x) = 2x+2x^2+\frac{5x^3}{3}+C </me>
+						and we want to find the one with <m>F(0)=0</m>. Note that plugging 0 into the above formula yields <m>F(0)=C</m>, hence we need <m>C=0</m>. Our final answer is
+						<me> F(x) = 2x+2x^2+\frac{5x^3}{3} </me>.
+					</solution>
+				</exercise>
+			</worksheet>
+			<video youtube="zdezhYUt4Bo"/>
+		</section>   	
+
+        		<section xml:id="section5_3">
+            		<title>Section 5.3 - The Fundamental Theorem of Calculus</title>
+                
+            		<video youtube="5v94TydLNjk"/>
+		
+			<worksheet>
+                			<exercise>
+  					Compute
+ 					<me> \int_1^4 3x^2+5 \, dx </me>
+  					using the Fundamental Theorem of Calculus.
+					<solution>
+						<me> \left. \int_1^4 3x^2+5 \, dx = x^3+5x \right\vert_1^4 = (4^3+5(4))-(1^3+5(1))=78</me>
+					</solution>
+				</exercise>
+
+				<exercise>
+  					Compute
+  					<me>\int_{-\pi}^{\pi} 2\sin(x)+3x \, dx </me>
+ 					using the Fundamental Theorem of Calculus.
+					<solution>
+						<me>\left. \int_{-\pi}^{\pi} 2\sin(x)+3x \, dx = -2\cos(x)+\frac{3x^2}{2} \right\vert_{-\pi}^{\pi} </me>
+						<me>= -2\cos(\pi)+\frac{3\pi^2}{2}-(-2\cos(-\pi)+\frac{3(-\pi)^2}{2}) = 0 </me>
+					</solution>
+				</exercise>
+
+				<exercise>
+  					<fn>From exercise 18 in section 5.3</fn>Let <m>F(x) = e^{x^2}</m>. 
+ 					<ol type="a">
+   						<li>Compute <m>F'(x)</m>.</li>
+    						<li>Compute <m>\displaystyle \int_0^1 F'(x) \, dx</m>.</li>
+  					</ol>
+					<solution>
+					<ol type="a">
+   						<li><m>F'(x)=2xe^{x^2}</m>.</li>
+    						<li><me>\int_0^1 F'(x) \, dx = F(1)-F(0) = e^{1^2}-e^{0^2} = e-1 \approx 1.71828</me></li>
+  					</ol>
+					</solution>
+				</exercise>
+			</worksheet>
+			<video youtube="kA17sSJRtf4"/>
+		</section>   			
+	</chapter>
 </book>
 
 </pretext>
