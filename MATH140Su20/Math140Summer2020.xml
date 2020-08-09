@@ -82,7 +82,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                 
                 	<worksheet>
                 		<exercise>
-  				Are the following functions continuous?
+  				<p>Are the following functions continuous?</p>
   				<ol type="a">
     					<li> <me> f(x) = \left\{ \begin{matrix} x &amp; x \leq 1 \\ x^2 &amp; x > 1 \end{matrix} \right. </me></li>
     					<li> <me> g(x) = \left\{ \begin{matrix} \frac x{\left\vert x \right\vert} &amp; x \neq 0 \\ 0 &amp; x = 0 \end{matrix} \right. </me> </li>
@@ -99,8 +99,8 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 			</exercise>
 
 			<exercise>
-  				Find <m>k</m> so that the following function is continuous on any interval:
-  				<me> f(x) = \left \{ \begin{matrix} kx &amp; x \leq 3 \\ 5 &amp; x > 3 \end{matrix} \right. </me>
+  				<p>Find <m>k</m> so that the following function is continuous on any interval:
+  				<me> f(x) = \left \{ \begin{matrix} kx &amp; x \leq 3 \\ 5 &amp; x > 3 \end{matrix} \right. </me></p>
 				<p><interactive desmos=""/></p>		
 				<solution>
 					<p>While I use Desmos for intuition, to find the exact answer we need the left and right sides to meet when <m>x=3</m>. Thus we need <m>k(3)=5</m> and hence <m>k=\frac 53</m>.</p>
@@ -109,7 +109,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 			</exercise>
 
 			<exercise>
-  				Let <me> f(x) = \frac{e^x - 1}{x}. </me> 
+  				<p>Let <me> f(x) = \frac{e^x - 1}{x}. </me> </p>
   
   				<ol type="a">
     					<li> Make a table of values of <m>f(x)</m> for <m>x=0.1,0.01,0.001,0.0001,-0.1,-0.01,-0.001,-0.0001</m>.</li>
@@ -137,16 +137,16 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                 
                 	<worksheet>
                 		<exercise>                        
-				Compute <me>\lim_{x\to \infty} \frac{4x+5}{6x^2+7x+8}</me>
+				<p>Compute <me>\lim_{x\to \infty} \frac{4x+5}{6x^2+7x+8}</me></p>
 				<solution>
-					You can evaluate this graphically, but to me the best tactic is to divide the numerator and denominator by the largest power of <m>x</m>. In this case that is <m>x^2</m>.
+					<p>You can evaluate this graphically, but to me the best tactic is to divide the numerator and denominator by the largest power of <m>x</m>. In this case that is <m>x^2</m>.
 					<me> \lim_{x\to \infty} \frac{4x+5}{6x^2+7x+8} = \lim_{x\to \infty} \frac{\frac4x+\frac5{x^2}}{6+\frac7x+\frac8{x^2}} = 0 </me>
-					Note that everything in the numerator goes to zero, so the fraction as a whole goes to zero (as the denominator is nonzero).
+					Note that everything in the numerator goes to zero, so the fraction as a whole goes to zero (as the denominator is nonzero).</p>
 				</solution>
                 		</exercise>
 			<exercise>
-				Compute the left and right hand limits of the function <m> \frac{\ln(|x|+1)}{x}</m> as <m>x</m> approaches 0 and use these computations to draw a conclusion about 
-				<me>\lim_{x\to 0} \frac{\ln(|x|+1)}{x}</me>
+				<p>Compute the left and right hand limits of the function <m> \frac{\ln(|x|+1)}{x}</m> as <m>x</m> approaches 0 and use these computations to draw a conclusion about 
+				<me>\lim_{x\to 0} \frac{\ln(|x|+1)}{x}</me></p>
 				<solution>
 					<p>From the left, it appears to be approaching -1, whereas from the right, it appears to be approaching 1. Thus, the limit does not exist.</p>
 					<p><interactive desmos="hhdwb6gqmc"/></p>
@@ -163,19 +163,19 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                 
                 	<worksheet>
                 		<exercise>  
-				Compute 
+				<p>Compute 
   				<me>\lim_{x\to 2} \frac{x^2-4}{x-2} </me>
-  				using any technique. Justify your answer.
+  				using any technique. Justify your answer.</p>
 				<solution>
-					While any of the solutions can be used here, the algebraic technique is the best choice.
-					<me>\lim_{x\to 2} \frac{x^2-4}{x-2} = \lim_{x\to 2} \frac{(x-2)(x+2)}{(x-2)} = \lim_{x\to 2} x+2 = 4 </me>
+					<p>While any of the solutions can be used here, the algebraic technique is the best choice.
+					<me>\lim_{x\to 2} \frac{x^2-4}{x-2} = \lim_{x\to 2} \frac{(x-2)(x+2)}{(x-2)} = \lim_{x\to 2} x+2 = 4 </me></p>
 				</solution>
 			</exercise>
 
 			<exercise>
-  				Compute 
+  				<p>Compute 
   				<me>\lim_{x\to 0} \frac{\sin x}{x} </me>
-  				using any technique (making sure that your graphing calculator is in radians). Justify your answer.
+  				using any technique (making sure that your graphing calculator is in radians). Justify your answer.</p>
 				<solution>
 					<p>Here, the algebraic technique cannot be used, so we will use graphical and numerical. From the graph and the table, we see that the limit approaches 1. </p>
 					<p><interactive desmos="9kmp9abyzk"/></p>
@@ -200,33 +200,33 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 		
 			<worksheet>
 				<exercise>
-  					Let <m>s(t)</m> represent the distance in inches that a turtle has traveled in <m>t</m> seconds. The table below indicates the position of the turtle at discrete time intervals.
+  					<p>Let <m>s(t)</m> represent the distance in inches that a turtle has traveled in <m>t</m> seconds. The table below indicates the position of the turtle at discrete time intervals.
   					<me> \begin{array} {| c | c | c | c | c | c | c | c |}
     					\hline t \text{(in seconds)}&amp; 0 &amp; 0.5 &amp; 1 &amp; 1.5 &amp; 2 &amp; 2.5 &amp; 3 \\
    					\hline s(t) \text{(in inches)}&amp; 1.2 &amp; 1.5 &amp; 1.7 &amp; 2.0 &amp; 2.3 &amp; 2.4 &amp; 2.7 \\
    	 				\hline
   					\end{array} </me>
-  					Approximate the instantaneous velocity of the turtle at time <m>t=2</m>.
+  					Approximate the instantaneous velocity of the turtle at time <m>t=2</m>.</p>
 					<solution>
-						We have three approaches to this, Left, right and average.
+						<p>We have three approaches to this, Left, right and average.
 						<me>\text{(Left) } \frac{f(2)-f(1.5)}{2-1.5} = \frac{2.3-2.0}{.5)= 0.6 \text{ in/sec}</me>
 						<me>\text{(Right) } \frac{f(2.5)-f(2)}{2.5-2} = \frac{2.4-2.3}{.5)= 0.2 \text{ in/sec}</me>
-						<me>\text{(Average) } \frac{.6+.2}{2} = 0.4 \text{ in/sec}</me>
+						<me>\text{(Average) } \frac{.6+.2}{2} = 0.4 \text{ in/sec}</me></p>
 					</solution>
 				</exercise>
 
 				<exercise>
-  					The following graph is the graph of the position function of a particle traveling in a straight line. 
+  					<p>The following graph is the graph of the position function of a particle traveling in a straight line.
  					<image source="images/Math140S13wksht5g1.jpg" />
 
-  					When is the velocity of the particle positive, and when is it negative?
+  					When is the velocity of the particle positive, and when is it negative?</p>
 					<solution>
-						The velocity of the particle is positive when the function is increasing, so <m> 0 &lt; t &lt; .75 </m> and <m> t > 2.25</m>. The velocity of the particle is negative when the function is decreasing, so <m>.75 &lt; t &lt; 2.25</m>.
+						<p>The velocity of the particle is positive when the function is increasing, so <m> 0 &lt; t &lt; .75 </m> and <m> t > 2.25</m>. The velocity of the particle is negative when the function is decreasing, so <m>.75 &lt; t &lt; 2.25</m>.</p>
 					</solution>
 				</exercise>
 
 				<exercise>
-  					Compute the derivative at a point <m>f'(1)</m> of <m>f(x)=-3x^2+7x-2</m> using the limit definition of the derivative.
+  					<p>Compute the derivative at a point <m>f'(1)</m> of <m>f(x)=-3x^2+7x-2</m> using the limit definition of the derivative.</p>
 					<solution>
 						<me> f'(1) = \lim_{h\to 0} \frac{f(1+h)-f(1)}{h} </me>
 						<me> = \lim_{h\to 0} \frac{-3(1+h)^2+7(1+h)-2-(2)}{h}</me>
@@ -246,15 +246,15 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                 		<video youtube="msvxJte7V4Y"/>
 			<worksheet>
 				<exercise>
-					The function <m>f(x)</m> is represented by the graph below. Sketch a graph of <m>f'(x)</m> on the axes below. 
- 					<image source="images/Math140WkshtDerivative2G1.png" />
+					<p>The function <m>f(x)</m> is represented by the graph below. Sketch a graph of <m>f'(x)</m> on the axes below. 
+ 					<image source="images/Math140WkshtDerivative2G1.png" /></p>
 					<solution>
 					 	<image source="images/Math140WkshtDerivative2G2.JPG" />
 					</solution>
 				</exercise>
 
 				<exercise>
-  					If <m>f(x) = x^2 - 4x+5</m>, compute <m>f'(x)</m> using the limit definition of the derivative.
+  					<p>If <m>f(x) = x^2 - 4x+5</m>, compute <m>f'(x)</m> using the limit definition of the derivative.</p>
 					<solution>
 						Using the limit definition we get
 						<md>
@@ -278,7 +278,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                 		<video youtube="bonR2NTmEeI"/>
 			<worksheet>
 				<exercise>
-  					On a hot summer day, Bob takes a carton of ice cream out of a 10<m>^\circ</m>F freezer and forgets about it. Suppose room temperature is <m>75^\circ</m>F.
+  					<p>On a hot summer day, Bob takes a carton of ice cream out of a 10<m>^\circ</m>F freezer and forgets about it. Suppose room temperature is <m>75^\circ</m>F.</p>
   					<ol type="a">
     						<li><p>Sketch a graph of temperature <m>f(t)</m> of the ice cream as a function of time, where <m>t</m> is time in hours.</p>
  						<p><image source="images/Math140WkshtInterpretingDerivativesG1.png" /></p>
@@ -306,14 +306,14 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                 		<video youtube="4aLT6XeV9Gc"/>
 			<worksheet>
 				<exercise>
- 	 				The table below gives the position <m>s</m> in feet of my car <m>t</m> seconds after I start merging onto the interstate.
+ 	 				<p>The table below gives the position <m>s</m> in feet of my car <m>t</m> seconds after I start merging onto the interstate.
   					<me> 
 						\begin{array}{| l | l | l | l | l | l | l |}
   						\hline \text{Time } (t) &amp; 0 &amp; 2 &amp; 4 &amp; 6 &amp; 8 &amp; 10\\
   						\hline \text{Position} (s) &amp; 0 &amp; 20 &amp; 52 &amp; 90 &amp; 132 &amp; 200 \\
   						\hline
   						\end{array} 
-					</me>
+					</me></p>
   
 					<ol type="a">
     						<li>Estimate <m>\displaystyle \frac{ds}{dt}</m> for the time intervals below
@@ -344,10 +344,10 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 				</exercise>
 
 				<exercise>
-  					Compute the second derivative of 
-  					<me>f(x) = 3x^2+7x+1 . </me>
+  					<p>Compute the second derivative of 
+  					<me>f(x) = 3x^2+7x+1 . </me></p>
 					<solution>
-						Using the limit of the difference quotient, we get
+						<p>Using the limit of the difference quotient, we get
 						<md>
 							<mrow> f'(x)  \amp = \lim_{h\to 0} \frac{f(x+h)-f(x)}{h} </mrow>
 							<mrow> \amp = \lim_{h\to 0} \frac{3x^2+6xh+3h^2+7x+7h+1 - (3x^2+7x+1)}{h} </mrow>
@@ -355,7 +355,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 							<mrow> \amp = \lim_{h\to 0} 6x+3h+7</mrow>
 							<mrow> \amp = 6x+7</mrow>
 						</md>
-						To compute the second derivative, we take the derivative of <m>f'(x)</m> as above. Since it is linear, the derivative is the slope which is 6 in this case.
+						To compute the second derivative, we take the derivative of <m>f'(x)</m> as above. Since it is linear, the derivative is the slope which is 6 in this case.</p>
 					</solution>
 				</exercise>
 		
@@ -393,7 +393,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 		
 			<worksheet>
 				<exercise>
-  					Compute the derivatives of the following functions
+  					<p>Compute the derivatives of the following functions</p>
 					<ol type="a">
     						<li><m>f(t) = 3t^2-4t+1</m></li>
     						<li><m>g(x) = 17x^{3/2} - 5x^{1/2}</m></li>
@@ -410,14 +410,14 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 					</solution>
 				</exercise>
   				<exercise>
-					A raindrop falls from a cloud with height (in meters) given as a function of time by 
+					<p>A raindrop falls from a cloud with height (in meters) given as a function of time by 
 					<me>h=1000-4.9t^2.</me> 
-					Find the velocity and acceleration at time <m>t</m>.
+					Find the velocity and acceleration at time <m>t</m>.</p>
 					<solution>
-						The velocity is the derivative 
+						<p>The velocity is the derivative 
 						<me> \frac{dh}{dt} = -9.8 t \text{ m}/\text{sec}</me>
 						and the acceleration is the second derivative
-						<me> \frac{d^2h}{dt^2} = -9.8 \text{ m}/\text{sec}^2</me>
+						<me> \frac{d^2h}{dt^2} = -9.8 \text{ m}/\text{sec}^2</me></p>
 					</solution>
 				</exercise>
 			</worksheet>
@@ -431,7 +431,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 		
 			<worksheet>
 				<exercise>
-  					Compute the derivatives of the following functions
+  					<p>Compute the derivatives of the following functions</p>
   					<ol type="a">
    						<li><m>f(t) = 5\cdot 2^t</m></li>
     						<li><m>g(x) = e^{3x}</m></li>
@@ -443,7 +443,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
    						<li><m>f'(t) = 5\cdot 2^t \ln(2)</m></li>
     						<li><m>g'(x) = e^{3x}\cdot 3</m></li>
   						<li><m>h'(t) = e^{t+3}</m></li>
-						<li><m>k'(x) = 0+\pi^x\ln(\pi)+\pix^{\pi-1}</m></li>
+						<li><m>k'(x) = 0+\pi^x\ln(\pi)+\pi x^{\pi-1}</m></li>
   					</ol>
 					</solution>
 				</exercise>
@@ -457,7 +457,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 		
 			<worksheet>
 				<exercise>
-  					Compute the derivatives of the following functions:
+  					<p>Compute the derivatives of the following functions:</p>
   					<ol type="a">
    						<li><m>f(x) = x^3 3^x</m></li>
 						<li><m>g(x) = \frac{x^2 + e^x}{x^3}</m></li>
@@ -483,7 +483,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 		
 			<worksheet>
 				<exercise>
-					Compute the derivatives of the following functions using the chain rule:
+					<p>Compute the derivatives of the following functions using the chain rule:</p>
   					<ol type="a">
     						<li><m>k(x) = e^{x+1}</m></li>
     						<li><m>f(x) = \sqrt{e^x +1}</m></li>
@@ -515,22 +515,22 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 		
 			<worksheet>
                 <exercise>
-                    So we know that
+                    <p>So we know that
                     <me> \frac{d}{dx} ( \sin x ) = \cos x \hspace{.2in} \text{ and } \hspace{.2in} \frac{d}{dx} (\cos x) = - \sin x </me>
                     and we know that
                     <me>\tan x = \frac{\sin x}{\cos x} . </me>
-                    Compute the derivative of <m>\tan x</m>.
+                    Compute the derivative of <m>\tan x</m>.</p>
                     <solution>
-                        Using the quotient rule, we get
+                        <p>Using the quotient rule, we get
                         <me> \frac{d}{dx}\left( \tan x \right) = \frac{d}{dx}\left( \frac{\sin x}{\cos x} \right) = \frac{\cos(x)\cos(x)-\sin(x)(-\sin(x))}{(\cos(x))^2}</me>
                         <me> = \frac{(\cos(x))^2+(\sin(x))^2}{(\cos(x))^2} = \frac{1}{(\cos(x))^2} </me>
-                        The last equality comes from the Pythagorean Identity.
+                        The last equality comes from the Pythagorean Identity.</p>
                     </solution>
                 </exercise>
 
                 <exercise>
-                    <fn>From problem 62 in section 3.5</fn> The voltage, <m>V</m>, in volts, in an electrical outlet is given as a function of time, <m>t</m>, in second by the function
-                    <me>V = 156 \cos(120 \pi t) </me>
+                    <p><fn>From problem 62 in section 3.5</fn> The voltage, <m>V</m>, in volts, in an electrical outlet is given as a function of time, <m>t</m>, in second by the function
+                    <me>V = 156 \cos(120 \pi t) </me></p>
                     <ol type="a">
                         <li>Give an expression for the rate of change of voltage with respect to time.</li>
                         <li>What is the maximum rate of change?</li>
@@ -544,7 +544,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                 </exercise>
                 
                 <exercise>
-                    Compute the following derivatives:
+                    <p>Compute the following derivatives:</p>
                     <ol type="a">
                         <li><m>\displaystyle \frac{d}{dx} (\sin(x^2))</m></li>
                         <li><m>\displaystyle\frac{d}{dx} \left( \frac{3\cos(x)}{x^2-7}\right)</m></li>
@@ -571,7 +571,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
     
             <worksheet>
                 <exercise>
-                    Compute the derivative of the following functions:
+                    <p>Compute the derivative of the following functions:</p>
                     <ol type="a">
                         <li><m>f(x) = \ln(2^x+x^2)</m></li>
                         <li><m>g(t) = \sqrt{\arcsin(t)}</m></li>
@@ -598,21 +598,21 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
             
             <worksheet>
                 <exercise>
-                    Compute <m>\frac{dy}{dx}</m> if <m>\ln x + \ln (y^2) = 3</m>.
+                    <p>Compute <m>\frac{dy}{dx}</m> if <m>\ln x + \ln (y^2) = 3</m>.</p>
                     <solution>
-                    Taking the derivative of both sides of the equation we get
+                    <p>Taking the derivative of both sides of the equation we get
                     <me> \frac 1x + \frac{1}{y^2}\cdot 2y \cdot \frac{dy}{dx} = 0 </me>
                     Solving for <m>\frac{dy}{dx}</m> we get
-                    <me> \frac{dy}{dx} = \frac{-y}{2x} </me>
+                    <me> \frac{dy}{dx} = \frac{-y}{2x} </me></p>
                     </solution>
                 </exercise>
 
                 <exercise>
-                    Find the equation of the tangent line to
+                    <p>Find the equation of the tangent line to
                     <me> y^2 = \frac{x^2}{xy-4} </me>
-                    at the point <m>(4,2)</m>.
+                    at the point <m>(4,2)</m>.</p>
                     <solution>
-                        There are several approaches here, but let's start with some algebra so that we can get rid of the fraction.
+                        <p>There are several approaches here, but let's start with some algebra so that we can get rid of the fraction.
                         <me> y^2(xy-4) = x^2 </me>
                         <me> xy^3-4y^2 = x^2 </me>
                         Taking the derivative of both sides we get
@@ -622,22 +622,22 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                         <me> \frac{dy}{dx} = \frac{2x-y^3}{3xy^2-8y} </me>
                         We want to compute the tangent line at <m>(4,2)</m>, so we plug in 4 for <m>x</m> and 2 for <m>y</m>.
                         <me> \left. \frac{dy}{dx} \right\vert_{(4,2)} = \frac{2(4)-2^3}{3(4)(2^2)-8(2)} = 0 </me>
-                        Since the slope is zero, the tangent line is <m>y=2</m> as that is the <m>y</m>-coordinate of the point.
+                        Since the slope is zero, the tangent line is <m>y=2</m> as that is the <m>y</m>-coordinate of the point.</p>
                     </solution>
                 </exercise>
 
                 <exercise>
-                    Find the slope of the tangent to the curve
+                    <p>Find the slope of the tangent to the curve
                     <me> \sin (xy) = x </me>
-                    at the point <m>(1, \pi/2)</m>. (Hint: Look at the graph to explain the answer.)
+                    at the point <m>(1, \pi/2)</m>. (Hint: Look at the graph to explain the answer.)</p>
                     <solution>
-                        First we take the derivative of both sides
+                        <p>First we take the derivative of both sides
                         <me> \cos(xy)\cdot \left( x \frac{dy}{dx}+y\right) = 1 </me>
                         Using algebra to solve for <m>\frac{dy}{dx}</m> we get
                         <me> \frac{dy}{dx} =\frac{\frac{1}{\cos(xy)}-y}{x} </me>
                         Plugging in the point, we get
                         <me> \left. \frac{dy}{dx} \right\vert_{(1,\pi/2)} = \text{ undefined} </me>
-                        Looking at the graph you find that the slope is vertical at this point explaining the undefined slope.
+                        Looking at the graph you find that the slope is vertical at this point explaining the undefined slope.</p>
                     </solution>
                 </exercise>
             </worksheet>
@@ -651,22 +651,22 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
         
             <worksheet>
                 <exercise>
-                    Use the tangent line approximation of <m>f(x)=\ln(x)</m> at <m>x=1</m> to approximate the value <m>\ln(1.1)</m>.
+                    <p>Use the tangent line approximation of <m>f(x)=\ln(x)</m> at <m>x=1</m> to approximate the value <m>\ln(1.1)</m>.</p>
                     <solution>
-                        Using tangent line approximation at <m>x=1</m> we see that <m>f(1)=\ln(1)=0</m>, <m>f'(x) = \frac 1x</m>, and <m>f'(1) = \frac 11 = 1</m>, so the tangent line is
+                        <p>Using tangent line approximation at <m>x=1</m> we see that <m>f(1)=\ln(1)=0</m>, <m>f'(x) = \frac 1x</m>, and <m>f'(1) = \frac 11 = 1</m>, so the tangent line is
                         <me> y = f(1)+f'(1)(x-1) = 0 + 1(x-1) = x-1 </me>
                         Using tangent line approximation we see that
-                        <me> \ln(1.1) = f(1.1) \approx 1.1-1 = 0.1 </me>
+                        <me> \ln(1.1) = f(1.1) \approx 1.1-1 = 0.1 </me></p>
                     </solution>
                 </exercise>
 
                 <exercise>
-                    Let <m>f(A)</m> represent the price of building a house of area <m>A</m> ft<m>^2</m> in Bob the Builder's subdivision. To buy a 2100 ft<m>^2</m> house it costs $200,000. If <m>f'(2100)=90</m>, estimate the cost of a 2150 ft<m>^2</m> house using tangent line approximation.
+                    <p>Let <m>f(A)</m> represent the price of building a house of area <m>A</m> ft<m>^2</m> in Bob the Builder's subdivision. To buy a 2100 ft<m>^2</m> house it costs $200,000. If <m>f'(2100)=90</m>, estimate the cost of a 2150 ft<m>^2</m> house using tangent line approximation.</p>
                     <solution>
-                        Using tangent line approximation we get
+                        <p>Using tangent line approximation we get
                         <me> f(A)\approx f(2100)+f'(2100)(A-2100) = 200000+90(A-2100)</me>
                         <me> f(2150)\approx 200000+90(2150-2100) = 204500</me>.
-                        The bigger house should cost approximately $204,500.
+                        The bigger house should cost approximately $204,500.</p>
                     </solution>
                 </exercise>
             </worksheet>
@@ -684,34 +684,34 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 		
 			<worksheet>
                 			<exercise>
-   					  Let <m>\displaystyle f(x) = \frac{5x}{x^2+4}</m>. 
+   					  <p>Let <m>\displaystyle f(x) = \frac{5x}{x^2+4}</m>. </p>
   						<ol type="a">
     							<li>Identify the critical points of <m>f</m>.</li>
     							<li>Find all maxima and minima of <m>f</m> using the first derivative test.</li>
   						</ol>
 						<solution>
-						First, we find the critical points
+						<p>First, we find the critical points
 						<me>f'(x) = \frac{(x^2+4)(5)-(5x)(2x)}{(x^2+4)^2} = \frac{-5x^2+20}{(x^2+4)^2} = \frac{(-5)(x-2)(x+2)}{(x^2+4)^2} </me>
 						The critical points are at <m>x=-2</m> and <m>x=2</m>. If we look at values a little to the left and right of these critical points we will be able to use the first derivative test.
 						<me>f'(-4) = \frac{-60}{400}\quad f'(0)=\frac{20}{16} \quad f'(4) = \frac{-60}{400} </me>
-						Since the derivative changes from negative to positive at <m>x=-2</m>, there is a local minimum there. Since the derivative changes from positive to negative at <m>x=2</m>, there is a local maximum there.
+						Since the derivative changes from negative to positive at <m>x=-2</m>, there is a local minimum there. Since the derivative changes from positive to negative at <m>x=2</m>, there is a local maximum there.</p>
 						</solution>
 				</exercise>
 
 				<exercise>
-  					Let <m>g(x) = x^3 - 12x + 7</m>. 
+  					<p>Let <m>g(x) = x^3 - 12x + 7</m>. </p>
 					<ol type="a">
     						<li>Identify the critical points of <m>g</m>.</li>
    						<li>Find all maxima and minima of <m>g</m> using the second derivative test.</li>
 					</ol>
 					<solution>
-						To identify the critical points we take the derivative of <m>g</m>
+						<p>To identify the critical points we take the derivative of <m>g</m>
 						<me> g'(x) = 3x^2-12 = 3(x^2-4)=3(x-2)(x+2)</me>
 						The derivative is zero at <m>x=-2</m> and <m>x=2</m>. To use the second derivative test we take the second derivative.
 						<me>g''(x) = 6x</me>
 						We then plug in our critical points 
 						<me>g''(-2)=-12\quad g''(2)=12</me>
-						and see there is a local max at <m>x=-2</m> and a local min at <m>x=2</m>.
+						and see there is a local max at <m>x=-2</m> and a local min at <m>x=2</m>.</p>
 					</solution>
                 			</exercise>
 			</worksheet>
@@ -726,13 +726,13 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 		
 			<worksheet>
                 			<exercise>
-					<fn>adapted from section 4.3</fn>A new game is in the process of being invented, and the inventor requests your help in choosing the dimensions of the court it is played on. The court should be rectangular with area <m>1000\mathrm{ft}^2</m>. There are also <m>8\mathrm{ft}</m> ``out of bounds" zones on the left and right sides, and <m>5\mathrm{ft}</m> ``out of bounds" zones at the top and bottom. Find the dimensions of the smallest area that this court with out of bounds zones could occupy.
+					<p><fn>adapted from section 4.3</fn>A new game is in the process of being invented, and the inventor requests your help in choosing the dimensions of the court it is played on. The court should be rectangular with area <m>1000\mathrm{ft}^2</m>. There are also <m>8\mathrm{ft}</m> "out of bounds" zones on the left and right sides, and <m>5\mathrm{ft}</m> "out of bounds" zones at the top and bottom. Find the dimensions of the smallest area that this court with out of bounds zones could occupy.</p>
   					<image source="images/court.jpg" />
 				</exercise>
 				<exercise>
-					<fn>Similar to #15 in Section 4.3</fn>
+					<p><fn>Similar to #15 in Section 4.3</fn>
 					<image source="images/Math140S16Exam3adG1crop.png"/>
-    					The rectangle pictured to the left has one vertex on the graph of the curve <m>y=e^{-x}</m>, one edge along the <m>x</m>-axis, and another edge along the <m>y</m>-axis. Find the value of <m>x</m> that maximizes the area of the rectangle. 
+    					The rectangle pictured to the left has one vertex on the graph of the curve <m>y=e^{-x}</m>, one edge along the <m>x</m>-axis, and another edge along the <m>y</m>-axis. Find the value of <m>x</m> that maximizes the area of the rectangle. </p>
                 			</exercise>
 			</worksheet>
 			<video youtube="fsFP_nE88k4"/>
@@ -748,14 +748,14 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 		
 			<worksheet>
                 			<exercise>
-			 		Let <m>s(t)</m> represent the speed of a runner (in feet per second) at time <m>t</m> seconds after the start of a race. 
+			 		<p>Let <m>s(t)</m> represent the speed of a runner (in feet per second) at time <m>t</m> seconds after the start of a race. 
   					<me> 
 						\begin{array} {| c | c | c | c | c | c | c |}
     						\hline t \amp 0 \amp 3 \amp 6 \amp 9 \amp 12 \amp 15 \\
     						\hline s(t) \amp 0 \amp 12 \amp 16.1 \amp 18.2 \amp 19 \amp 19.6 \\
     						\hline
   						\end{array}
-					</me>
+					</me></p>
   					<ol type="a">    
    						<li>Approximate <m>\displaystyle{\int_0^{15} s(t) \,dt}</m> using left and right hand sums with <m>n=5</m>.</li>
     						<li>What could we do to more accurately approximate <m>\displaystyle{\int_0^{15} s(t) \, dt}</m>?</li>
@@ -782,10 +782,10 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 		
 			<worksheet>
                 			<exercise>
- 	 				Approximate <m>\displaystyle \int_0^{\pi/2} \sin(x) \, dx</m> using <m>n=2</m> subintervals. 
-  					(That is, we cut the interval from <m>0</m> to <m>\pi/2</m> into 2 pieces).
+ 	 				<p>Approximate <m>\displaystyle \int_0^{\pi/2} \sin(x) \, dx</m> using <m>n=2</m> subintervals. 
+  					(That is, we cut the interval from <m>0</m> to <m>\pi/2</m> into 2 pieces).</p>
 					<solution>
-						<me> 
+						<p><me> 
 							\begin{matrix} 
 							x \amp 0 \amp \frac{\pi}{4} \amp \frac{\pi}{2} \\
 							\sin(x) \amp 0 \amp \frac{\sqrt 2}{2} \amp 1 \\
@@ -795,11 +795,11 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 						<me> \text{LHS} = \frac{\pi}{4}\left( 0 + \frac {\sqrt 2} {2} \right) \approx 0.555</me>
 						<me> \text{RHS} = \frac{\pi}{4}\left( \frac {\sqrt 2} {2} +1 \right) \approx 1.341</me>
 						<me> \text{Average} = .948 </me>
-						The real value is 1 which is pretty close to the average.
+						The real value is 1 which is pretty close to the average.</p>
 					</solution>
 				</exercise>
 				<exercise>
-  					The graph of <m>f(x)</m> is given below.
+  					<p>The graph of <m>f(x)</m> is given below.</p>
  					<image source="images/Math140S14Wksht19G1.jpg"/>
   					<ol type="a">
    						<li>Compute <m>\displaystyle \int_1^3 f(x)\, dx</m>.</li>
@@ -827,7 +827,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 		
 			<worksheet>
                 			<exercise>
-  					Find all antiderivatives for the following functions:
+  					<p>Find all antiderivatives for the following functions:</p>
   					<ol type="a">
     						<li><m>f(x)=x^2</m></li>
     						<li><m>g(t)=\sin(t)</m></li>
@@ -847,12 +847,12 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 					</solution>
 				</exercise>
 				<exercise>
-  					Find the antiderivative <m>F</m> of <m>f(x)=2+4x+5x^2</m> such that <m>F(0)=0</m>. 
+  					<p>Find the antiderivative <m>F</m> of <m>f(x)=2+4x+5x^2</m> such that <m>F(0)=0</m>. </p>
 					<solution>
-						The general antiderivative looks like 
+						<p>The general antiderivative looks like 
 						<me> F(x) = 2x+2x^2+\frac{5x^3}{3}+C </me>
 						and we want to find the one with <m>F(0)=0</m>. Note that plugging 0 into the above formula yields <m>F(0)=C</m>, hence we need <m>C=0</m>. Our final answer is
-						<me> F(x) = 2x+2x^2+\frac{5x^3}{3} </me>.
+						<me> F(x) = 2x+2x^2+\frac{5x^3}{3} </me>.</p>
 					</solution>
 				</exercise>
 			</worksheet>
@@ -866,18 +866,18 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 		
 			<worksheet>
                 			<exercise>
-  					Compute
+  					<p>Compute
  					<me> \int_1^4 3x^2+5 \, dx </me>
-  					using the Fundamental Theorem of Calculus.
+  					using the Fundamental Theorem of Calculus.</p>
 					<solution>
 						<me> \left. \int_1^4 3x^2+5 \, dx = x^3+5x \right\vert_1^4 = (4^3+5(4))-(1^3+5(1))=78</me>
 					</solution>
 				</exercise>
 
 				<exercise>
-  					Compute
+  					<p>Compute
   					<me>\int_{-\pi}^{\pi} 2\sin(x)+3x \, dx </me>
- 					using the Fundamental Theorem of Calculus.
+ 					using the Fundamental Theorem of Calculus.</p>
 					<solution>
 						<me>\left. \int_{-\pi}^{\pi} 2\sin(x)+3x \, dx = -2\cos(x)+\frac{3x^2}{2} \right\vert_{-\pi}^{\pi} </me>
 						<me>= -2\cos(\pi)+\frac{3\pi^2}{2}-(-2\cos(-\pi)+\frac{3(-\pi)^2}{2}) = 0 </me>
@@ -885,7 +885,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 				</exercise>
 
 				<exercise>
-  					<fn>From exercise 18 in section 5.3</fn>Let <m>F(x) = e^{x^2}</m>. 
+  					<p><fn>From exercise 18 in section 5.3</fn>Let <m>F(x) = e^{x^2}</m>. </p>
  					<ol type="a">
    						<li>Compute <m>F'(x)</m>.</li>
     						<li>Compute <m>\displaystyle \int_0^1 F'(x) \, dx</m>.</li>
@@ -900,6 +900,81 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 			</worksheet>
 			<video youtube="kA17sSJRtf4"/>
 		</section>   			
+	</chapter>
+	
+	<chapter xml:id="week7">
+        		<title>Week 7 - Odds &amp; Ends</title>
+        		<section xml:id="section6_3">
+            		<title>Section 6.3 - Antiderivatives &amp; Motion</title>
+                
+            		<video youtube="7QXYcYwe8vc"/>
+		
+			<worksheet>
+                			<exercise>
+			  		<p>Find the solution of the initial value problem</p>
+  					<me>\frac{dy}{dx} = 2x+\frac{1}{x}, \hspace{.2in} y(1) = 7 .</me>
+					<solution>
+						<p>The general antiderivative is </p>
+						<me> y = x^2+\ln(|x|)+C </me>
+						<p> Since <m>y(1)=7</m></p>
+						<me> 7 = 1^2+\ln(1)+C \Rightarrow C=6 </me>
+						<p> Our final answer is thus <m> y = x^2+\ln(|x|)+6</m>.</p>
+					</solution>
+				</exercise>
+
+				<exercise>
+  					<p>A rock is thrown straight up from a 45 foot bridge at a velocity of 64 ft/sec.</p>
+ 					<ol type="a">
+   						<li>Give formulas for acceleration, velocity, and height of the rock at time <m>t</m>. </li>
+    						<li>When does the rock reach its maximum height?</li>
+    						<li>How high does the rock fly?</li>
+					</ol>
+					<solution>
+					<ol type="a">
+   						<li><me>a(t) = -32</me>
+						<me>v(t) = -32t+64</me>
+						<me>h(t) = -16t^2+64t+45</me></li>
+    						<li><p>Setting the derivative (velocity) to zero we get </p>
+						<me> 0 = -32t+64 \Rightarrow t=2 </me>
+						<p>We know it is a maximum by the second derivative test as <m>a(2)=-32</m>.</p></li>
+    						<li>Plugging the time <m>t=2</m> back into the height function we get
+						<me> h(2) = -16(2)^2+64(2)+45 = 109\text{ feet}</me></li>
+					</ol>
+					</solution>
+				</exercise>
+			</worksheet>
+			<video youtube="nFqzXxhn57o"/>
+		</section>
+        		<section xml:id="section4_6">
+            		<title>Section 4.6 - Related Rates</title>
+                
+            		<video youtube="aUCCSbAFvhg"/>
+		
+			<worksheet>
+                			<exercise>
+			  		<p><fn>Exercise 12 from Section 4.6</fn>A voltage <m>V</m> across a resistance <m>R</m> generates a current </p>
+  					<me>I = \frac VR . </me>
+  					<p>If a constant voltage of $9$ volts is put across a resistance that is increasing at a rate of 0.2 <m>\Omega</m>/sec when the resistance is 5 <m>\Omega</m>, at what rate is the current changing?</p>
+					<solution>
+						<p>First we note that <m>V=9</m> is a constant value so we should go ahead and include it in the formula
+						<me> I = \frac 9R = 9R^{-1} </me>
+						Next, we take the derivative of both sides and get
+						<me> \frac{dI}{dt} = 9(-1)R^{-2}\frac{dR}{dt} </me>
+						Plugging in 5 for <m>R</m> and 0.2 for <m>\frac{dR}{dt}</m> we get 
+						<me> \frac{dI}{dt} = 9(-1)5^{-2}(0.2) = 0.72 \text{ amps/sec}</me></p>
+					</solution>
+				</exercise>
+
+				<exercise>
+  					<p>A rectangle has one side of 10 cm. How fast is the area of the rectangle changing at the instant when the other side is 12 cm and increasing at 3 cm per minute?</p>
+					<solution>
+						<p>Let <m>x</m> be the side length that is changing. We use the area formula to relate the quantities. <m>A=10x</m>. Taking the derivative we get 
+						<me> \frac{dA}{dt} = 10 \frac{dx}{dt} = 10(3) = 30 \text{ cm}^2\text{/min}</me></p>
+					</solution>
+				</exercise>
+			</worksheet>
+			<video youtube="ehJpn5_jTU4"/>
+		</section>
 	</chapter>
 </book>
 
