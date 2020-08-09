@@ -27,7 +27,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 <!--     xelatex minimal.tex                                                                      -->
 <!--                                                                                              -->
 <!-- (2) HTML:                                                                                    -->
-<!--     xsltproc ~/mathbook/xsl/mathbook-html.xsl Math140Summer2020.xml                                      -->
+<!--     xsltproc ~/mathbook/xsl/pretext-html.xsl Math140Summer2020.xml                                     -->
 <!--     <browser>  minimal.html                                                                  -->
 <!--                                                                                              -->
 <!-- (3) CoCalc worksheet (parameter causes a single file for output)                             -->
@@ -209,8 +209,8 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
   					Approximate the instantaneous velocity of the turtle at time <m>t=2</m>.</p>
 					<solution>
 						<p>We have three approaches to this, Left, right and average.
-						<me>\text{(Left) } \frac{f(2)-f(1.5)}{2-1.5} = \frac{2.3-2.0}{.5)= 0.6 \text{ in/sec}</me>
-						<me>\text{(Right) } \frac{f(2.5)-f(2)}{2.5-2} = \frac{2.4-2.3}{.5)= 0.2 \text{ in/sec}</me>
+						<me>\text{(Left) } \frac{f(2)-f(1.5)}{2-1.5} = \frac{2.3-2.0}{.5} = 0.6 \text{ in/sec}</me>
+						<me>\text{(Right) } \frac{f(2.5)-f(2)}{2.5-2} = \frac{2.4-2.3}{.5} = 0.2 \text{ in/sec}</me>
 						<me>\text{(Average) } \frac{.6+.2}{2} = 0.4 \text{ in/sec}</me></p>
 					</solution>
 				</exercise>
