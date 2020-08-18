@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2020-08-18T15:37:41-04:00       *-->
+<!--*   A recent stable commit (2020-07-07):   *-->
+<!--* 1771dacf84bfb1789139598d8379414b560b8f17 *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Week 11 - Trigonometry and Periodic Functions</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", "AMScd.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" class="hidden-content" style="display:none">\(\newcommand{\doubler}[1]{2#1}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="Math110Fall2020.html"><span class="title">MATH 110 Fall 2020</span></a></h1>
+<p class="byline">Daniel Moseley</p>
+</div>
+</div></div>
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section5_3.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="Math110Fall2020.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="section7_1.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section5_3.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="Math110Fall2020.html" title="Up">Up</a><a class="next-button button toolbar-item" href="section7_1.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter"><a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a></li>
+<li class="link">
+<a href="week1.html" data-scroll="week1"><span class="codenumber">1</span> <span class="title">Week 1 - Functions &amp; Change</span></a><ul>
+<li><a href="section1_1.html" data-scroll="section1_1">Functions and Function Notation</a></li>
+<li><a href="section1_2.html" data-scroll="section1_2">Rate of Change</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="week2.html" data-scroll="week2"><span class="codenumber">2</span> <span class="title">Week 2 - Linear Functions</span></a><ul>
+<li><a href="section1_3.html" data-scroll="section1_3">Linear Functions</a></li>
+<li><a href="section1_4.html" data-scroll="section1_4">Formulas for Linear Functions</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="week3.html" data-scroll="week3"><span class="codenumber">3</span> <span class="title">Week 3 - Linear Models</span></a><ul>
+<li><a href="section1_5.html" data-scroll="section1_5">Modeling With Linear Functions</a></li>
+<li><a href="section1_6.html" data-scroll="section1_6">Fitting Linear Functions to Data</a></li>
+<li><a href="project1.html" data-scroll="project1">Project #1: Linear Regression</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="week4.html" data-scroll="week4"><span class="codenumber">4</span> <span class="title">Week 4 - Domain &amp; Range</span></a><ul>
+<li><a href="section2_1.html" data-scroll="section2_1">Input and Output</a></li>
+<li><a href="section2_2.html" data-scroll="section2_2">Domain and Range</a></li>
+<li><a href="section-10.html" data-scroll="section-10">Preview of Transformations: Shifts</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="week5.html" data-scroll="week5"><span class="codenumber">5</span> <span class="title">Week 5 - Composition and Inverse</span></a><ul><li><a href="section2_5.html" data-scroll="section2_5">Preview of Composite and Inverse Functions</a></li></ul>
+</li>
+<li class="link">
+<a href="week6.html" data-scroll="week6"><span class="codenumber">6</span> <span class="title">Week 6 - Exponential Functions</span></a><ul>
+<li><a href="section4_1.html" data-scroll="section4_1">Exponential Functions #1</a></li>
+<li><a href="section4_2.html" data-scroll="section4_2">Exponential Functions #2</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="week7.html" data-scroll="week7"><span class="codenumber">7</span> <span class="title">Week 7 - Applications of Exponential Functions</span></a><ul>
+<li><a href="section4_3.html" data-scroll="section4_3">Exponential Functions #3</a></li>
+<li><a href="section4_4.html" data-scroll="section4_4">Applications to Compound Interest</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="week8.html" data-scroll="week8"><span class="codenumber">8</span> <span class="title">Week 8 - e and Logarithms</span></a><ul>
+<li><a href="section4_5.html" data-scroll="section4_5">The Number \(e\)</a></li>
+<li><a href="section5_1.html" data-scroll="section5_1">Logarithms and Their Properties</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="week9.html" data-scroll="week9"><span class="codenumber">9</span> <span class="title">Week 9 - Logarithms Continued</span></a><ul>
+<li><a href="section5_2.html" data-scroll="section5_2">Logarithms and Exponential Models</a></li>
+<li><a href="section5_3.html" data-scroll="section5_3">Finishing Up Exponential Functions</a></li>
+</ul>
+</li>
+<li class="link active">
+<a href="week10.html" data-scroll="week10"><span class="codenumber">10</span> <span class="title">Week 11 - Trigonometry and Periodic Functions</span></a><ul>
+<li><a href="section7_1.html" data-scroll="section7_1">Introduction to Periodic Functions</a></li>
+<li><a href="section7_2.html" data-scroll="section7_2">The Sine and Cosine Functions</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="week12.html" data-scroll="week12"><span class="codenumber">11</span> <span class="title">Week 12 - Trigonometric Functions Continued</span></a><ul>
+<li><a href="section7_3.html" data-scroll="section7_3">Radians and Arc Length</a></li>
+<li><a href="section7_4.html" data-scroll="section7_4">Graphs of Sine and Cosine</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="week13.html" data-scroll="week13"><span class="codenumber">12</span> <span class="title">Week 13 - Trigonometric Models</span></a><ul>
+<li><a href="section7_5.html" data-scroll="section7_5">Sinusoidal Functions</a></li>
+<li><a href="section7_8.html" data-scroll="section7_8">Inverse Trigonometric Functions</a></li>
+</ul>
+</li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="chapter" id="week10"><h2 class="heading">
+<span class="type">Chapter</span> <span class="codenumber">10</span> <span class="title">Week 11 - Trigonometry and Periodic Functions</span>
+</h2>
+<nav class="summary-links"><ul>
+<li><a href="section7_1.html"><span class="codenumber">10.1</span> <span class="title">Introduction to Periodic Functions</span></a></li>
+<li><a href="section7_2.html"><span class="codenumber">10.2</span> <span class="title">The Sine and Cosine Functions</span></a></li>
+</ul></nav></section></div></main>
+</div>
+</body>
+</html>

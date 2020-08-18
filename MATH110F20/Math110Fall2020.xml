@@ -72,8 +72,8 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
             <p>This is a collection of the materials (outside of the textbook) we will use in class to guide you on your journey through MATH 110.</p>
         </introduction>
 
-        <chapter xml:id="chapter1">
-            <title>Chapter 1 - Linear Functions &amp; Change</title>
+        <chapter xml:id="week1">
+            <title>Week 1 - Functions &amp; Change</title>
             <section xml:id="section1_1">
                 <title>Functions and Function Notation</title>
                 
@@ -203,7 +203,9 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                     </exercise>
                 </worksheet>
             </section>
-
+        </chapter>
+        <chapter xml:id="week2">
+            <title>Week 2 - Linear Functions</title>
             <section xml:id="section1_3">
                 <title>Linear Functions</title>
                 <video youtube="jt7nPwcVBzA"/>
@@ -340,7 +342,9 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                 </exercise>
                 </worksheet>
             </section>
-            
+        </chapter>
+        <chapter xml:id="week3">
+            <title>Week 3 - Linear Models</title>
             <section xml:id="section1_5">
                 <title>Modeling With Linear Functions</title>
                 <p><video youtube="UAS6vGer_Lg"/></p>
@@ -466,8 +470,8 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
             </section>
         </chapter>
         
-        <chapter xml:id="chapter2">
-            	<title>Chapter 2 - Functions</title>
+        <chapter xml:id="week4">
+            	<title>Week 4 - Domain &amp; Range</title>
            	<section xml:id="section2_1">
                 		<title>Input and Output</title>
 			<video youtube="nwdWDJ5-y40"/>
@@ -565,10 +569,10 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 					</solution>
 				</exercise>
 			</worksheet>
-        		</section>
-		<section></section>
-           	<section xml:value="2.4">
-                		<title>Preview of Transformations: Shifts</title>
+        </section>
+            
+        <section xml:value="2.4">
+            <title>Preview of Transformations: Shifts</title>
 			<video youtube="8zsHCyhEd08"/>
 			<worksheet>
 				<exercise>
@@ -606,7 +610,11 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 					</solution>
 				</exercise>
 			</worksheet>
-        		</section>       
+        		</section>
+        </chapter>
+        
+        <chapter xml:id="week5">
+            <title>Week 5 - Composition and Inverse</title>
            	<section xml:id="section2_5">
                 		<title>Preview of Composite and Inverse Functions</title>
 			<video youtube="DlkplyiXrDM"/>
@@ -652,10 +660,9 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 			</worksheet>
         		</section>   
 	 </chapter>
-	 <chapter>
-	 </chapter>
-	 <chapter xml:id="chapter4">
-            	<title>Chapter 4 - Exponential Functions</title>
+
+	 <chapter xml:id="week6">
+            	<title>Week 6 - Exponential Functions</title>
            	<section xml:id="section4_1">
                 		<title>Exponential Functions #1</title>
 			<video youtube="xX3PtaLhNPs"/>
@@ -747,7 +754,10 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 				</exercise>
 			</worksheet>
 	 	</section>
+        </chapter>
 		
+        <chapter xml:id="week7">
+            <title>Week 7 - Applications of Exponential Functions</title>
            	<section xml:id="section4_3">
                 		<title>Exponential Functions #3</title>
 			<video youtube="ecmqZdMMHCk"/>
@@ -817,13 +827,15 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 				</exercise>
 			</worksheet>
 		</section>
+    </chapter>
+        
+    <chapter xml:id="week8">
+        <title>Week 8 - e and Logarithms</title>
 		<section xml:id="section4_5">
                 		<title>The Number <m>e</m></title>
 			<video youtube="0vUtx-G136E"/>
 		</section>
-	 </chapter>
-	 <chapter xml:id="chapter5">
-            	<title>Chapter 5 - Logarithmic Functions</title>
+
            	<section xml:id="section5_1">
                 		<title>Logarithms and Their Properties</title>
 			<video youtube="RFHa7ySE0-o"/>
@@ -862,6 +874,10 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 				</exercise>
 			</worksheet>
 		</section>
+    </chapter>
+    
+    <chapter xml:id="week9">
+        <title>Week 9 - Logarithms Continued</title>
            	<section xml:id="section5_2">
                 		<title>Logarithms and Exponential Models</title>
 			<video youtube="pb9wGJgTbWk"/>
@@ -927,10 +943,9 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 			</worksheet>
 		</section>		
 	</chapter>
-	<chapter>
-	</chapter>
-	<chapter xml:id="chapter7">
-            	<title>Chapter 7 - Trigonometry and Periodic Functions</title>
+
+	<chapter xml:id="week10">
+            <title>Week 11 - Trigonometry and Periodic Functions</title>
            	<section xml:id="section7_1">
                 		<title>Introduction to Periodic Functions</title>
 			<video youtube="6evikF1iaTs"/>
@@ -955,7 +970,11 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                 		<title>The Sine and Cosine Functions</title>
 			<video youtube="3dsEQ-GFs3g"/>
 			<video youtube="m4GByng82G8"/>
-		</section>		
+		</section>
+    </chapter>
+    
+    <chapter xml:id="week12">
+        <title>Week 12 - Trigonometric Functions Continued</title>
            	<section xml:id="section7_3">
                 		<title>Radians and Arc Length</title>
 			<video youtube="ENwqnceRfzE"/>
@@ -1014,7 +1033,11 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 					<solution>The midline is <m>y=4</m> and the amplitude is 2. (Note that it isn't -2, because distances cannot be negative).</solution>
 				</exercise>
 			</worksheet>
-		</section>	
+		</section>
+    </chapter>
+    
+    <chapter xml:id="week13">
+        <title>Week 13 - Trigonometric Models</title>
 		<section xml:id="section7_5">
                 		<title>Sinusoidal Functions</title>
 			<video youtube="uAOL_Q23Md0"/>

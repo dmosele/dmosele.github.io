@@ -103,7 +103,27 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                 	</worksheet>
                                 		
             </section>
-        		
+            <section xml:id="section12_2_12_3">
+                <title>Section 12.2/12.3 - Functions of Two Variables</title>
+                    
+                <video youtube=""/>
+                    
+                <worksheet>
+                    <exercise>
+                        The contour diagram below is that of the function of monthly car payment as a function of loan size and interest rate. (Loan size is on the <m>y</m> axis, and interest rate is on the <m>x</m> axis).
+                        <image source="images/Math300F13Exam1G3.jpg"/>
+                        <ol type="a">
+                            <li>If the interest rate is <m>7.5\%</m> and you borrow <m>\$4000</m>, approximately what is your monthly payment?</li>
+                            <li>If interest rates increase to <m>14\%</m> about how what size loan can you afford if the monthly payment remains the same?</li>
+                        </ol>
+                    </exercise>
+                    <exercise>
+                        <p>Draw a contour diagram for <m>f(x,y)= -\sin x + y</m> using the contours <m>z=0,\pm2</m> making sure to label each contour.</p>
+                        <image source="images/Math300F13Exam1G2.jpg"/>
+                    </exercise>
+                </worksheet>
+                                            
+            </section>
         </chapter>
 </book>
 
