@@ -110,7 +110,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                     
                 <worksheet>
                     <exercise>
-                        The contour diagram below is that of the function of monthly car payment as a function of loan size and interest rate. (Loan size is on the <m>y</m> axis, and interest rate is on the <m>x</m> axis).
+                        <p>The contour diagram below is that of the function of monthly car payment as a function of loan size and interest rate. (Loan size is on the <m>y</m> axis, and interest rate is on the <m>x</m> axis).</p>
                         <image source="images/Math300F13Exam1G3.jpg"/>
                         <ol type="a">
                             <li>If the interest rate is <m>7.5\%</m> and you borrow <m>\$4000</m>, approximately what is your monthly payment?</li>
