@@ -147,7 +147,19 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                     
                 <worksheet>
                     <exercise>
+                        <p>Find the length of the vector
+                            <me> \vec v = \vec i - \vec j + 3 \vec k.</me>
+                        </p>
+                    </exercise>
+                    
+                    <exercise>
+                        <p>Find a unit vector in the opposite direction to
+                            <me> \vec v = 2\vec i - \vec j - \sqrt{11} \vec k . </me>
+                        </p>
+                    </exercise>
 
+                    <exercise>
+                        <p>Resolve the vector (in 2-space) of length 2 pointing up and to the right at an angle of <m>\pi/4</m> with the <m>x</m>-axis.</p>
                     </exercise>
                 </worksheet>
                                             
