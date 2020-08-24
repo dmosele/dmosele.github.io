@@ -125,6 +125,34 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                                             
             </section>
         </chapter>
+        <chapter xml:id="week2">
+            <title>Week 2 - Vectors</title>
+            <section xml:id="section12_4">
+                <title>Section 12.4 - Linear Functions</title>
+                    
+                <video youtube=""/>
+                    
+                <worksheet>
+                    <exercise>
+                        <p>Compute the equation of the plane passing through the points</p>
+                        <me>(1,2,3),\, (2,2,5),\, (1,4,9)</me>
+                    </exercise>
+                </worksheet>
+                                            
+            </section>
+            <section xml:id="section13_1">
+                <title>Section 13.1 - Displacement Vectors</title>
+                    
+                <video youtube=""/>
+                    
+                <worksheet>
+                    <exercise>
+
+                    </exercise>
+                </worksheet>
+                                            
+            </section>
+        </chapter>
 </book>
 
 </pretext>
