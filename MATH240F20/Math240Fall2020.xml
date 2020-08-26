@@ -106,7 +106,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
             <section xml:id="section12_2_12_3">
                 <title>Section 12.2/12.3 - Functions of Two Variables</title>
                     
-                <video youtube=""/>
+                <video youtube="xZnkkRnRRCI"/>
                     
                 <worksheet>
                     <exercise>
@@ -130,7 +130,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
             <section xml:id="section12_4">
                 <title>Section 12.4 - Linear Functions</title>
                     
-                <video youtube=""/>
+                <video youtube="GOxxYd6jIZY"/>
                     
                 <worksheet>
                     <exercise>
@@ -143,7 +143,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
             <section xml:id="section13_1">
                 <title>Section 13.1 - Displacement Vectors</title>
                     
-                <video youtube=""/>
+                <video youtube="m-clm7TkuzQ"/>
                     
                 <worksheet>
                     <exercise>
@@ -160,6 +160,18 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
                     <exercise>
                         <p>Resolve the vector (in 2-space) of length 2 pointing up and to the right at an angle of <m>\pi/4</m> with the <m>x</m>-axis.</p>
+                    </exercise>
+                </worksheet>
+                                            
+            </section>
+            <section xml:id="section13_2">
+                <title>Section 13.2 - Vectors in General</title>
+                    
+                <video youtube=""/>
+                    
+                <worksheet>
+                    <exercise>
+                        
                     </exercise>
                 </worksheet>
                                             
