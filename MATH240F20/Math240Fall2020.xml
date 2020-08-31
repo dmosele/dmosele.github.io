@@ -177,6 +177,60 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                                             
             </section>
         </chapter>
+        <chapter xml:id="week3">
+            <title>Week 3 - Dot, Cross, &amp; Derivatives</title>
+            <section xml:id="section13_3">
+                <title>Section 13.3 - The Dot Product</title>
+                    
+                <video youtube=""/>
+                    
+                <worksheet>
+                    <exercise>
+                        <p>Which pairs of the vectors <m>\sqrt 3 \vec i + \vec j, 3\vec i + \sqrt 3 \vec j , \vec i - \sqrt 3 \vec j</m></p>
+                            <ol type="a">
+                                <li>are perpendicular?</li>
+                                <li>are parallel?</li>
+                            </ol>
+                    </exercise>
+
+                    <exercise>
+                        <p>Find the angle between the vectors</p>
+                        <me>\vec v = -3\vec i + 5 \vec j + 4 \vec k \text{ and } \vec w = 2\vec j + \vec k .</me>
+                    </exercise>
+                    
+                    <exercise>
+                        <p>Find the equation of the plane containing the point <m>(2,5,4)</m> with the vector <m> \vec u = 2\vec i - 3 \vec j + \vec k</m> orthogonal to it.</p>
+                    </exercise>
+                </worksheet>
+                                            
+            </section>
+            <section xml:id="section13_4">
+                <title>Section 13.4 - The Cross Product</title>
+                    
+                <video youtube=""/>
+                    
+                <worksheet>
+                    <exercise>
+                        <p>Let <m>\vec u = 3\vec i + \vec j - \vec k</m> and <m>\vec v = \vec i - 4\vec j + 2 \vec k</m>.</p>
+                        <ol type="a">
+                            <li>Compute <m>\vec u \times \vec v</m>.</li>
+                            <li>Check that it is indeed perpendicular to <m>\vec u</m> and <m>\vec v</m>.</li>
+                            <li>What can you say about <m>\vec v \times \vec u</m>?</li>
+                        </ol>
+                    </exercise>
+                    <exercise>
+                        <p>Suppose that <m>\vec v \cdot \vec w = 5</m>, <m> \Vert \vec v \times \vec w \Vert = 3</m>, and the angle between <m>\vec v</m> and <m>\vec w</m> is <m>\theta</m>. Find <m>\tan \theta</m> and <m>\theta</m>.</p>
+                    </exercise>
+                    <exercise>
+                        <p>Find the area of the triangle formed by the points <m>(1,2,3)</m>, <m>(4,1,0)</m>, and <m>(3,0,7)</m>.</p>
+                    </exercise>
+                    <exercise>
+                        <p>Find the equation of the plane passing through <m>(1,2,3)</m>, <m>(4,1,0)</m>, and <m>(3,0,7)</m>.</p>
+                    </exercise>
+                </worksheet>
+                                            
+            </section>
+        </chapter>
 </book>
 
 </pretext>
