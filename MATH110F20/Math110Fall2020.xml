@@ -75,7 +75,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
         <chapter xml:id="week1">
             <title>Week 1 - Functions &amp; Change</title>
             <section xml:id="section1_1">
-                <title>Functions and Function Notation</title>
+                <title>Section 1.1 - Functions and Function Notation</title>
                 
                 <video youtube="EQaTTLD6Hco"/>
                 
@@ -131,7 +131,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
             </section>
             
             <section xml:id="section1_2">
-                <title>Rate of Change</title>
+                <title>Section 1.2 - Rate of Change</title>
                 
                 <video youtube="R-Yn41uAaVc"/>
                     
@@ -207,7 +207,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
         <chapter xml:id="week2">
             <title>Week 2 - Linear Functions</title>
             <section xml:id="section1_3">
-                <title>Linear Functions</title>
+                <title>Section 1.3 - Linear Functions</title>
                 <video youtube="jt7nPwcVBzA"/>
                 <worksheet>
                     
@@ -287,7 +287,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
             </section>
 
             <section xml:id="section1_4">
-                <title>Formulas for Linear Functions</title>
+                <title>Section 1.4 - Formulas for Linear Functions</title>
                 <video youtube="DU_5s9fpSz8"/>
                 <worksheet>
                 
@@ -346,7 +346,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
         <chapter xml:id="week3">
             <title>Week 3 - Linear Models</title>
             <section xml:id="section1_5">
-                <title>Modeling With Linear Functions</title>
+                <title>Section 1.5 - Modeling With Linear Functions</title>
                 <p><video youtube="UAS6vGer_Lg"/></p>
                 <worksheet>
                 <exercise>
@@ -373,7 +373,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
             </section>
 
             <section xml:id="section1_6">
-                <title>Fitting Linear Functions to Data</title>
+                <title>Section 1.6 - Fitting Linear Functions to Data</title>
                 <p><video youtube="l89_tAZLG0M"/></p>
 
                 <worksheet>
@@ -473,7 +473,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
         <chapter xml:id="week4">
             	<title>Week 4 - Domain &amp; Range</title>
            	<section xml:id="section2_1">
-                		<title>Input and Output</title>
+                <title>Section 2.1 - Input and Output</title>
 			<video youtube="nwdWDJ5-y40"/>
 			<worksheet>
 				<exercise>
@@ -536,7 +536,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 			</worksheet>
         		</section>
            	<section xml:id="section2_2">
-                		<title>Domain and Range</title>
+                <title>Section 2.2 - Domain and Range</title>
 			<video youtube="a70jya-CR2g"/>
 			<worksheet>
 				<exercise>
