@@ -572,7 +572,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
         </section>
             
         <section xml:value="2.4">
-            <title>Preview of Transformations: Shifts</title>
+            <title>Section 2.4 - Preview of Transformations: Shifts</title>
 			<video youtube="8zsHCyhEd08"/>
 			<worksheet>
 				<exercise>
@@ -616,7 +616,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
         <chapter xml:id="week5">
             <title>Week 5 - Composition and Inverse</title>
            	<section xml:id="section2_5">
-                		<title>Preview of Composite and Inverse Functions</title>
+                <title>Section 2.5 - Preview of Composite and Inverse Functions</title>
 			<video youtube="DlkplyiXrDM"/>
 			<worksheet>
 				<exercise>
@@ -664,7 +664,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 	 <chapter xml:id="week6">
             	<title>Week 6 - Exponential Functions</title>
            	<section xml:id="section4_1">
-                		<title>Exponential Functions #1</title>
+                <title>Section 4.1 - Exponential Functions #1</title>
 			<video youtube="xX3PtaLhNPs"/>
 			<worksheet>
 				<exercise>
@@ -705,7 +705,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 			</worksheet>
 	 	</section>
            	<section xml:id="section4_2">
-                		<title>Exponential Functions #2</title>
+                <title>Section 4.2 - Exponential Functions #2</title>
 			<video youtube="nJTLHSBnRb8"/>
 			<worksheet>
 				<exercise>
@@ -759,7 +759,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
         <chapter xml:id="week7">
             <title>Week 7 - Applications of Exponential Functions</title>
            	<section xml:id="section4_3">
-                		<title>Exponential Functions #3</title>
+                <title>Section 4.3 - Exponential Functions #3</title>
 			<video youtube="ecmqZdMMHCk"/>
 			<worksheet>
 				<exercise>
@@ -796,7 +796,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 			</worksheet>
 	 	</section>
 		<section xml:id="section4_4">
-                		<title>Applications to Compound Interest</title>
+            <title>Section 4.4 - Applications to Compound Interest</title>
 			<video youtube="5C4q7OPWNOg"/>
 			<worksheet>
 				<exercise>
@@ -832,12 +832,12 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
     <chapter xml:id="week8">
         <title>Week 8 - e and Logarithms</title>
 		<section xml:id="section4_5">
-                		<title>The Number <m>e</m></title>
+            <title>Section 4.5 - The Number <m>e</m></title>
 			<video youtube="0vUtx-G136E"/>
 		</section>
 
            	<section xml:id="section5_1">
-                		<title>Logarithms and Their Properties</title>
+                <title>Section 5.1 - Logarithms and Their Properties</title>
 			<video youtube="RFHa7ySE0-o"/>
 			<worksheet>
 				<exercise>
@@ -879,7 +879,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
     <chapter xml:id="week9">
         <title>Week 9 - Logarithms Continued</title>
            	<section xml:id="section5_2">
-                		<title>Logarithms and Exponential Models</title>
+                <title>Section 5.2 - Logarithms and Exponential Models</title>
 			<video youtube="pb9wGJgTbWk"/>
 			<worksheet>
 				<exercise>
@@ -914,7 +914,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 			</worksheet>
 		</section>
 		<section xml:id="section5_3">
-                		<title>Finishing Up Exponential Functions</title>
+            <title>Section 5.3 - Finishing Up Exponential Functions</title>
 			<video youtube="d8EbCw6jOkw"/>
 			<worksheet>
 				<exercise>
@@ -947,7 +947,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 	<chapter xml:id="week10">
             <title>Week 11 - Trigonometry and Periodic Functions</title>
            	<section xml:id="section7_1">
-                		<title>Introduction to Periodic Functions</title>
+                <title>Section 7.1 - Introduction to Periodic Functions</title>
 			<video youtube="6evikF1iaTs"/>
 			<worksheet>
 				<exercise>
@@ -967,7 +967,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 			</worksheet>
 		</section>
            	<section xml:id="section7_2">
-                		<title>The Sine and Cosine Functions</title>
+                <title>Section 7.2 - The Sine and Cosine Functions</title>
 			<video youtube="3dsEQ-GFs3g"/>
 			<video youtube="m4GByng82G8"/>
 		</section>
@@ -976,7 +976,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
     <chapter xml:id="week12">
         <title>Week 12 - Trigonometric Functions Continued</title>
            	<section xml:id="section7_3">
-                		<title>Radians and Arc Length</title>
+                <title>Section 7.3 - Radians and Arc Length</title>
 			<video youtube="ENwqnceRfzE"/>
 			<worksheet>
 				<exercise>
@@ -1019,7 +1019,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 			</worksheet>
 		</section>	
            	<section xml:id="section7_4">
-                		<title>Graphs of Sine and Cosine</title>
+                <title>Section 7.4 - Graphs of Sine and Cosine</title>
 			<video youtube="f1NOsqpSXwo"/>
 			<worksheet>
 				<exercise>
@@ -1039,7 +1039,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
     <chapter xml:id="week13">
         <title>Week 13 - Trigonometric Models</title>
 		<section xml:id="section7_5">
-                		<title>Sinusoidal Functions</title>
+            <title>Section 7.5 - Sinusoidal Functions</title>
 			<video youtube="uAOL_Q23Md0"/>
 			<worksheet>
 				<exercise>
@@ -1062,7 +1062,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 			</worksheet>
 		</section>	
 		<section xml:id="section7_8">
-                		<title>Inverse Trigonometric Functions</title>
+            <title>Section 7.8 - Inverse Trigonometric Functions</title>
 			<video youtube="5ImdKq7QlOI"/>
 		</section>	
 	</chapter>
