@@ -230,6 +230,22 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                 </worksheet>
                                             
             </section>
+            <section xml:id="section14_1_2">
+                <title>Section 14.1/14.2 - Partial Derivatives</title>
+                <video youtube=""/>
+                
+                <worksheet>
+                    <exercise>
+                        <p>Compute the following partial derivatives</p>
+                        <ol type="a">
+                            <li><m>f_x(x,y)</m> and <m>f_y(x,y)</m> if <m>f(x,y) = 5x^2y^3+8xy^2-3x^2</m>.</li>
+                            <li><m>f_x(2,3)</m> if <m>f(x,y) = (\cos x) + y</m>.</li>
+                            <li><m>\frac{\partial V}{\partial r}</m> and <m>\frac{\partial V}{\partial h}$ if $V=\frac 43 \pi r^2 h</m>.</li>
+                            <li><m>\frac{\partial}{\partial M} \left( \frac{2\pi r^{3/2}}{\sqrt{GM}} \right)</m></li>
+                        </ol>
+                    </exercise>
+                </worksheet>
+            </section>
         </chapter>
 </book>
 
