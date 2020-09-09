@@ -477,7 +477,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 			<video youtube="nwdWDJ5-y40"/>
 			<worksheet>
 				<exercise>
-					Let <m>f(x) = x^2-9</m>.
+					<p>Let <m>f(x) = x^2-9</m>.</p>
  						<ol type="a.">
     							<li> Compute <m>f(0)</m>. </li>
     							<li> Solve <m>f(x) = 0</m>. </li>
@@ -494,7 +494,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 					</solution>			
 				</exercise>
 				<exercise>
-					  Marvin the Martian has height given by <m>h(t) = 13+\frac{t^2}{2}</m> where <m>t</m> is the number of years since Marvin was born and height is in inches.
+					  <p>Marvin the Martian has height given by <m>h(t) = 13+\frac{t^2}{2}</m> where <m>t</m> is the number of years since Marvin was born and height is in inches.</p>
   					<ol type ="a">
     						<li>How tall was Marvin at birth (time zero)?</li>
     						<li>When will Marvin be 21 inches tall?</li>
@@ -509,7 +509,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 					</solution>
 				</exercise>
 				<exercise>
-					Answer the following questions about the function <m>f(x)</m> using its graph below.
+                    <p>Answer the following questions about the function <m>f(x)</m> using its graph below.</p>
                         			<p><interactive desmos="fuchydee7i" width="60%" aspect="2:3" /></p>
 					<ol type="a">
     						<li> Fill in the following table
