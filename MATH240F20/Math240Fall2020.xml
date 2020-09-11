@@ -45,6 +45,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
     <docinfo>
         <macros>
         \newcommand{\doubler}[1]{2#1}
+        \newcommand{\grad}{\mathrm{grad}}
         </macros>
     </docinfo>
 
@@ -265,6 +266,37 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                         <p>Find the equation of the tangent plane of the function
                         <me>f(x,y) = x^2e^{5y} </me>
                         at the point <m>(2,0)</m>. Use linear approximation to estimate <m>f(2.02,-0.01)</m>.</p>
+                    </exercise>
+                </worksheet>
+            </section>
+            <section xml:id="section14_4">
+                <title>Section 14.4 - The Gradient &amp; Directional Derivatives</title>
+                
+                <video youtube="mfpihLrHK_s"/>
+                
+                <worksheet>
+                    <exercise>
+                        <p>Let <m>f(x,y) = \sin (x^2 + y^2)</m>.</p>
+                        <ol type="a">
+                            <li>Compute <m>\grad f</m>.</li>
+                            <li>Compute <m>\grad f (\sqrt \pi, 0)</m></li>
+                            <li>Compute the direction derivative <m>f_{\vec u} (\sqrt \pi, 0)</m> in the direction of <m>\vec u = \frac 35 \vec i - \frac 45 \vec j</m>.</li>
+                        </ol>
+                    </exercise>
+
+                    <exercise>
+                        <p><fn>Exercise #69 in 14.4</fn>Compute the directional derivative of <m>f(x,y) = e^x \tan (y) + 2x^2 y</m> at the point <m>(0, \pi/4)</m> in the
+                        <m>\vec i - \vec j</m> direction.</p>
+                    </exercise>
+
+                    <exercise>
+                        <p>Use the contour diagram of <m>f</m> shown below to answer the following questions.</p>
+                        <image source="images/Math300F13Wksht8G1.jpg"/>
+                        <ol type="a">
+                            <li>Draw the gradient vector at the point <m>(2,2)</m>.</li>
+                            <li>Is the directional derivative at <m>(2,2)</m> in the <m>\vec i</m> direction positive, negative, or approximately zero?</li>
+                            <li>Is the directional derivative at <m>(2,2)</m> in the <m>\vec i-\vec j</m> direction positive, negative, or approximately zero?</li>
+                        </ol>
                     </exercise>
                 </worksheet>
             </section>

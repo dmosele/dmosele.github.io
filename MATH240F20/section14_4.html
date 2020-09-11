@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2020-09-10T21:51:49-04:00       *-->
+<!--*   A recent stable commit (2020-07-07):   *-->
+<!--* 1771dacf84bfb1789139598d8379414b560b8f17 *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Section 14.4 - The Gradient &amp; Directional Derivatives</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", "AMScd.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" class="hidden-content" style="display:none">\(\newcommand{\doubler}[1]{2#1}
+\newcommand{\grad}{\mathrm{grad}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="Math240Fall2020.html"><span class="title">MATH 240 Fall 2020</span></a></h1>
+<p class="byline">Daniel Moseley</p>
+</div>
+</div></div>
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section14_3.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="week4.html" title="Up">Up</a><span id="nextbutton" class="next-button button toolbar-item disabled">Next</span></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section14_3.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="week4.html" title="Up">Up</a><span class="next-button button toolbar-item disabled">Next</span>
+</div>
+</div></nav></header><div class="page">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter"><a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a></li>
+<li class="link">
+<a href="week1.html" data-scroll="week1"><span class="codenumber">1</span> <span class="title">Week 1 - Functions of Two Variables</span></a><ul>
+<li><a href="section12_1.html" data-scroll="section12_1">Section 12.1 - Functions of Two Variables</a></li>
+<li><a href="section12_2_12_3.html" data-scroll="section12_2_12_3">Section 12.2/12.3 - Functions of Two Variables</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="week2.html" data-scroll="week2"><span class="codenumber">2</span> <span class="title">Week 2 - Vectors</span></a><ul>
+<li><a href="section12_4.html" data-scroll="section12_4">Section 12.4 - Linear Functions</a></li>
+<li><a href="section13_1.html" data-scroll="section13_1">Section 13.1 - Displacement Vectors</a></li>
+<li><a href="section13_2.html" data-scroll="section13_2">Section 13.2 - Vectors in General</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="week3.html" data-scroll="week3"><span class="codenumber">3</span> <span class="title">Week 3 - Dot, Cross, &amp; Derivatives</span></a><ul>
+<li><a href="section13_3.html" data-scroll="section13_3">Section 13.3 - The Dot Product</a></li>
+<li><a href="section13_4.html" data-scroll="section13_4">Section 13.4 - The Cross Product</a></li>
+<li><a href="section14_1_2.html" data-scroll="section14_1_2">Section 14.1/14.2 - Partial Derivatives</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="week4.html" data-scroll="week4"><span class="codenumber">4</span> <span class="title">Week 4 - Tangent Plane, Gradient, &amp; Directional Derivatives</span></a><ul>
+<li><a href="section14_3.html" data-scroll="section14_3">Section 14.3 - The Dot Product</a></li>
+<li><a href="section14_4.html" data-scroll="section14_4" class="active">Section 14.4 - The Gradient &amp; Directional Derivatives</a></li>
+</ul>
+</li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="section14_4"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">4.2</span> <span class="title">Section 14.4 - The Gradient &amp; Directional Derivatives</span>
+</h2>
+<div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-10" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/mfpihLrHK_s?&amp;modestbranding=1&amp;rel=0"></iframe></div>
+<section class="worksheet" id="worksheet-10"><h3 class="heading hide-type">
+<span class="type">Worksheet</span> <span class="codenumber">4.2.1</span> <span class="title">Worksheet</span>
+</h3>
+<article class="exercise exercise-like" id="exercise-21"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
+<p id="p-25">Let \(f(x,y) = \sin (x^2 + y^2)\text{.}\)</p>
+<ol class="lower-alpha">
+<li id="li-12">Compute \(\grad f\text{.}\)</li>
+<li id="li-13">Compute \(\grad f (\sqrt \pi, 0)\)</li>
+<li id="li-14">Compute the direction derivative \(f_{\vec u} (\sqrt \pi, 0)\) in the direction of \(\vec u = \frac 35 \vec i - \frac 45 \vec j\text{.}\)</li>
+</ol></article><article class="exercise exercise-like" id="exercise-22"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
+<p id="p-26"><a data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-1" id="fn-1"><sup> 1 </sup></a>Compute the directional derivative of \(f(x,y) = e^x \tan (y) + 2x^2 y\) at the point \((0, \pi/4)\) in the \(\vec i - \vec j\) direction.</p>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-1"><div class="fn">Exercise #69 in 14.4</div></div></article><article class="exercise exercise-like" id="exercise-23"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
+<p id="p-27">Use the contour diagram of \(f\) shown below to answer the following questions.</p>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="images/Math300F13Wksht8G1.jpg" style="width: 100%; height: auto;" alt=""></div>
+<ol class="lower-alpha">
+<li id="li-15">Draw the gradient vector at the point \((2,2)\text{.}\)</li>
+<li id="li-16">Is the directional derivative at \((2,2)\) in the \(\vec i\) direction positive, negative, or approximately zero?</li>
+<li id="li-17">Is the directional derivative at \((2,2)\) in the \(\vec i-\vec j\) direction positive, negative, or approximately zero?</li>
+</ol></article></section></section></div></main>
+</div>
+</body>
+</html>

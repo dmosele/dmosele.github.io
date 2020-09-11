@@ -540,7 +540,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 			<video youtube="a70jya-CR2g"/>
 			<worksheet>
 				<exercise>
-					Compute the domain of the following functions
+					<p>Compute the domain of the following functions</p>
   					<ol type="a">
     						<li><me>f(x) = \sqrt{2x-5} </me></li>
     						<li><me>g(x) = \frac{1}{x^2-1} </me></li>
@@ -553,7 +553,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 					</solution>
 				</exercise>
 				<exercise>
-					For the following questions use the function <m>y=f(x)</m> graphed below.
+					<p>For the following questions use the function <m>y=f(x)</m> graphed below.</p>
 					<p><interactive desmos="fmsqvpaeik" width="100%" aspect="3:2" /></p>
 					<ol type="a">
   						<li>Compute the domain and range of <m>f</m>.</li>
@@ -569,6 +569,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 					</solution>
 				</exercise>
 			</worksheet>
+            <video youtube="7qJT5oUFCXE"/>
         </section>
             
         <section xml:value="2.4">
