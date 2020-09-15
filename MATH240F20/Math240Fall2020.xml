@@ -301,6 +301,23 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                 </worksheet>
             </section>
         </chapter>
+        <chapter xml:id="week5">
+            <title>Week 5 - Second Order Partials</title>
+            <section xml:id="section14_7">
+                <title>Section 14.7 - Second Order Partial Derivatives</title>
+                <worksheet>
+                    <exercise>
+                        <p>Let <m>f(x,y) = e^{x+2y} + y\sin(x)</m>.</p>
+                        <ol type="a">
+                            <li>Compute all 4 second order partials of <m>f</m> and verify that <m>f_{xy}=f_{yx}</m>.</li>
+                            <li>Compute the equation of the tangent plane to <m>f</m> at <m>(0,0)</m>.</li>
+                            <li>Compute the quadratic Taylor polynomial of <m>f</m> about <m>(0,0)</m>.</li>
+                            <li>Estimate <m>f(0.1,-0.1)</m> using (i) linear approximation (tangent plane approximation) and (ii) the quadratic Taylor polynomial and compare it to the real value of <m>f(0.1,-0.1)</m>. Before you compute it, which estimate do you expect to be more accurate?</li>
+                        </ol>
+                    </exercise>
+                </worksheet>
+            </section>
+        </chapter>
     </book>
 
 </pretext>
