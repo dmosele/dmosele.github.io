@@ -577,7 +577,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 			<video youtube="8zsHCyhEd08"/>
 			<worksheet>
 				<exercise>
-	 				The graph the function <m>f(x)= x^2</m> is drawn on the on the following axes.
+	 				<p>The graph the function <m>f(x)= x^2</m> is drawn on the on the following axes.</p>
 					<p><interactive desmos="fk1dkqtvsa" width="100%" aspect="3:2" /></p>
  					<ol type="a">
    						<li>On the same axes, graph <m>f(x)+2</m>. (What is <m>f(x)+2</m> you say? <m>f(x)+2 = x^2+2</m>.)</li>
@@ -594,7 +594,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 					</solution>
 				</exercise>
 				<exercise> 
-					The graph the function <m>g(x)= \vert x \vert</m> is drawn on the on the following axes.
+					<p>The graph the function <m>g(x)= \vert x \vert</m> is drawn on the on the following axes.</p>
 					<p><interactive desmos="5uakallquf" width="100%" aspect="3:2" /></p>					
  					<ol type="a">
   						<li>On the same axes, graph <m>g(x+2)</m>. </li>
@@ -621,7 +621,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 			<video youtube="DlkplyiXrDM"/>
 			<worksheet>
 				<exercise>
-  					If <m>f(x) = \sqrt{x+4}</m> and <m>g(x)=x^2</m>, compute
+  					<p>If <m>f(x) = \sqrt{x+4}</m> and <m>g(x)=x^2</m>, compute</p>
   					<ol type="a">
     						<li><m>f(g(1))</m></li>
     						<li><m>g(f(1))</m></li>
@@ -637,14 +637,14 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 				</exercise>
 
 				<exercise>
-  					Let <m>C=f(w)</m> be the cost in dollars producing <m>w</m> widgets in our widget factory. What do the quantities <m>f(500)</m> and <m>f^{-1}(20000)</m> represent in terms of widgets and dollars?
+  					<p>Let <m>C=f(w)</m> be the cost in dollars producing <m>w</m> widgets in our widget factory. What do the quantities <m>f(500)</m> and <m>f^{-1}(20000)</m> represent in terms of widgets and dollars?</p>
 					<solution>
-						The quantity <m>f(500)</m> represents the cost of producing 500 widgets. The quantity <m>f^{-1}(20000)</m> represents the number of widgets that can be produced for $20000.
+						<p>The quantity <m>f(500)</m> represents the cost of producing 500 widgets. The quantity <m>f^{-1}(20000)</m> represents the number of widgets that can be produced for $20000.</p>
 					</solution>
 				</exercise>
 
 				<exercise>
-					Below is a graph of <m>f(x).</m>
+					<p>Below is a graph of <m>f(x).</m></p>
 					<p><interactive desmos="tlnycepx9y" width="100%" aspect="3:2" /></p>
 					<ol type="a">
 						<li>If <m>g(x)=x^2+3</m>, compute <m>g(f(1))</m>.</li>
