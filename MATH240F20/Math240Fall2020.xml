@@ -330,7 +330,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                     </exercise>
                     <exercise>
                         <p>Find the local maxima, local minima, and saddle points of the function
-                            <me>f(x,y) = x^3+y^3-9x^2+12y+12</me>
+                            <me>f(x,y) = x^3+y^3-9x^2-12y+12</me>
                             using the second derivative test. </p>
                     </exercise>
                 </worksheet>
