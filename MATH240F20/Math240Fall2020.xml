@@ -318,6 +318,24 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                 </worksheet>
             </section>
         </chapter>
+        <chapter xml:id="week6">
+            <title>Week 6 - Optimization</title>
+            <section xml:id="section15_1">
+                <title>Section 15.1 - Local Extrema</title>
+                <worksheet>
+                    <exercise>
+                        <p>Compute and classfy the critical point of
+                            <me> f(x,y)=x^2-y^2+4xy-6x+8y+12 </me>
+                            as a local max, local min, or saddle point.</p>
+                    </exercise>
+                    <exercise>
+                        <p>Find the local maxima, local minima, and saddle points of the function
+                            <me>f(x,y) = x^3+y^3-9x^2+12y+12</me>
+                            using the second derivative test. </p>
+                    </exercise>
+                </worksheet>
+            </section>
+        </chapter>
     </book>
 
 </pretext>
