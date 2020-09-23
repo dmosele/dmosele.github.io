@@ -669,7 +669,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 			<video youtube="xX3PtaLhNPs"/>
 			<worksheet>
 				<exercise>
-					The population of Forks, Washington was 3060 in the year 1980 and grew by <m>3.4\%</m> each year.    
+					<p>The population of Forks, Washington was 3060 in the year 1980 and grew by <m>3.4\%</m> each year.</p>
   					<ol type="a">
     						<li>How many people lived in Forks in 1981? 1982?</li>
     						<li>Write a formula for population <m>P</m> as a function of time <m>t</m> since 1980.</li>
@@ -686,7 +686,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 					</solution>
 				</exercise>
 				<exercise>
-  					The radioactive isotope Radon-222 decays at a rate of <m>16.7\%</m> per day.<fn>From https://en.wikipedia.org/wiki/Radioactive_decay</fn>
+  					<p>The radioactive isotope Radon-222 decays at a rate of <m>16.7\%</m> per day.<fn>From https://en.wikipedia.org/wiki/Radioactive_decay</fn></p>
   					<ol type="a">
     						<li>Write a function giving the mass <m>M</m> of a 500 gram sample after a time <m>t</m> in days.</li>
     						<li>How much will we have remaining after 3 days?</li>
