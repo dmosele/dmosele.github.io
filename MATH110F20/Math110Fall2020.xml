@@ -710,7 +710,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 			<video youtube="nJTLHSBnRb8"/>
 			<worksheet>
 				<exercise>
-				 	The population of manatees in the Gulf of Mexico was 1200 in the year 2010 and 1600 in the year 2018.    
+				 	<p>The population of manatees in the Gulf of Mexico was 1200 in the year 2010 and 1600 in the year 2018.   </p>
   					<ol type="a">
     						<li>Write a formula for population <m>P</m> of manatees as a linear function of time <m>t</m> since 2010.</li>
     						<li>Write a formula for population <m>P</m> of manatees as an exponential function of time <m>t</m> since 2010.</li>
@@ -733,7 +733,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 					</solution>
 				</exercise>
 				<exercise>
-  					After a car is purchased, it loses value over time. For example, a $20000 car is worth only $8000 five years after it was purchased.
+  					<p>After a car is purchased, it loses value over time. For example, a $20000 car is worth only $8000 five years after it was purchased.</p>
   					<ol type="a">
    						<li>Assuming that the car loses its value exponentially, find a formula for value <m>V</m> as a function of time since it was purchased.</li>
    						<li><p>When will the car be worth $5000?</p>
