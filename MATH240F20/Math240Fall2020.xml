@@ -340,7 +340,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                 <worksheet>
                     <exercise>
                         <p>
-                            An international airline has a regulation that each passenger can carry a suitcase having the sum of its width, length, and height less than or equal to 135 cm. Find the dimensions of the suitcase of maximum volume that a passenger may carry under this regulation.
+                            <fn>#29 in Section 15.2</fn>An international airline has a regulation that each passenger can carry a suitcase having the sum of its width, length, and height less than or equal to 135 cm. Find the dimensions of the suitcase of maximum volume that a passenger may carry under this regulation.
                         </p>
                     </exercise>
                 </worksheet>

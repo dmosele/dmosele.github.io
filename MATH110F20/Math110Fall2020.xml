@@ -764,7 +764,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 			<video youtube="ecmqZdMMHCk"/>
 			<worksheet>
 				<exercise>
-					Find the equation of the exponential function passing through the points <m>(1,6)</m> and <m>(4,24)</m>.
+					<p>Find the equation of the exponential function passing through the points <m>(1,6)</m> and <m>(4,24)</m>.</p>
 					<solution>
 						<p>As the function is of the form <m>y=a\cdot b^x</m>, we see that </p>
 						<me> 24=ab^4 \text{ and } 6=ab^1 </me>
@@ -778,9 +778,9 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 				</exercise>
 
 				<exercise>
-  					Suppose the population of ants in my yard is given by 
+  					<p>Suppose the population of ants in my yard is given by
   					<me>A =f(t)= 100(1.12)^t </me>
-  					where <m>A</m> represents the number of ants, and <m>t</m> is time in weeks since I started measuring.
+  					where <m>A</m> represents the number of ants, and <m>t</m> is time in weeks since I started measuring.</p>
   					<ol type="a">
    						<li>Is the number of ants increasing or decreasing? By what percentage is it increasing/decreasing each week?</li>
     						<li>When will the population of ants reach 1000?
@@ -801,7 +801,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 			<video youtube="5C4q7OPWNOg"/>
 			<worksheet>
 				<exercise>
-					Surprise! You receive a $5000 bonus from your new job! You are deciding how you should invest this. (You really want to buy a new motorcycle.) 
+					<p>Surprise! You receive a $5000 bonus from your new job! You are deciding how you should invest this. (You really want to buy a new motorcycle.) </p>
   					<ul>
     						<li>Option 1: A savings account that earns $12.1%$ compounded annually.</li>
     						<li>Option 2: A savings account that earns $12%$ compounded monthly.</li>
@@ -884,7 +884,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 			<video youtube="pb9wGJgTbWk"/>
 			<worksheet>
 				<exercise>
-					If you invest $1200 in an account accrues interest at a rate of 5% compounded continuously, how long will it take for the balance to reach $1600?
+					<p>If you invest $1200 in an account accrues interest at a rate of 5% compounded continuously, how long will it take for the balance to reach $1600?</p>
 					<solution>
 						<p>The formula for the account balance is</p>
 						<me>B = 1200e^{0.05t}</me>
@@ -894,7 +894,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 					</solution>
 				</exercise>
 				<exercise>
-  					The population of Smallville grows from 11000 in the year 2010 to 13000 in the year 2013. 
+  					<p>The population of Smallville grows from 11000 in the year 2010 to 13000 in the year 2013. </p>
   					<ol type="a">
     						<li>Write a formula for the population <m>P</m> as an exponential function of <m>t</m>, the number of years since 2010.</li>
     						<li>When will the population double in size?</li>
@@ -932,7 +932,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 				</exercise>
 
 				<exercise>
-  					Convert the exponential function <m>f(t)=3(0.5)^t</m> to a function of the form <m>f(t)=ae^{kt}</m>. What do you notice about <m>k</m> in this scenario?
+  					<p>Convert the exponential function <m>f(t)=3(0.5)^t</m> to a function of the form <m>f(t)=ae^{kt}</m>. What do you notice about <m>k</m> in this scenario?</p>
 					<solution>
 						<p>Here, we remember that <m>b=e^k</m> and since <m>b=.5</m>, we can use that to solve for <m>k</m>. </p>
 						<me>0.5=e^k \quad \Rightarrow \quad \ln(0.5)=\ln(e^k)=k </me>
@@ -981,7 +981,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 			<video youtube="ENwqnceRfzE"/>
 			<worksheet>
 				<exercise>
-					Conversions:
+					<p>Conversions:</p>
   					<ol type="a">
 						<li>Convert <m>150^\circ</m> to radians.</li>
    						<li>Convert <m>\frac{7\pi}{4}</m> radians to degrees.</li>
@@ -995,7 +995,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 				</exercise>
 
 				<exercise>
-  					Compute the following without a calculator.
+  					<p>Compute the following without a calculator.</p>
   					<ol type="a">
     						<li><m>\cos\left( \frac {3\pi}{4} \right)</m></li>
 	    					<li><m>\tan\left( 45^{\circ} \right)</m></li>
@@ -1011,10 +1011,10 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 				</exercise>
 
 				<exercise>
-  					What is the length of an arc that is cut off by an angle of <m>225^\circ</m> in a circle of radius 4 feet?
+  					<p>What is the length of an arc that is cut off by an angle of <m>225^\circ</m> in a circle of radius 4 feet?</p>
 					<solution>
-						First, we convert to radians <m>225^\circ \cdot \frac{\pi}{180} = \frac{5\pi}{4} </m>, then we use the arc length formula
-						<me>s = r\theta = 4\cdot \frac{5\pi}{4} = 5\pi </me>
+						<p>First, we convert to radians <m>225^\circ \cdot \frac{\pi}{180} = \frac{5\pi}{4} </m>, then we use the arc length formula
+						<me>s = r\theta = 4\cdot \frac{5\pi}{4} = 5\pi </me></p>
 					</solution>
 				</exercise>
 			</worksheet>
