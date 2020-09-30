@@ -345,6 +345,21 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                     </exercise>
                 </worksheet>
             </section>
+            <section xml:id="section15_3">
+                <title>Section 15.3 - Constrained Optimization</title>
+                <worksheet>
+                    <exercise>
+                        <p>
+                            Let <m>f(x,y) = x^2+2y^2</m>.
+                                <ol type="a">
+                                    <li>Compute the critical points of <m>f(x,y)</m>.</li>
+                                    <li>Compute the ``special points" as identified by the method of Lagrange multipliers subject to the constraint that <m>g(x,y)=x^2+y^2=4</m>.</li>
+                                    <li>Find the maximum and minimum values of <m>f(x,y)</m> on the disk <m>x^2+y^2 \leq 4</m>.</li>
+                                </ol>
+                        </p>
+                    </exercise>
+                </worksheet>
+            </section>
         </chapter>
     </book>
 
