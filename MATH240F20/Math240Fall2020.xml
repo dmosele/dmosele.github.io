@@ -357,6 +357,20 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                                     <li>Find the maximum and minimum values of <m>f(x,y)</m> on the disk <m>x^2+y^2 \leq 4</m>.</li>
                                 </ol>
                         </p>
+                        <solution>
+                            <ol type="a">
+                                <li><m>\mathrm{grad}(f) = 2x\vec i + 4y \vec j</m> so the critcal point is at <m>(0,0)</m></li>
+                                <li><m>\mathrm{grad}(g) = 2x\vec i + 2y \vec j</m> so we are solving the system of equations
+                                    <me> 2x = 2x\lambda \quad \text{and} \quad 4y=2y\lambda</me>
+                                    This is a strange one because solving both equations for <m>\lambda</m> yields that <m>\lambda=1</m> and <m>\lambda =2</m>. The one thing we ignored here was the possibilites that <m>x=0</m> or <m>y=0</m>. If <m>x=0</m>, then substituting back into the constraint equation yields <m>0^2+y^2=4</m> which means that <m>y=\pm 2</m>. If <m>y=0</m>, substituting into the constraint equation yields <m>x^2+0^2=4</m> which means that <m>x=\pm 2</m>. Thus, we get 4 important points out of this
+                                    <me> (0,-2),(0,2),(2,0),(-2,0) </me></li>
+                                <li>Plugging the critical point from part (a) and the four points from part (b) yields
+                                    <me>f(0,-2)=f(0,2)=8 </me>
+                                    <me>f(-2,0)=f(-2,0)=4</me>
+                                    <me>f(0,0)=0</me>
+                                    Hence, the minimum happens at <m>(0,0)</m> and the maximum happens at <m>(0,-2)</m> and <m>(0,2)</m>.</li>
+                            </ol>
+                        </solution>
                     </exercise>
                 </worksheet>
             </section>

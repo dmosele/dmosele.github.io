@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2020-09-30T10:23:00-04:00       *-->
+<!--*       on 2020-10-02T13:10:51-04:00       *-->
 <!--*   A recent stable commit (2020-07-07):   *-->
 <!--* 1771dacf84bfb1789139598d8379414b560b8f17 *-->
 <!--*                                          *-->
@@ -129,7 +129,35 @@ MathJax.Hub.Config({
 <li id="li-22">Compute the critical points of \(f(x,y)\text{.}\)</li>
 <li id="li-23">Compute the ``special points" as identified by the method of Lagrange multipliers subject to the constraint that \(g(x,y)=x^2+y^2=4\text{.}\)</li>
 <li id="li-24">Find the maximum and minimum values of \(f(x,y)\) on the disk \(x^2+y^2 \leq 4\text{.}\)</li>
-</ol></article></section></section></div></main>
+</ol>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-4" id="solution-4"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-4"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-25">\(\mathrm{grad}(f) = 2x\vec i + 4y \vec j\) so the critcal point is at \((0,0)\)</li>
+<li id="li-26">\(\mathrm{grad}(g) = 2x\vec i + 2y \vec j\) so we are solving the system of equations<div class="displaymath">
+\begin{equation*}
+2x = 2x\lambda \quad \text{and} \quad 4y=2y\lambda
+\end{equation*}
+</div>This is a strange one because solving both equations for \(\lambda\) yields that \(\lambda=1\) and \(\lambda =2\text{.}\) The one thing we ignored here was the possibilites that \(x=0\) or \(y=0\text{.}\) If \(x=0\text{,}\) then substituting back into the constraint equation yields \(0^2+y^2=4\) which means that \(y=\pm 2\text{.}\) If \(y=0\text{,}\) substituting into the constraint equation yields \(x^2+0^2=4\) which means that \(x=\pm 2\text{.}\) Thus, we get 4 important points out of this<div class="displaymath">
+\begin{equation*}
+(0,-2),(0,2),(2,0),(-2,0) 
+\end{equation*}
+</div>
+</li>
+<li id="li-27">Plugging the critical point from part (a) and the four points from part (b) yields<div class="displaymath">
+\begin{equation*}
+f(0,-2)=f(0,2)=8 
+\end{equation*}
+</div>
+<div class="displaymath">
+\begin{equation*}
+f(-2,0)=f(-2,0)=4
+\end{equation*}
+</div>
+<div class="displaymath">
+\begin{equation*}
+f(0,0)=0
+\end{equation*}
+</div>Hence, the minimum happens at \((0,0)\) and the maximum happens at \((0,-2)\) and \((0,2)\text{.}\)</li>
+</ol></div></div></article></section></section></div></main>
 </div>
 </body>
 </html>
