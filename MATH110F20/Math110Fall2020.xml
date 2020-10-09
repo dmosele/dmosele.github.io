@@ -843,7 +843,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 			<video youtube="RFHa7ySE0-o"/>
 			<worksheet>
 				<exercise>
-					Without a calculator, compute the following
+					<p>Without a calculator, compute the following</p>
   					<ol type="a">
     						<li><m>\log(10000)</m></li>
     						<li><m>\ln(e^3)</m></li>
