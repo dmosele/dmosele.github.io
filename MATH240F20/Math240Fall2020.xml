@@ -407,6 +407,17 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                         <me> \int_R e^{x^2}\, dA.</me></p>
                         <image source="images/Math300F13Wksht12G1.jpg"/>
                     </exercise>
+                    <exercise>
+                        <p>Consider the integral
+                            <me> \int_0^4 \int_0^{-(y-4)/2} g(x,y) \, dx \, dy </me></p>
+                            <ol type="a">
+                                <li>Sketch the region over which the integration is being performed.
+                                <image source="Math300F13Wksht13G1.jpg"/> </li>
+                                <li>Write the integral with the order of the integration reversed.</li>
+                                <me>\scalebox{2}{$ \int \, \int \, g(x,y) \, dy \, dx $} </me>
+                                <li>Compute the area of the region using integration.</li>
+                            </ol>
+                    </exercise>
                 </worksheet>
             </section>
         </chapter>
