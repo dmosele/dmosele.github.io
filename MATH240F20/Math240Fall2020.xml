@@ -421,6 +421,30 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                 </worksheet>
             </section>
         </chapter>
+        <chapter xml:id="week9">
+            <title>Week 9 - More Integration</title>
+            <section xml:id="section16_4">
+                <title>Section 16.4 - Polar Integration</title>
+                <worksheet>
+                    <exercise>
+                        <p>Let <m>R</m> the region pictured below.</p>
+                        <image source="images/Math300F13Wksht14G1.jpg"/>
+                        <p>Compute the integral</p>
+                        <me>\int_R x^2+y^2 dA .</me>
+                    </exercise>
+
+                    <exercise>
+                        <p><fn>Number 10 in section 16.4</fn>Sketch the region of integration for the following integral:</p>
+                        <me> \int _{\pi/2} ^\pi \int_0^1 f(r,\theta) r dr d\theta </me>
+                    </exercise>
+
+                    <exercise>
+                        <p><fn>Similar to number 12 in 16.4</fn>Sketch the region of integration for the following integral:</p>
+                        <me> \int _{\pi/6} ^{\pi/3} \int_1^3 f(r,\theta) r dr d\theta </me>
+                    </exercise>
+                </worksheet>
+            </section>
+        </chapter>
     </book>
 
 </pretext>
