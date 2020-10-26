@@ -445,6 +445,26 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                 </worksheet>
             </section>
         </chapter>
+        <chapter xml:id="week10">
+            <title>Week 10 - More Integration</title>
+            <section xml:id="section16_5">
+                <title>Section 16.5 - Cylindrical &amp; Spherical Integration</title>
+                <worksheet>
+                    <exercise>
+                        <p>Evaluate the triple integral of <m>f(x,y,z) = \cos(x^2+y^2)</m> over <m>W</m>, where <m>W</m> is the solid cylinder lying between the planes <m>z=-2</m> and <m>z=3</m> centered at on the <m>z</m> axis with a radius 2 base.</p>
+                    </exercise>
+                    <exercise>
+                        <p>Sketch the region of integration and evaluate the integral:</p>
+                        <me> \int_{-1}^1 \int_{-1}^1 \int_{-\sqrt{1-x^2}}^{\sqrt{1-x^2}} (x^2+y^2)^{3/2} \, dy \, dx \, dz . </me>
+                    </exercise>
+                    <exercise>
+                        <p> Compute the integral
+                        <me>\int_W e^{(x^2+y^2+z^2)^{3/2}}\, dV </me>
+                        where <m>W</m> is the unit sphere centered at the origin.</p>
+                    </exercise>
+                </worksheet>
+            </section>
+        </chapter>
     </book>
 
 </pretext>
