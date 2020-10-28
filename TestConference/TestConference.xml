@@ -73,18 +73,18 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                 
                 <video youtube="EQaTTLD6Hco"/>
                 
-                <image source="JU_PosterTemplate2020.pdf"/>
+                <image source="images/JU_PosterTemplate2020.pdf"/>
                 
-                <a href="JU_PosterTemplate2020.pdf">Link to Poster</a>
+                <a href="images/JU_PosterTemplate2020.pdf">Link to Poster</a>
             </section>
             <section xml:id="poster2">
                 <title>Science Poster 2 </title>
                 
                 <video youtube="EQaTTLD6Hco"/>
                 
-                <image source="JU_PosterTemplate2020.pdf"/>
+                <image source="images/JU_PosterTemplate2020.pdf"/>
                 
-                <a href="JU_PosterTemplate2020.pdf">Link to Poster</a>
+                <a href="images/JU_PosterTemplate2020.pdf">Link to Poster</a>
             </section>
         </chapter>
         
@@ -95,9 +95,9 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                 
                 <video youtube="EQaTTLD6Hco"/>
                 
-                <image source="JU_PosterTemplate2020.pdf"/>
+                <image source="images/JU_PosterTemplate2020.pdf"/>
                 
-                <a href="JU_PosterTemplate2020.pdf">Link to Poster</a>
+                <a href="images/JU_PosterTemplate2020.pdf">Link to Poster</a>
             </section>
         </chapter>
     </book>
