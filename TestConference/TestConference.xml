@@ -69,13 +69,37 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
         <chapter xml:id="scienceposters">
             <title>Science Posters</title>
             <section xml:id="poster1">
-                <title>Poster 1 </title>
+                <title>Science Poster 1 </title>
                 
                 <video youtube="EQaTTLD6Hco"/>
                 
                 <image source="JU_PosterTemplate2020.pdf"/>
-		</section>	
-	</chapter>
+                
+                <a href="JU_PosterTemplate2020.pdf">Link to Poster</a>
+            </section>
+            <section xml:id="poster2">
+                <title>Science Poster 2 </title>
+                
+                <video youtube="EQaTTLD6Hco"/>
+                
+                <image source="JU_PosterTemplate2020.pdf"/>
+                
+                <a href="JU_PosterTemplate2020.pdf">Link to Poster</a>
+            </section>
+        </chapter>
+        
+        <chapter xml:id="humanitiesposters">
+            <title>Humanities Posters</title>
+            <section xml:id="hposter1">
+                <title>Humanities Poster 1 </title>
+                
+                <video youtube="EQaTTLD6Hco"/>
+                
+                <image source="JU_PosterTemplate2020.pdf"/>
+                
+                <a href="JU_PosterTemplate2020.pdf">Link to Poster</a>
+            </section>
+        </chapter>
     </book>
 
 </pretext>
