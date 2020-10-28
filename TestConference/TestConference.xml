@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--********************************************************************
+Copyright 2015 Robert A. Beezer
+
+This file is part of MathBook XML.
+
+MathBook XML is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 or version 3 of the
+License (at your option).
+
+MathBook XML is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
+*********************************************************************-->
+
+<!-- To process this file do                                                                      -->
+<!-- cd ~/"OneDrive - Jacksonville University"/Website/"dmosele.github.io"/MATH110F20                                                                                             -->
+<!-- (1) LaTeX/PDF:                                                                               -->
+<!--     xsltproc -o Math110Fall2020.tex ~/mathbook/xsl/mathbook-latex.xsl Math110Fall2020.xml                      -->
+<!--     pdflatex minimal.tex                                                                     -->
+<!--     xelatex minimal.tex                                                                      -->
+<!--                                                                                              -->
+<!-- (2) HTML:                                                                                    -->
+<!--     xsltproc ~/mathbook/xsl/pretext-html.xsl Math110Fall2020.xml                                      -->
+<!--     <browser>  minimal.html                                                                  -->
+<!--                                                                                              -->
+<!-- (3) CoCalc worksheet (parameter causes a single file for output)                             -->
+<!--     REMOVE the "X" in the double dash (which is not legal in an XML comment)                 -->
+<!--     xsltproc -X-stringparam chunk.level 0 mathbook/xsl/mathbook-smc.xsl minimal.xml          -->
+<!--     <CoCalc> minimal.sagews                                                                  -->
+<!--                                                                                              -->
+<!-- (4) Sage doctesting                                                                          -->
+<!--     REMOVE the "X" in the double dash (which is not legal in an XML comment)                 -->
+<!--     xsltproc -X-stringparam chunk.level 0 mathbook/xsl/mathbook-sage-doctest.xsl minimal.xml -->
+<!--     <read further instructions in> minimal.py                                                -->
+
+<pretext>
+
+    <book xml:id="TestConf">
+        <title>Test Conference Poster Session</title>
+
+        <frontmatter>
+
+            <titlepage>
+                <author>
+                    <personname><a href="https://dmosele.github.io">Daniel Moseley</a></personname>
+                    <institution>Jacksonville University</institution>
+                </author>
+                <date><today /></date>
+            </titlepage>
+
+            <abstract>
+
+                <p>This is a collection of posters and videos</p>
+            </abstract>
+
+        </frontmatter>
+
+        <introduction>
+            <p>This is a collection of posters and videos.</p>
+        </introduction>
+
+        <chapter xml:id="scienceposters">
+            <title>Science Posters</title>
+            <section xml:id="poster1">
+                <title>Poster 1 </title>
+                
+                <video youtube="EQaTTLD6Hco"/>
+                
+                <image source="JU_PosterTemplate2020.pdf"/>
+		</section>	
+	</chapter>
+    </book>
+
+</pretext>
