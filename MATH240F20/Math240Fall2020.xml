@@ -465,6 +465,27 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                 </worksheet>
             </section>
         </chapter>
+        <chapter xml:id="week11">
+            <title>Week 11 - Integration &amp; Parameterization</title>
+            <section xml:id="section17_2">
+                <title>Section 17.2 - Motion, Velocity, &amp; Acceleration</title>
+                <worksheet>
+                    <exercise>
+                        <fn>#30 from Section 17.2</fn>
+                        <p>Jane wanders slowly down a circular staircase. With <m>x</m>, <m>y</m>, and <m>z</m> in feet and the ground floor on the plane <m>z=0</m>, her position <m>t</m> minutes from the start is given by</p>
+                            <me>x = 12 \cos t, \hspace{.3in} y = 12 \sin t, \hspace{.3in} z = 100-5t . </me>
+                            <ol type="a">
+                                <li>How tall is the tower?</li>
+                                <li>When does Jane reach the bottom?</li>
+                                <li>What is her velocity at time <m>t</m>?</li>
+                                <li>What is her speed at time <m>t</m>?</li>
+                                <li>What is her acceleration at time <m>t</m>?</li>
+                                <li>How far does she travel walking down the stairs?</li>
+                            </ol>
+                    </exercise>
+                </worksheet>
+            </section>
+        </chapter>
     </book>
 
 </pretext>
