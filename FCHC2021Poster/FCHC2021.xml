@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--********************************************************************
+Copyright 2015 Robert A. Beezer
+
+This file is part of MathBook XML.
+
+MathBook XML is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 or version 3 of the
+License (at your option).
+
+MathBook XML is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
+*********************************************************************-->
+
+<!-- To process this file do                                                                      -->
+<!-- cd ~/"OneDrive - Jacksonville University"/Website/"dmosele.github.io"/MATH110F20                                                                                             -->
+<!-- (1) LaTeX/PDF:                                                                               -->
+<!--     xsltproc -o Math110Fall2020.tex ~/mathbook/xsl/mathbook-latex.xsl Math110Fall2020.xml                      -->
+<!--     pdflatex minimal.tex                                                                     -->
+<!--     xelatex minimal.tex                                                                      -->
+<!--                                                                                              -->
+<!-- (2) HTML:                                                                                    -->
+<!--     xsltproc ~/mathbook/xsl/pretext-html.xsl Math110Fall2020.xml                                      -->
+<!--     <browser>  minimal.html                                                                  -->
+<!--                                                                                              -->
+<!-- (3) CoCalc worksheet (parameter causes a single file for output)                             -->
+<!--     REMOVE the "X" in the double dash (which is not legal in an XML comment)                 -->
+<!--     xsltproc -X-stringparam chunk.level 0 mathbook/xsl/mathbook-smc.xsl minimal.xml          -->
+<!--     <CoCalc> minimal.sagews                                                                  -->
+<!--                                                                                              -->
+<!-- (4) Sage doctesting                                                                          -->
+<!--     REMOVE the "X" in the double dash (which is not legal in an XML comment)                 -->
+<!--     xsltproc -X-stringparam chunk.level 0 mathbook/xsl/mathbook-sage-doctest.xsl minimal.xml -->
+<!--     <read further instructions in> minimal.py                                                -->
+
+<pretext>
+
+    <book xml:id="FCHC2021Poster">
+        <title>FCHC 2021 Virtual Poster Session</title>
+
+        <frontmatter>
+
+            <titlepage>
+                <author>
+                    <personname><url href="https://fchchonors.org">FCHC</url></personname>
+                </author>
+                <date><today /></date>
+            </titlepage>
+
+            <abstract>
+                <image source ="FCHC-logo-2020.png"/>
+                <p>Using the navigation bar on the left, you can navigate to each poster and view not only the poster, but a video of each presenter explaining their poster. Below the poster is a link to see a larger size version.</p>
+            </abstract>
+
+        </frontmatter>
+
+        <introduction>
+            <image source ="FCHC-logo-2020.png"/>
+            <p>Using the navigation bar on the left, you can navigate to each poster and view not only the poster, but a video of each presenter explaining their poster. Below the poster is a link to see a larger size version.</p>
+        </introduction>
+
+        <chapter xml:id="posters">
+            <title>Posters</title>
+            <section xml:id="poster1">
+                <title>An Event To Remember</title>
+                <author>Kaitlyn Viasto, Hana Kabil, Jonathan O'Berry, and Elizabeth Kirby</author>
+                
+                <video youtube="m9IObs86vBg"/>
+                
+                <image source="Posters/Poster1.jpg"/>
+                
+                <url href="Posters/Poster1.pdf">Link to Poster</url>
+            </section>
+            <section xml:id="poster2">
+                <title>English Tutors Level 100/200 </title>
+                <author>Samantha Brunjes, Eleanor Ascheman, and Erin Ogrodnik</author>
+                
+                <video youtube="tKke2LQpcp4"/>
+                
+                <image source="Posters/Poster2.jpg"/>
+                
+                <url href="Posters/Poster2.pdf">Link to Poster</url>
+            </section>
+            <section xml:id="poster3">
+                <title>School Gardens to Reduce Inequalities</title>
+                <author>Clio Chazan-Gabbard, Katherine Evans, and Kathryn Fox</author>
+                
+                <video youtube="_hgyO1UsZPM"/>
+                
+                <image source="Posters/Poster3.jpg"/>
+                
+                <url href="Posters/Poster3.pdf">Link to Poster</url>
+            </section>
+            <section xml:id="poster4">
+                <title>Alice in Wonderland Syndrome: A Real-Life Fairy Tale</title>
+                <author>Drew Burgess</author>
+                
+                <video youtube="yho-PbAzAbU"/>
+                
+                <image source="Posters/Poster4.jpg"/>
+                
+                <url href="Posters/Poster4.pdf">Link to Poster</url>
+            </section>
+            <section xml:id="poster5">
+                <title>Finding Biomarkers for Early Alzheimer's Detection</title>
+                <author>Savannah Snider, Rodney Guttmann, Ph.D., Enid Sisskin, Ph.D., Stephanie Jones</author>
+                
+                <video youtube="nwVEWtccbh0"/>
+                
+                <image source="Posters/Poster5.jpg"/>
+                
+                <url href="Posters/Poster5.pdf">Link to Poster</url>
+            </section>
+            <section xml:id="poster6">
+                <title>The New Normal in Education Delivery</title>
+                <author>Emilee Lopez, Beatriz Natera</author>
+                
+                <video youtube="YKILkMjZ-Qk"/>
+                
+                <image source="Posters/Poster6.jpg"/>
+                
+                <url href="Posters/Poster6.pdf">Link to Poster</url>
+            </section>
+            <section xml:id="poster7">
+                <title>Impact of the Framing Effect on Perceptions of Physical Disability</title>
+                <author>Rebekah Rodriguez, Kelly L. Schuller, Ph.D.</author>
+                
+                <video youtube="aotJOfzg5m4"/>
+                
+                <image source="Posters/Poster7.jpg"/>
+                
+                <url href="Posters/Poster7.pdf">Link to Poster</url>
+            </section>
+            <section xml:id="poster8">
+                <title>Music Shaped the Counterculture of the 1960s
+                    by Capturing Events and Emotions of the Decade in Song</title>
+                <author>Katherine George</author>
+                
+                <video youtube="SQWm38Iip4A"/>
+                
+                <image source="Posters/Poster8.jpg"/>
+                <image source="Posters/Poster8b.jpg"/>
+
+                <url href="Posters/Poster8.pdf">Link to Poster</url>
+                <url href="Posters/Poster8b.pdf">Link to Poster 2</url>
+            </section>
+            <section xml:id="poster9">
+                <title>Islamophobia and the Rise of Right-Wing Populism in Eastern Europe</title>
+                <author>Hannah Bass</author>
+                
+                <video youtube="LiLO9Iorzg0 "/>
+                
+                <image source="Posters/Poster9.jpg"/>
+                
+                <url href="Posters/Poster9.pdf">Link to Poster</url>
+            </section>
+            <section xml:id="poster10">
+                <title>A Comparison of Living Arrangements and Mental Health in University Students</title>
+                <author>Jessica Miceli, Peter Reuter, MD, PhD</author>
+                
+                <video youtube="9kcbgLho8q4"/>
+                
+                <image source="Posters/Poster10.jpg"/>
+                
+                <url href="Posters/Poster10.pdf">Link to Poster</url>
+            </section>
+            <section xml:id="poster11">
+                <title>Reducing the Destructive Effects of Eutrophication Through Filter Ecosystems</title>
+                <author>Scott Claflin, Jessica Fliess, Jaelyn Flody, Faith Nevin</author>
+                
+                <video youtube="3FGVFCAfUzk"/>
+                
+                <image source="Posters/Poster11.jpg"/>
+                
+                <url href="Posters/Poster11.pdf">Link to Poster</url>
+            </section>
+            <section xml:id="poster12">
+                <title>Talking Planimlas! Identifying Genes Associated with Coral Bioacouatics</title>
+                <author>Camila Rimoldi Ibanez and Dr. James Hawker</author>
+                
+                <video youtube="MiE-kwjDBF8"/>
+                
+                <image source="Posters/Poster12.jpg"/>
+                
+                <url href="Posters/Poster12.pdf">Link to Poster</url>
+            </section>
+            <section xml:id="poster13">
+                <title>Political Influences by the Catholic Church and Spanish Government in Colonial Mexico</title>
+                <author>Dorian Barboza</author>
+                
+                <video youtube=""/>
+                
+                <image source="Posters/Poster13.jpg"/>
+                
+                <url href="Posters/Poster13.pdf">Link to Poster</url>
+            </section>
+            <section xml:id="poster14">
+                <title>Florida Tech Reads</title>
+                <author>Jennifer Tolliver</author>
+                
+                <video youtube="Wul0XBkJisc"/>
+                
+                <image source="Posters/Poster14.jpg"/>
+                
+                <url href="Posters/Poster14.pdf">Link to Poster</url>
+            </section>
+        </chapter>
+    </book>
+
+</pretext>
