@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--********************************************************************
+Copyright 2015 Robert A. Beezer
+
+This file is part of MathBook XML.
+
+MathBook XML is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 or version 3 of the
+License (at your option).
+
+MathBook XML is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
+*********************************************************************-->
+
+<!-- To process this file do                                                                      -->
+<!-- cd ~/"OneDrive - Jacksonville University"/Website/"dmosele.github.io"/JITtest                                                                                             -->
+<!-- (2) HTML:                                                                                    -->
+<!--     xsltproc ~/mathbook/xsl/pretext-html.xsl JITtest.xml                                     -->
+<!--     <browser>  minimal.html                                                                  -->
+<!--                                                                                              -->
+<!-- (3) CoCalc worksheet (parameter causes a single file for output)                             -->
+<!--     REMOVE the "X" in the double dash (which is not legal in an XML comment)                 -->
+<!--     xsltproc -X-stringparam chunk.level 0 mathbook/xsl/mathbook-smc.xsl minimal.xml          -->
+<!--     <CoCalc> minimal.sagews                                                                  -->
+<!--                                                                                              -->
+<!-- (4) Sage doctesting                                                                          -->
+<!--     REMOVE the "X" in the double dash (which is not legal in an XML comment)                 -->
+<!--     xsltproc -X-stringparam chunk.level 0 mathbook/xsl/mathbook-sage-doctest.xsl minimal.xml -->
+<!--     <read further instructions in> minimal.py                                                -->
+
+<pretext>
+
+    <docinfo>
+        <macros>
+        \newcommand{\doubler}[1]{2#1}
+        </macros>
+    </docinfo>
+
+    <book xml:id="Math140HFall2020">
+        <title>Interactive Math Instruction</title>
+
+        <frontmatter>
+
+            <titlepage>
+                <author>
+                    <personname><a href="https://dmosele.github.io">JU Math</a></personname>
+                    <institution>Jacksonville University</institution>
+                </author>
+                <date><today /></date>
+            </titlepage>
+
+            <abstract>
+
+                <p>This is a collection of the materials (outside of the textbook) we will use in class to guide you on your journey through MATH 140H. The textbook used in the course will be Calculus: Single Variable, 7th Edition edition by Hughes-Hallett, et al.</p>
+            </abstract>
+
+        </frontmatter>
+
+        <introduction>
+            <p>This is a collection of the materials (outside of the textbook) we will use in class to guide you on your journey through MATH 140H.</p>
+        </introduction>
+
+    <chapter xml:id="webworktest">
+        <title>Math Topics</title>
+            <section>
+                <title>JIT Learning Test</title>
+                <worksheet>
+                <exercise>
+                    <p>What is 2+2? </p>
+                    <interactive xml:id="test1" platform="sage" width="100%" aspect="4:2">
+                        <slate surface="sage">
+                            @interact
+                            def _(answer=2, auto=UpdateButton(text="Check")):
+                                if answer==4:
+                                    print('Correct')
+                                else:
+                                    print('Incorrect')
+                        </slate>
+                    </interactive>
+                </exercise>
+
+                <exercise>
+                    <p>What is the slope of the graph below? </p>
+                    <interactive xml:id="test2" platform="sage" width="100%" aspect="4:5">
+                        <slate surface="sage">
+                            f=2*x+7
+                            @interact
+                            def _(answer=1, auto=UpdateButton(text="Check")):
+                                show(plot(f,(x,-3,3)))
+                                if answer==2:
+                                    print('Correct')
+                                else:
+                                    print('Incorrect')
+                        </slate>
+                    </interactive>
+                </exercise>
+                
+                </worksheet>
+            </section>
+	</chapter>
+</book>
+
+</pretext>
