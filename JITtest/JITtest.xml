@@ -98,8 +98,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
         <title>Math Topics - webwork</title>
             <section>
                 <title>JIT Learning Test</title>
-                <worksheet>
-                <exercise>
+
                 <webwork>
                   <setup>
                     <pg-code>
@@ -120,13 +119,11 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                     <p><m><var name="$a"/> + <var name="$b"/> = <var name="$c"/></m>.</p>
                   </solution>
                 </webwork>
-                </exercise>
                 
                 <exercise>
                     <webwork source="Library/ma122DB/set12/s5_4_26.pg" />
                 </exercise>
                     
-                </worksheet>
             </section>
     </chapter>
 </book>
