@@ -21,19 +21,8 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
 <!-- To process this file do                                                                      -->
 <!-- cd ~/"OneDrive - Jacksonville University"/Website/"dmosele.github.io"/JITtest                                                                                             -->
-<!-- (2) HTML:                                                                                    -->
-<!--     xsltproc ~/mathbook/xsl/pretext-html.xsl JITtest.xml                                     -->
-<!--     <browser>  minimal.html                                                                  -->
-<!--                                                                                              -->
-<!-- (3) CoCalc worksheet (parameter causes a single file for output)                             -->
-<!--     REMOVE the "X" in the double dash (which is not legal in an XML comment)                 -->
-<!--     xsltproc -X-stringparam chunk.level 0 mathbook/xsl/mathbook-smc.xsl minimal.xml          -->
-<!--     <CoCalc> minimal.sagews                                                                  -->
-<!--                                                                                              -->
-<!-- (4) Sage doctesting                                                                          -->
-<!--     REMOVE the "X" in the double dash (which is not legal in an XML comment)                 -->
-<!--     xsltproc -X-stringparam chunk.level 0 mathbook/xsl/mathbook-sage-doctest.xsl minimal.xml -->
-<!--     <read further instructions in> minimal.py                                                -->
+<!-- ~/mathbook/pretext/pretext -c webwork -s https://webwork-ptx.aimath.org -d webwork-representations JITtest.xml -->
+<!-- xsltproc -stringparam publisher publication.ptx ~/mathbook/xsl/pretext-html.xsl JITtest.xml                                     -->
 
 <pretext>
 
@@ -67,8 +56,8 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
             <p>This is a collection of the materials (outside of the textbook) we will use in class to guide you on your journey through MATH 140H.</p>
         </introduction>
 
-    <chapter xml:id="webworktest">
-        <title>Math Topics</title>
+    <chapter xml:id="sageinteracttest">
+        <title>Math Topics - sage interact</title>
             <section>
                 <title>JIT Learning Test</title>
                 <worksheet>
@@ -105,6 +94,41 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                 </worksheet>
             </section>
 	</chapter>
+    <chapter xml:id="webworktest">
+        <title>Math Topics - webwork</title>
+            <section>
+                <title>JIT Learning Test</title>
+                <worksheet>
+                <exercise>
+                <webwork>
+                  <setup>
+                    <pg-code>
+                      Context("LimitedNumeric");
+                      $a = Compute(random(1, 9, 1));
+                      $b = Compute(random(1, 9, 1));
+                      $c = $a + $b;
+                    </pg-code>
+                  </setup>
+
+                  <statement>
+                    <p>Compute <m><var name="$a"/> + <var name="$b"/></m>.</p>
+                    <instruction>Type your answer without using the <c>+</c> sign.</instruction>
+                    <p>The sum is <var name="$c" width="2"/>.</p>
+                  </statement>
+
+                  <solution>
+                    <p><m><var name="$a"/> + <var name="$b"/> = <var name="$c"/></m>.</p>
+                  </solution>
+                </webwork>
+                </exercise>
+                
+                <exercise>
+                    <webwork source="Library/ma122DB/set12/s5_4_26.pg" />
+                </exercise>
+                    
+                </worksheet>
+            </section>
+    </chapter>
 </book>
 
 </pretext>
