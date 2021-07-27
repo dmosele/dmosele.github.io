@@ -99,15 +99,14 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
             <section>
                 <title>JIT Learning Test</title>
 
+                <exercise>
                 <webwork>
-                  <setup>
                     <pg-code>
                       Context("LimitedNumeric");
                       $a = Compute(random(1, 9, 1));
                       $b = Compute(random(1, 9, 1));
                       $c = $a + $b;
                     </pg-code>
-                  </setup>
 
                   <statement>
                     <p>Compute <m><var name="$a"/> + <var name="$b"/></m>.</p>
@@ -119,9 +118,15 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                     <p><m><var name="$a"/> + <var name="$b"/> = <var name="$c"/></m>.</p>
                   </solution>
                 </webwork>
+                </exercise>
                 
                 <exercise>
                     <webwork source="Library/ma122DB/set12/s5_4_26.pg" />
+                </exercise>
+                
+                <exercise xml:id="ez-1-5-WW4" permid="vTB">
+                  <title>Displacement and velocity</title>
+                  <webwork source="Library/UVA-Stew5e/setUVA-Stew5e-C02S07-TansVelsRates/2-7-20.pg" />
                 </exercise>
                     
             </section>
