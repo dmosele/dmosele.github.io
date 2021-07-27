@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-07-27T15:44:53-04:00       *-->
+<!--*       on 2021-07-27T16:36:31-04:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -50,10 +50,10 @@
   },
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="https://webwork-ptx.aimath.org/webwork2_files/js/apps/MathView/mathview.css" rel="stylesheet">
-<script src="https://pretextbook.org/js/0.13/pretext-webwork.js"></script><script src="https://webwork-ptx.aimath.org/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script async="" src="https://cse.google.com/cse.js?cx=015103900096539427448:ngwuia10qci"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+<script src="https://pretextbook.org/js/0.13/pretext-webwork.js"></script><script src="https://webwork-ptx.aimath.org/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
 </script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
 <link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
-<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<script src="https://cdn.geogebra.org/apps/deployggb.js"></script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
 <link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
 <link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
 <link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
@@ -70,15 +70,30 @@
 \newcommand{\amp}{&amp;}
 \)</div>
 <header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
-<a id="logo-link" href=""></a><div class="title-container">
+<a id="logo-link" href="https://dmosele.github.io/JITtest" target="_blank"><img src="images/junewseal.png" alt="Logo image"></a><div class="title-container">
 <h1 class="heading"><a href="Math140HFall2020.html"><span class="title">Interactive Math Instruction</span></a></h1>
 <p class="byline">JU Math</p>
 </div>
-<div class="searchwrapper" role="search"><div class="gcse-search"></div></div>
 </div></div>
 <nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><span id="previousbutton" class="previous-button button toolbar-item disabled">Prev</span><span id="upbutton" class="up-button button disabled toolbar-item">Up</span><a id="nextbutton" class="next-button button toolbar-item" href="frontmatter-1.html" title="Next">Next</a></span></div>
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<button id="calculator-toggle" class="toolbar-item button toggle" title="Show calculator" aria-expanded="false" aria-controls="calculator-container">Calc</button><div id="calculator-container" class="calculator-container" style="display: none; z-index:100;"><div id="geogebra-calculator"></div></div>
+<script>
+var ggbApp = new GGBApplet({"appName": "graphing",
+    "width": 330,
+    "height": 600,
+    "showToolBar": true,
+    "showAlgebraInput": true,
+    "perspective": "G/A",
+    "algebraInputPosition": "bottom",
+    "scaleContainerClass": "calculator-container",
+    "allowUpscale": true,
+    "autoHeight": true,
+    "disableAutoScale": false},
+true);
+</script><span class="threebuttons"><span id="previousbutton" class="previous-button button toolbar-item disabled">Prev</span><span id="upbutton" class="up-button button disabled toolbar-item">Up</span><a id="nextbutton" class="next-button button toolbar-item" href="frontmatter-1.html" title="Next">Next</a></span>
+</div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
 <button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><span class="previous-button button toolbar-item disabled">Prev</span><span class="up-button button disabled toolbar-item">Up</span><a class="next-button button toolbar-item" href="frontmatter-1.html" title="Next">Next</a>
@@ -88,17 +103,13 @@
 <nav id="toc"><ul>
 <li class="link frontmatter"><a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a></li>
 <li class="link">
-<a href="sageinteracttest.html" data-scroll="sageinteracttest"><span class="codenumber">1</span> <span class="title">Math Topics - sage interact</span></a><ul><li><a href="section-1.html" data-scroll="section-1">JIT Learning Test</a></li></ul>
-</li>
-<li class="link">
-<a href="webworktest.html" data-scroll="webworktest"><span class="codenumber">2</span> <span class="title">Math Topics - webwork</span></a><ul><li><a href="section-2.html" data-scroll="section-2">JIT Learning Test</a></li></ul>
+<a href="webworktest.html" data-scroll="webworktest"><span class="codenumber">1</span> <span class="title">Math Topics</span></a><ul><li><a href="section-1.html" data-scroll="section-1">Adding Fractions</a></li></ul>
 </li>
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
-<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="book" id="Math140HFall2020"><section class="introduction" id="introduction-1"><p id="p-2">This is a collection of the materials (outside of the textbook) we will use in class to guide you on your journey through MATH 140H.</p></section><nav class="summary-links"><ul>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="book" id="Math140HFall2020"><section class="introduction" id="introduction-1"><p id="p-2">his is a collection of materials designed to help you strengthen your math skills. Most of these skills have courses connected to them with applications in that course.</p></section><nav class="summary-links"><ul>
 <li><a href="frontmatter-1.html"><span class="title">Front Matter</span></a></li>
-<li><a href="sageinteracttest.html"><span class="codenumber">1</span> <span class="title">Math Topics - sage interact</span></a></li>
-<li><a href="webworktest.html"><span class="codenumber">2</span> <span class="title">Math Topics - webwork</span></a></li>
+<li><a href="webworktest.html"><span class="codenumber">1</span> <span class="title">Math Topics</span></a></li>
 </ul></nav></section></div></main>
 </div>
 </body>

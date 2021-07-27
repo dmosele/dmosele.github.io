@@ -27,6 +27,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 <pretext>
 
     <docinfo>
+        <brandlogo url="https://dmosele.github.io/JITtest" source="images/junewseal.png" />
         <macros>
         \newcommand{\doubler}[1]{2#1}
         </macros>
@@ -47,57 +48,19 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
             <abstract>
 
-                <p>This is a collection of the materials (outside of the textbook) we will use in class to guide you on your journey through MATH 140H. The textbook used in the course will be Calculus: Single Variable, 7th Edition edition by Hughes-Hallett, et al.</p>
+                <p>This is a collection of materials designed to help you strengthen your math skills. Most of these skills have courses connected to them with applications in that course.</p>
             </abstract>
 
         </frontmatter>
 
         <introduction>
-            <p>This is a collection of the materials (outside of the textbook) we will use in class to guide you on your journey through MATH 140H.</p>
+            <p>his is a collection of materials designed to help you strengthen your math skills. Most of these skills have courses connected to them with applications in that course.</p>
         </introduction>
 
-    <chapter xml:id="sageinteracttest">
-        <title>Math Topics - sage interact</title>
-            <section>
-                <title>JIT Learning Test</title>
-                <worksheet>
-                <exercise>
-                    <p>What is 2+2? </p>
-                    <interactive xml:id="test1" platform="sage" width="100%" aspect="4:2">
-                        <slate surface="sage">
-                            @interact
-                            def _(answer=2, auto=UpdateButton(text="Check")):
-                                if answer==4:
-                                    print('Correct')
-                                else:
-                                    print('Incorrect')
-                        </slate>
-                    </interactive>
-                </exercise>
-
-                <exercise>
-                    <p>What is the slope of the graph below? </p>
-                    <interactive xml:id="test2" platform="sage" width="100%" aspect="4:5">
-                        <slate surface="sage">
-                            f=2*x+7
-                            @interact
-                            def _(answer=1, auto=UpdateButton(text="Check")):
-                                show(plot(f,(x,-3,3)))
-                                if answer==2:
-                                    print('Correct')
-                                else:
-                                    print('Incorrect')
-                        </slate>
-                    </interactive>
-                </exercise>
-                
-                </worksheet>
-            </section>
-	</chapter>
     <chapter xml:id="webworktest">
-        <title>Math Topics - webwork</title>
+        <title>Math Topics</title>
             <section>
-                <title>JIT Learning Test</title>
+                <title>Adding Fractions</title>
 
                 <exercise>
                 <webwork>
