@@ -59,8 +59,10 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
     <chapter xml:id="webworktest">
         <title>Math Topics</title>
-            <section>
+            <section xml:id="addfrac">
                 <title>Adding Fractions</title>
+                
+                <video youtube="rwIfqJm8yDc"/>
 
                 <exercise>
                 <webwork>
@@ -93,7 +95,27 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                 </exercise>
                     
             </section>
+            <section xml:id="percentages">
+                <title>Percentages</title>
+            </section>
     </chapter>
-</book>
+    <chapter xml:id="diagnostics">
+        <title>Diagnostics</title>
+        <section>
+            <title>Test</title>
+        </section>
+    </chapter>
+    <chapter xml:id="course_connect">
+        <title>Course Connections</title>
+        <section xml:id="CHEM204">
+            <title>CHEM 204</title>
+            <p> If you are in CHEM 204, we recommend checking out the skills: <xref ref="addfrac" /></p>
+        </section>
+        <section xml:id="MPP">
+            <title>MPP</title>
+            <p> If you are in the MPP program, we recommend checking out the skills: <xref ref="percentages" /></p>
+        </section>
+    </chapter>
+    </book>
 
 </pretext>
