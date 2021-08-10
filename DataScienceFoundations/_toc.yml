@@ -1,5 +1,6 @@
-file: Welcome to Data Science Foundations
-sections:
-- file: Diagonalization
-- file: DotProductAndLength
-- file: Least-Squares
+format: jb-book
+root: Welcome to Data Science Foundations
+chapters:
+- file: Intro_to_Python
+  sections:
+  - file: Python Basic Mathematical Operations
