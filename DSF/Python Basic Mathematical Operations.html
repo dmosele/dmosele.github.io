@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Data Science Foundations &#8212; Data Science Foundations</title>
+    <title>Basic Mathematical Operations in Python &#8212; Data Science Foundations</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -54,7 +54,7 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Introduction to Python" href="Intro_to_Python.html" />
+    <link rel="prev" title="Introduction to Python" href="Intro_to_Python.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -85,25 +85,25 @@
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
- <li class="toctree-l1 current">
-  <a class="reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Welcome to Data Science Foundations.html">
    Welcome to Data Science Foundations
   </a>
  </li>
 </ul>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1 has-children">
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="Intro_to_Python.html">
    Introduction to Python
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="Python Basic Mathematical Operations.html">
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      Basic Mathematical Operations in Python
     </a>
    </li>
@@ -150,7 +150,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/Welcome to Data Science Foundations.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="_sources/Python Basic Mathematical Operations.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
@@ -175,7 +175,7 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/Welcome to Data Science Foundations.ipynb"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/Python Basic Mathematical Operations.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="_static/images/logo_binder.svg"
@@ -200,11 +200,72 @@
         
               <div>
                 
-  <div class="section" id="welcome-to-data-science-foundations">
-<h1>Welcome to Data Science Foundations<a class="headerlink" href="#welcome-to-data-science-foundations" title="Permalink to this headline">¶</a></h1>
-<p>This text is designed for the MATH 170: Data Science Foundations course from Jacksonville University. In this course, we will learn a little bit of Python, a little bit of statistics, and some techniques to visualize and communicate our results.</p>
-<p>(Warning: This text is currently in progress and not in any completed state yet.)</p>
-<div class="toctree-wrapper compound">
+  <div class="section" id="basic-mathematical-operations-in-python">
+<h1>Basic Mathematical Operations in Python<a class="headerlink" href="#basic-mathematical-operations-in-python" title="Permalink to this headline">¶</a></h1>
+<p>For the most part, mathematical operations work just like you would like in Python. For example, let’s add 3 and 5 by typing “3+5”. To execute code in a Jupyter Notebook cell, you press Shift+Enter.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">3</span><span class="o">+</span><span class="mi">5</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>8
+</pre></div>
+</div>
+</div>
+</div>
+<p>Python then reports the answer correctly as 8.</p>
+<p>The same is true for multiplication and division.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">3</span><span class="o">*</span><span class="mi">5</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>15
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">5</span><span class="o">/</span><span class="mi">3</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.6666666666666667
+</pre></div>
+</div>
+</div>
+</div>
+<p>If we want to exponentiate however, the typical caret symbol doesn’t work. In fact, it has to do with the “exclusive or” logical operation.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">3</span><span class="o">^</span><span class="mi">5</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>6
+</pre></div>
+</div>
+</div>
+</div>
+<p>Using two asterisks though yields the desired result.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">3</span><span class="o">**</span><span class="mi">5</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>243
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 
@@ -233,7 +294,7 @@
         
         <div class='prev-next-bottom'>
             
-    <a class='right-next' id="next-link" href="Intro_to_Python.html" title="next page">Introduction to Python</a>
+    <a class='left-prev' id="prev-link" href="Intro_to_Python.html" title="previous page">Introduction to Python</a>
 
         </div>
         
