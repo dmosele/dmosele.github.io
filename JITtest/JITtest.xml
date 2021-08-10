@@ -27,13 +27,13 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 <pretext>
 
     <docinfo>
-        <brandlogo url="https://dmosele.github.io/JITtest" source="images/junewseal.png" />
+        <brandlogo source="images/junewseal.png" />
         <macros>
         \newcommand{\doubler}[1]{2#1}
         </macros>
     </docinfo>
 
-    <book xml:id="Math140HFall2020">
+    <book xml:id="JITtest">
         <title>Interactive Math Instruction</title>
 
         <frontmatter>
