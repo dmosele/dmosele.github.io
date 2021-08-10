@@ -6,3 +6,11 @@ logo: junewseal.png
 latex:
   latex_documents:
     targetname: book.tex
+
+repository:
+  url                       : https://github.com/dmosele/dmosele.github.io # Online location of your book
+  path_to_book              : DataScienceFoundations  # Optional path to your book, relative to the repository root
+  branch                    : master  # Which branch of the repository should be used when creating links (optional)
+
+launch_buttons:
+  colab_url: "https://colab.research.google.com"
