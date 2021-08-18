@@ -9,17 +9,17 @@
 # 
 # The nice thing about Google Colab is that it is available basically anywhere you have an internet browser. There's nothing to install. All you need to do is go to https://colab.research.google.com and create a new notebook.
 # 
-# The downside, at least for me, is that it is not intuitive how to import data into Colab. If you want to import data into colab, you can use the following code:
+# The downside, at least for me, is that it is not intuitive how to import data into Colab. If you want to import data into colab, you can use the following code: (You will need to remove the # symbols to make the code work).
 
 # In[1]:
 
 
-import pandas as pd
-from google.colab import files
-import io
+#import pandas as pd
+#from google.colab import files
+#import io
 
-uploaded = files.upload()
-df2 = pd.read_csv(io.BytesIO(uploaded['name_of_file.csv']))
+#uploaded = files.upload()
+#df2 = pd.read_csv(io.BytesIO(uploaded['name_of_file.csv']))
 
 
 # ## Anaconda
