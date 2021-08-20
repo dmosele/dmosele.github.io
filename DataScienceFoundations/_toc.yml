@@ -4,3 +4,4 @@ chapters:
 - file: Intro_to_Python
   sections:
   - file: Python Basic Mathematical Operations
+  - file: More Mathematical Operations
