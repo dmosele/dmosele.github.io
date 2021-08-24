@@ -16,4 +16,4 @@ launch_buttons:
   colab_url: "https://colab.research.google.com"
   
 execute:
-  allow_errors: false
+  execute_notebooks: force

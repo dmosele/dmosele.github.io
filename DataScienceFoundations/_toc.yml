@@ -3,6 +3,6 @@ root: Welcome to Data Science Foundations
 chapters:
 - file: Intro_to_Python
   sections:
-  - file: Python Basic Mathematical Operations
-  - file: More Mathematical Operations
-  - file: Python Data Types
+    - file: Python Basic Mathematical Operations
+    - file: More Mathematical Operations
+    - file: Python Data Types
