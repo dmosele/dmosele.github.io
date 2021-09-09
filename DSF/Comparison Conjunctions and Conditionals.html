@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introduction to Python &#8212; Data Science Foundations</title>
+    <title>Comparison, Conjunctions, &amp; Conditionals &#8212; Data Science Foundations</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -54,8 +54,7 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Basic Mathematical Operations in Python" href="Python Basic Mathematical Operations.html" />
-    <link rel="prev" title="Welcome to Data Science Foundations" href="Welcome to Data Science Foundations.html" />
+    <link rel="prev" title="Functions 2" href="Functions 2.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -94,7 +93,7 @@
 </ul>
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active has-children">
-  <a class="current reference internal" href="#">
+  <a class="reference internal" href="Intro_to_Python.html">
    Introduction to Python
   </a>
   <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
@@ -102,7 +101,7 @@
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
+  <ul class="current">
    <li class="toctree-l2">
     <a class="reference internal" href="Python Basic Mathematical Operations.html">
      Basic Mathematical Operations in Python
@@ -138,8 +137,8 @@
      Functions 2
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="Comparison Conjunctions and Conditionals.html">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      Comparison, Conjunctions, &amp; Conditionals
     </a>
    </li>
@@ -186,7 +185,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/Intro_to_Python.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="_sources/Comparison Conjunctions and Conditionals.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
@@ -211,7 +210,7 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/dmosele/dmosele.github.io/master?urlpath=tree/DataScienceFoundations/Intro_to_Python.ipynb"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/dmosele/dmosele.github.io/master?urlpath=tree/DataScienceFoundations/Comparison Conjunctions and Conditionals.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="_static/images/logo_binder.svg"
@@ -219,7 +218,7 @@
         
         
         
-        <a class="colab-button" href="https://colab.research.google.com/github/dmosele/dmosele.github.io/blob/master/DataScienceFoundations/Intro_to_Python.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+        <a class="colab-button" href="https://colab.research.google.com/github/dmosele/dmosele.github.io/blob/master/DataScienceFoundations/Comparison Conjunctions and Conditionals.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
                 title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
                     src="_static/images/logo_colab.png"
                     alt="Interact on Colab">Colab</button></a>
@@ -233,24 +232,6 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav">
-                <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#google-colab">
-   Google Colab
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#anaconda">
-   Anaconda
-  </a>
- </li>
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -259,32 +240,114 @@
         
               <div>
                 
-  <div class="section" id="introduction-to-python">
-<h1>Introduction to Python<a class="headerlink" href="#introduction-to-python" title="Permalink to this headline">¶</a></h1>
-<p>Welcome to Python! There are a couple of ways to get started using Python. One is to install it directly on your computer using something like Anaconda. The other way is to use it in the cloud with a service like Google Colab. Either way is fine for now, so let’s get started.</p>
-<div class="section" id="google-colab">
-<h2>Google Colab<a class="headerlink" href="#google-colab" title="Permalink to this headline">¶</a></h2>
-<p>The nice thing about Google Colab is that it is available basically anywhere you have an internet browser. There’s nothing to install. All you need to do is go to <a class="reference external" href="https://colab.research.google.com">https://colab.research.google.com</a> and create a new notebook.</p>
-<p>The downside, at least for me, is that it is not intuitive how to import data into Colab. If you want to import data into colab, you can use the following code: (You will need to remove the # symbols to make the code work).</p>
+  <div class="section" id="comparison-conjunctions-conditionals">
+<h1>Comparison, Conjunctions, &amp; Conditionals<a class="headerlink" href="#comparison-conjunctions-conditionals" title="Permalink to this headline">¶</a></h1>
+<p>The final thing we need before moving on is the notion of comparison and testing with conditional statements. In a logic course you would understand a conditional statement as something like:</p>
+<p>“<strong>If</strong> the sky is green, <strong>then</strong> 2+2=5”</p>
+<p>Frequently, in coding we want to be able to test multiple conditions such as</p>
+<p>“<strong>If</strong> the sky is green, <strong>then</strong> 2+2=5. Otherwise, <strong>if</strong> the sky is purple, <strong>then</strong> 3+7=2.”</p>
+<p>For the subsequent conditions, the word else or “elif” is frequently used in programming. The difference here is that else is used if none of the earlier conditions are met and elif is used when there are additional conditions are needed.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#import pandas as pd</span>
-<span class="c1">#from google.colab import files</span>
-<span class="c1">#import io</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Write a function that takes the month as input and provides the semester as output.</span>
+<span class="c1"># Month will be an integer that takes a value between 1 and 12</span>
 
-<span class="c1">#uploaded = files.upload()</span>
-<span class="c1">#df2 = pd.read_csv(io.BytesIO(uploaded[&#39;name_of_file.csv&#39;]))</span>
+<span class="k">def</span> <span class="nf">what_semester</span><span class="p">(</span><span class="n">month</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">month</span><span class="o">&lt;</span><span class="mi">5</span> <span class="ow">and</span> <span class="n">month</span><span class="o">&gt;=</span><span class="mi">1</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">&quot;Spring&quot;</span>
+    <span class="k">elif</span> <span class="n">month</span><span class="o">&lt;</span><span class="mi">8</span> <span class="ow">and</span> <span class="n">month</span><span class="o">&gt;=</span><span class="mi">5</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">&quot;Summer&quot;</span>
+    <span class="k">elif</span> <span class="n">month</span><span class="o">&lt;</span><span class="mi">13</span> <span class="ow">and</span> <span class="n">month</span><span class="o">&gt;=</span><span class="mi">8</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">&quot;Fall&quot;</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">&quot;Plz try again&quot;</span>
+
+<span class="n">what_semester</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Fall&#39;
 </pre></div>
 </div>
 </div>
 </div>
+<p>Note that the above function is a bit imprecise. Frequently, the transition between semesters doesn’t happen on the first or last day of the month, so we need to be more granular here.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Let&#39;s try a similar function with month and day as inputs.</span>
+
+<span class="k">def</span> <span class="nf">what_semester2</span><span class="p">(</span><span class="n">month</span><span class="p">,</span><span class="n">day</span><span class="p">):</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">month</span><span class="o">==</span><span class="mi">1</span> <span class="ow">and</span> <span class="n">day</span><span class="o">&lt;</span><span class="mi">10</span><span class="p">)</span> <span class="ow">or</span> <span class="n">month</span><span class="o">==</span><span class="mi">12</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">&quot;Winter&quot;</span>
+    <span class="k">elif</span> <span class="n">month</span><span class="o">&lt;</span><span class="mi">5</span> <span class="ow">and</span> <span class="n">month</span><span class="o">&gt;=</span><span class="mi">1</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">&quot;Spring&quot;</span>
+    <span class="k">elif</span> <span class="p">(</span><span class="n">month</span><span class="o">&lt;</span><span class="mi">8</span> <span class="ow">and</span> <span class="n">month</span><span class="o">&gt;=</span><span class="mi">5</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">month</span><span class="o">==</span><span class="mi">8</span> <span class="ow">and</span> <span class="n">day</span><span class="o">&lt;</span><span class="mi">16</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s2">&quot;Summer&quot;</span>
+    <span class="k">elif</span> <span class="n">month</span><span class="o">&lt;</span><span class="mi">12</span> <span class="ow">and</span> <span class="n">month</span><span class="o">&gt;=</span><span class="mi">8</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">&quot;Fall&quot;</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">&quot;Plz try again&quot;</span>
+    
+<span class="n">what_semester2</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">20</span><span class="p">)</span>
+</pre></div>
 </div>
-<div class="section" id="anaconda">
-<h2>Anaconda<a class="headerlink" href="#anaconda" title="Permalink to this headline">¶</a></h2>
-<p>The program Anaconda is Python equipped with a bunch of tools and an easy way to add new tools to it. The downside is that it is software to be installed, but the upside is that it is free!</p>
-<p>You can download it from <a class="reference external" href="https://www.anaconda.com/products/individual">https://www.anaconda.com/products/individual</a> and install it. Once it is installed you can install and then launch Jupyter Notebook from the Anaconda Navigator.</p>
 </div>
-<div class="toctree-wrapper compound">
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Fall&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">5</span> <span class="o">!=</span> <span class="mi">6</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+</pre></div>
+</div>
+</div>
+</div>
+<p><span class="math notranslate nohighlight">\(\underline{\hspace{6in}}\)</span></p>
+<p>Let’s look at another example. This one will be a guessing game. The computer will pick a number between 0 and 9 and you have to guess. It will tell you if your guess is less than, greater than, or spot on the correct value.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#run this cell only once for each time you play the game</span>
+<span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">randrange</span>
+<span class="n">computer_choice</span> <span class="o">=</span> <span class="n">randrange</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write a function that allows you to check your guess</span>
+
+<span class="k">def</span> <span class="nf">guessing_game</span><span class="p">(</span><span class="n">computer_choice</span><span class="p">,</span><span class="n">your_guess</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">your_guess</span> <span class="o">==</span> <span class="n">computer_choice</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">&quot;Congratulations! You are correct.&quot;</span>
+    <span class="k">elif</span> <span class="n">your_guess</span> <span class="o">&gt;</span> <span class="n">computer_choice</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">&quot;You guessed too high&quot;</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">&quot;You guessed too low&quot;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">guessing_game</span><span class="p">(</span><span class="n">computer_choice</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;You guessed too low&#39;
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 
@@ -313,8 +376,7 @@
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="Welcome to Data Science Foundations.html" title="previous page">Welcome to Data Science Foundations</a>
-    <a class='right-next' id="next-link" href="Python Basic Mathematical Operations.html" title="next page">Basic Mathematical Operations in Python</a>
+    <a class='left-prev' id="prev-link" href="Functions 2.html" title="previous page">Functions 2</a>
 
         </div>
         
