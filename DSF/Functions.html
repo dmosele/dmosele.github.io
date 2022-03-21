@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Functions &#8212; Data Science Foundations</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
@@ -22,8 +23,8 @@
       
 
     
-    <link rel="stylesheet" href="_static/sphinx-book-theme.5f77b4aec8189eecf79907ce328c390d.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.5f77b4aec8189eecf79907ce328c390d.css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
@@ -33,28 +34,28 @@
     
   <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
 
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/language_data.js"></script>
     <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
-    <script >
+    <script>
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Lists and Iterating #2" href="Lists and Iteration 2.html" />
+    <link rel="next" title="Functions 2" href="Functions%202.html" />
+    <link rel="prev" title="Lists and Iterating #2" href="Lists%20and%20Iteration%202.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -86,50 +87,72 @@
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="Welcome to Data Science Foundations.html">
+  <a class="reference internal" href="Welcome%20to%20Data%20Science%20Foundations.html">
    Welcome to Data Science Foundations
   </a>
  </li>
 </ul>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active has-children">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="Intro_to_Python.html">
    Introduction to Python
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Python%20Basic%20Mathematical%20Operations.html">
+     Basic Mathematical Operations in Python
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="More%20Mathematical%20Operations.html">
+     More Mathematical Operations in Python
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Python%20Data%20Types.html">
+     Data Types in Python
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="Loops%20Functions%20and%20Conditions.html">
+   Loops, Functions, and Conditions
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
    <i class="fas fa-chevron-down">
    </i>
   </label>
   <ul class="current">
    <li class="toctree-l2">
-    <a class="reference internal" href="Python Basic Mathematical Operations.html">
-     Basic Mathematical Operations in Python
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="More Mathematical Operations.html">
-     More Mathematical Operations in Python
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="Python Data Types.html">
-     Data Types in Python
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="Lists and Iteration.html">
+    <a class="reference internal" href="Lists%20and%20Iteration.html">
      Lists and Iterating
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="Lists and Iteration 2.html">
+    <a class="reference internal" href="Lists%20and%20Iteration%202.html">
      Lists and Iterating #2
     </a>
    </li>
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
      Functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Functions%202.html">
+     Functions 2
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Comparison%20Conjunctions%20and%20Conditionals.html">
+     Comparison, Conjunctions, &amp; Conditionals
     </a>
    </li>
   </ul>
@@ -230,7 +253,7 @@
         
               <div>
                 
-  <div class="section" id="functions">
+  <section id="functions">
 <h1>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h1>
 <p>When we want to generalize a computation or be able to apply a process to several objects, we can utilize the idea of a function to achieve this. The notion of function is similar to the one in math, except it has a little (just a little) more freedom. In math, a function takes some object as input (a number or numbers usually) and produces an output (also generally a number, but not necessarily). Here, it is essentially the same scenario except our output doesn’t even necessarily have to exist!</p>
 <p>To further show the similarities, let’s take an example of the squaring function. In a math course, you would typically write the function as
@@ -423,7 +446,7 @@ $<span class="math notranslate nohighlight">\(C = (F-32)*(5/9)\)</span>$</p>
 </div>
 </div>
 </div>
-</div>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -450,7 +473,8 @@ $<span class="math notranslate nohighlight">\(C = (F-32)*(5/9)\)</span>$</p>
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="Lists and Iteration 2.html" title="previous page">Lists and Iterating #2</a>
+    <a class='left-prev' id="prev-link" href="Lists%20and%20Iteration%202.html" title="previous page">Lists and Iterating #2</a>
+    <a class='right-next' id="next-link" href="Functions%202.html" title="next page">Functions 2</a>
 
         </div>
         

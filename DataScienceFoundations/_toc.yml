@@ -6,8 +6,11 @@ chapters:
     - file: Python Basic Mathematical Operations
     - file: More Mathematical Operations
     - file: Python Data Types
+- file: Loops Functions and Conditions
+  sections:
     - file: Lists and Iteration
     - file: Lists and Iteration 2
     - file: Functions
     - file: Functions 2
     - file: Comparison Conjunctions and Conditionals
+
